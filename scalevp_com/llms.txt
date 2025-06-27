@@ -1,0 +1,68 @@
+# Scale Venture Partners
+
+We are an early-stage venture capital firm focused on investing in the new era of **intelligent software**. Our mission is to partner with great founders building businesses that leverage data and AI to create transformative enterprise solutions. We believe in the power of software to drive efficiency and innovation across industries, and we bring a record of success in helping companies scale from early growth to market leadership.
+
+## Where We Invest
+
+Our investment strategy centers on identifying and supporting companies that are shaping the future of enterprise software. We focus on specific market areas where we see significant potential for growth and disruption through intelligent applications and infrastructure. We partner with founders who are building category-defining products in these dynamic sectors.
+
+### AI Apps
+We invest in applications that are fundamentally powered by artificial intelligence, transforming workflows and decision-making within businesses. These companies are building intelligent agents, automation tools, and predictive platforms that deliver significant value. Examples from our portfolio include **Bland** (AI phone calling agents), **Klarity** (AI for finance and accounting), **Tavus** (AI video generation), and **Regie.ai** (AI sales automation).
+
+### Fintech
+Our focus in Fintech is on software companies that are innovating within the financial services ecosystem, particularly those serving businesses. This includes payments, financial operations, risk management, and compliance solutions that leverage technology for greater efficiency and security. Portfolio companies like **Bill.com** (digital business payments), **Socure** (identity verification), and **Forter** (fraud prevention) represent our commitment to this area.
+
+### Infrastructure
+We back companies building the foundational software and platforms that enable the development, deployment, and operation of modern applications. This includes cloud infrastructure, DevOps tools, data platforms, and developer productivity solutions. Our investments in this space include **JFrog** (DevOps and DevSecOps), **CircleCI** (CI/CD), **Honeycomb** (observability), and **Cortex** (engineering system of record).
+
+### Productivity
+This area encompasses software that enhances individual and team productivity, streamlines business processes, and improves collaboration. We look for applications that make work more efficient, automate repetitive tasks, and provide better insights for decision-making. Companies like **Box** (content management), **Demandbase** (account-based marketing), and **DocuSign** (e-signatures) are key examples in our portfolio.
+
+### Security
+We invest in companies developing advanced software solutions to protect enterprises from evolving cyber threats. This includes identity and access management, data security, application security, and threat detection platforms. Our portfolio in Security features companies like **Expel** (managed detection and response) and **AppOmni** (SaaS security).
+
+### Verticals
+Beyond our core horizontal themes, we also invest in software companies that are building intelligent, vertical-specific applications tailored to the unique needs of particular industries. These solutions often leverage deep domain expertise to solve complex problems within sectors like logistics, healthcare, or real estate. **Airspace Technologies** (time-critical logistics) is an example of our investment in this area.
+
+You can explore more about our investment focus areas on our website.
+
+## Our Portfolio
+
+We are proud to partner with a diverse group of innovative companies that are leading the charge in enterprise software. Our portfolio represents our commitment to investing in transformative businesses across various stages of growth, from early scaling to market leadership and successful exit.
+
+Here are some of the companies we've partnered with:
+
+*   **Bill.com**: A leading digital business payments company managing billions in payments (NYSE: BILL).
+*   **JFrog**: Provides a hybrid, multi-cloud DevOps and DevSecOps solution (NASDAQ: FROG).
+*   **Box**: Transforms how organizations work with cloud content management (NYSE: BOX).
+*   **Cortex**: The engineering system of record, focused on Infrastructure.
+*   **Bland**: Enables enterprises to build and deploy AI phone calling agents, focused on AI apps.
+*   **Klarity**: Offers a best-in-class application for finance and accounting professionals, focused on AI apps and Fintech.
+*   **Abacum**: Focused on Productivity and AI apps.
+*   **Agari**: An M&A exit in the Security market.
+*   **Airspace Technologies**: A current investment in the Verticals market.
+*   **AllyO**: An M&A exit in the AI apps market.
+*   **Applause**: An M&A exit in the SaaS market.
+*   **AppOmni**: A current investment in the Security market.
+*   **CircleCI**: A current investment in the Infrastructure market.
+*   **Demandbase**: A current investment in the Productivity market.
+*   **DocuSign**: A prominent company in the Productivity market.
+*   **Expel**: A current investment in the Security market.
+*   **Forter**: A current investment in the Fintech market.
+*   **Honeycomb**: A current investment in the Infrastructure market.
+*   **Papaya Global**: A current investment in the Fintech market.
+*   **QAWolf**: A current investment in the Infrastructure market.
+*   **Regie.ai**: A current investment in the AI apps market.
+*   **Sixfold**: A current investment in the AI apps market.
+*   **Socure**: A current investment in the Fintech market.
+*   **Tavus**: A current investment in the AI apps market.
+*   **WalkMe**: A prominent company in the Productivity market.
+
+We work closely with our portfolio companies, providing not just capital but also strategic guidance and operational support to help them navigate the challenges of rapid growth. As **Christine Yen**, Co-Founder & CEO of Honeycomb, shared, "From leading multiple funding announcements to marketing funnel analysis, the Scale team worked as part of our team to set up processes the right way, before we had the bandwidth to hire full-time resources."
+
+You can view our full portfolio on our website at https://scalevp.com/portfolio/.
+
+At Scale Venture Partners, we are dedicated to partnering with the next generation of leaders building intelligent software companies. Our focus on early-stage enterprise software, combined with our deep market expertise and operational support, positions us to help founders achieve their vision and build enduring businesses that shape an intelligent future.
+
+---
+Generated by: lapis trylapis.com

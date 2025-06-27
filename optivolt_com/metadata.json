@@ -1,0 +1,22 @@
+{
+  "domain": "optivolt.com",
+  "description": "Optivolt - Solar Energy",
+  "generated_at": "2025-06-27T17:32:01.370114",
+  "scraped_pages": 3,
+  "llms_txt": {
+    "length": 968,
+    "sections": 0,
+    "subsections": 0,
+    "has_attribution": true,
+    "has_company_voice": true
+  },
+  "llms_full_txt": {
+    "length": 102192,
+    "pages": 30,
+    "avg_per_page": 3406,
+    "has_anchor_links": true,
+    "has_code_blocks": true,
+    "has_tables": true,
+    "has_metadata": true
+  }
+}
