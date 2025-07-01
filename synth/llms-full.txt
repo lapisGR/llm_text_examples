@@ -1,0 +1,1376 @@
+--------------------------------------------------------------------------------
+title: "synth-a7a3d3e9.mintlify.app Documentation"
+description: "Welcome to the documentation for Synth, a powerful platform and SDK designed to streamline the development and management of AI applications. In today's rapidly evolving AI landscape, building robust,..."
+last_updated: "July 01, 2025"
+source: "https://synth-a7a3d3e9.mintlify.app"
+total_pages: 13
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# synth-a7a3d3e9.mintlify.app Documentation
+
+```markdown
+# Introduction
+
+Welcome to the documentation for Synth, a powerful platform and SDK designed to streamline the development and management of AI applications. In today's rapidly evolving AI landscape, building robust, observable, and scalable systems that leverage large language models (LLMs) can be complex. Synth addresses these challenges by providing developers with the tools needed to integrate diverse AI providers, manage data flows, and gain deep insights into AI interactions.
+
+Synth's core value proposition lies in simplifying the complexity of building sophisticated AI-powered systems. It acts as an abstraction layer and management tool, enabling developers to easily connect with leading AI providers like OpenAI and Anthropic. By offering a developer-friendly Python SDK and focusing on crucial aspects like tracing events and data management, Synth empowers engineers to accelerate development cycles, improve debugging capabilities, and build more reliable AI applications.
+
+This platform is tailored for developers, data scientists, and engineers who are integrating AI into their products and workflows. Whether you
+
+
+
+--------------------------------------------------------------------------------
+title: "Introduction - Synth Docs"
+description: "Synth is a platform designed to simplify the development, debugging, and maintenance of complex AI agents and software. By providing robust tools for logging agent execution, identifying performance b..."
+last_updated: "July 01, 2025"
+source: "https://synth-a7a3d3e9.mintlify.app/introduction"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# Introduction - Synth Docs
+
+```markdown
+# Introduction {#introduction}
+
+Synth is a platform designed to simplify the development, debugging, and maintenance of complex AI agents and software. By providing robust tools for logging agent execution, identifying performance bottlenecks, and facilitating iterative improvements, Synth empowers developers to build more reliable and effective AI systems.
+
+This documentation serves as a comprehensive guide to understanding and utilizing the Synth platform, covering everything from initial setup and data logging via our SDKs to advanced analysis techniques and best practices for agent development. Whether you are building a simple agent or a sophisticated multi-step system, Synth provides the visibility and tools needed to ensure your agent performs optimally.
+
+## Overview {#overview}
+
+Building state-of-the-art AI agents presents unique challenges, particularly in understanding their behavior, diagnosing failures, and systematically improving performance. Unlike traditional software, agents often involve non-deterministic elements, complex interactions between components (LLMs, tools, memory), and emergent behaviors that are difficult to predict or debug using standard methods.
+
+Synth addresses these challenges by providing a structured approach to observing and analyzing agent execution. Key capabilities include:
+
+*   **Automated Tracing and Logging:** Capture detailed logs of your agent's execution flow, including LLM calls, tool usage, intermediate steps, inputs, and outputs. This provides a comprehensive trace of how your agent arrives at a decision or outcome.
+*   **Performance Monitoring:** Collect metrics related to execution time, token usage, cost, and custom performance indicators relevant to your agent's task.
+*   **Failure Identification:** Analyze logged data to pinpoint specific instances or patterns where your agent fails, produces incorrect outputs, or behaves unexpectedly.
+*   **Iterative Improvement:** Use insights gained from analysis to refine prompts, adjust parameters, modify agent logic, or update tools, leading to a data-driven approach to agent development.
+
+Integration with Synth is primarily achieved through our dedicated Software Development Kits (SDKs). We currently offer SDKs for [Python](/python-sdk/api-reference/introduction) and [TypeScript](/typescript-sdk/introduction), providing simple decorators and client wrappers for popular libraries like OpenAI and Anthropic to minimize integration effort.
+
+## Quick Start {#quick-start}
+
+The fastest way to understand Synth's capabilities and see how it integrates with an AI agent is to explore our comprehensive Craftax Demo. This example showcases the end-to-end workflow of using Synth to develop and improve an LLM agent.
+
+The [Craftax Demo](/python-sdk/api-reference/tutorials/Craftax-Example) provides a complete, runnable example demonstrating:
+
+1.  **SDK Installation and Configuration:** Learn how to add the Synth SDK to your project and configure it to connect to the Synth platform.
+2.  **Agent Building with Automatic Tracing:** See how to structure an AI agent using the SDK's tracing features, enabling automatic capture of execution data without extensive manual logging.
+3.  **Execution Data and Metrics Collection:** Observe how the SDK automatically collects detailed traces, inputs, outputs, and performance metrics during agent runs.
+4.  **Agent Performance Analysis with Synth:** Understand how the collected data is visualized and analyzed within the Synth platform to identify areas for improvement.
+
+The demo features an LLM agent playing a simplified Minecraft-inspired game, providing a clear and relatable context for evaluating agent performance and demonstrating key SDK features and best practices for integrating Synth into your AI development workflow.
+
+You can run the code for the Craftax Demo directly in Google Colab using [this link](https://colab.research.google.com/drive/1z17DSIp3KlDMaGHt1nGqFxU10cfzy5tz#scrollTo=55yXnAOm6fwf). We highly recommend starting with this demo to get hands-on experience with Synth.
+
+For detailed instructions on setting up the SDK and integrating it into your specific project, please refer to the [Python SDK Documentation](/python-sdk/api-reference/introduction) or [TypeScript SDK Documentation](/typescript-sdk/introduction).
+```
+
+
+--------------------------------------------------------------------------------
+title: "OpenAI Client - Synth Docs"
+description: "Okay, here is the technical documentation for the Synth OpenAI Client page, formatted as requested and incorporating the content provided."
+last_updated: "July 01, 2025"
+source: "https://synth-a7a3d3e9.mintlify.app/python-sdk/api-reference/pages/openai"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# OpenAI Client - Synth Docs
+
+Okay, here is the technical documentation for the Synth OpenAI Client page, formatted as requested and incorporating the content provided.
+
+---
+
+## OpenAI Client
+
+The Synth OpenAI clients provide a seamless way to integrate OpenAI model interactions into your traced workflows. These clients wrap the standard `openai` Python library clients (`openai.OpenAI` and `openai.AsyncOpenAI`), adding automatic tracking capabilities.
+
+When you use a Synth OpenAI client within a method decorated with Synth's [`trace_event`](/trace-event) or [`trace_event_async`](/trace-event) decorators, all interactions with the OpenAI API made through that client instance are automatically captured. This includes input messages, output messages, model parameters, and details about tool calls and their responses, providing a comprehensive log of the AI's behavior within the context of your traced event.
+
+## Usage {#usage}
+
+To use the Synth OpenAI clients, import `OpenAI` or `AsyncOpenAI` directly from the `synth_sdk` package. Instantiate the desired client (synchronous `OpenAI` or asynchronous `AsyncOpenAI`) and use it within a method that is decorated with the appropriate Synth tracing decorator (`@trace_event` or `@trace_event_async`).
+
+The following example demonstrates how to use the `AsyncOpenAI` client within an `async` method decorated with `@trace_event_async`.
+
+```python
+from synth_sdk import AsyncOpenAI, OpenAI
+import uuid
+from synth_sdk.tracing import trace_event_async # Assuming trace_event_async is here or similar
+
+class Agent:
+    def __init__(self):
+        self.system_instance_id = str(uuid.uuid4())
+        self.system_name = "Example_System"
+        # Instantiate the Synth AsyncOpenAI client
+        self.client = AsyncOpenAI()  # or OpenAI() for sync
+
+    @trace_event_async(
+        event_type="solve_problem",
+        # Additional trace_event parameters can go here
+    )
+    async def solve_problem(self, problem: str):
+        # Use the Synth client just like the standard OpenAI client
+        # Messages and parameters are automatically tracked by Synth
+        response = await self.client.chat.completions.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": "You are a problem solver."},
+                {"role": "user", "content": problem}
+            ],
+            temperature=0.7
+        )
+        return response.choices[0].message.content
+
+# Example usage (assuming async context)
+# async def main():
+#     agent = Agent()
+#     result = await agent.solve_problem("What is the capital of France?")
+#     print(result)
+#
+# import asyncio
+# asyncio.run(main())
+```
+
+In this example, the call to `self.client.chat.completions.create(...)` within the `solve_problem` method will automatically trigger the tracking of the input messages, the model used (`gpt-4`), the temperature, and the resulting output message, because the method is decorated with `@trace_event_async` and a Synth client is used.
+
+## Automatic Tracking {#automatic-tracking}
+
+When a Synth `OpenAI` or `AsyncOpenAI` client is used within a method decorated with [`trace_event`](/trace-event), the following information is automatically captured and associated with the trace event:
+
+*   **Input messages:** The list of messages sent to the OpenAI model.
+*   **Output messages:** The message received back from the OpenAI model.
+*   **Model parameters:** Key parameters used for the API call, such as `model`, `temperature`, `max_tokens`, etc.
+*   **Tool calls:**
+
+
+--------------------------------------------------------------------------------
+title: "Craftax Demo - Synth Docs"
+description: "[Synth Docs home page![light logo](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/logo/synth.svg)![dark logo](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/logo/synth.svg)](/)"
+last_updated: "July 01, 2025"
+source: "https://synth-a7a3d3e9.mintlify.app/python-sdk/api-reference/tutorials/Craftax-Example"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# Craftax Demo - Synth Docs
+
+[Synth Docs home page![light logo](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/logo/synth.svg)![dark logo](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/logo/synth.svg)](/)
+
+Search...
+
+Ctrl KAsk AI
+
+  * [Support](https://join.slack.com/t/synthaicommunity/shared_invite/zt-2uzhr4vjq-FrLQQt9Y6t6A9sSSHpzrtA)
+  * [Home](https://www.usesynth.ai/)
+  * [Home](https://www.usesynth.ai/)
+
+
+
+Search...
+
+Navigation
+
+Guides
+
+Craftax Demo
+
+[Documentation](/introduction)[Python SDK](/python-sdk/api-reference/introduction)[TypeScript SDK](/typescript-sdk/introduction)
+
+* [Documentation](/introduction)
+* [Changelog](/changelog)
+
+##### Python SDK
+
+  * [Python SDK](/python-sdk/api-reference/introduction)
+  * Guides
+
+    * [Craftax Demo](/python-sdk/api-reference/tutorials/Craftax-Example)
+  * Data Upload
+
+  * Provider Integrations
+
+
+
+
+Guides
+
+# Craftax Demo
+
+Create an AI agent that plays the Craftax game, and evaluate its shortcomings using the Synth platform
+
+## 
+
+​
+
+Overview
+
+This tutorial demonstrates how to evaluate an LLM agent’s shortcomings at playing [Craftax](https://craftaxenv.github.io), a Minecraft-inspired game environment, using the Synth SDK and platform. The agent uses a [ReAct (Reasoning + Action)](https://craftaxenv.github.io) approach to make decisions and interact with the game world.
+
+![Craftax Game Environment](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/public/farming.png)
+
+## 
+
+​
+
+Game Rules and Actions
+
+We’ll use the [CraftaxLM](https://github.com/JoshuaPurtell/craftaxlm) to render the game in a text format that the LLM can engage with.
+
+The LLM’s state and surroundings are rendered in the prompt, and it’s able to take between 1 and 8 consecutive actions like
+
+  1. Basic movement (up, down, left, right)
+  2. Resource gathering and crafting
+  3. Combat and tool usage
+  4. Building and construction
+
+
+
+to make headway each step. Because it uses the Re-Act framework, the agent definition is rather simple:
+
+Copy
+
+Ask AI
+    
+    
+    from craftaxlm import CraftaxClassicACI
+    from synth_sdk.tracing.abstractions import RewardSignal
+    from zyk import LM
+    
+    class SimpleReActLanguageAgent:
+        def __init__(self, lm: LM, mode: str = "craftax_classic"):
+            self.system_instance_id = str(uuid.uuid4())
+            self.system_name = "craftax_agent"
+            self.lm = lm
+            self.mode = mode
+    
+        @trace_event_async(
+            event_type="re-act",
+        )
+        async def get_actions(self):
+            if self.mode == "classic":
+                rules = craftax_classic_game_rules
+                game_tips = crafter_game_tips
+                actions = craftax_classic_action_dict
+            elif self.mode == "full":
+                rules = craftax_full_game_rules
+                game_tips = craftax_game_tips
+                actions = craftax_full_action_dict
+            else:
+                raise ValueError(f"Mode {self.mode} not recognized")
+            system_message = f"""
+    # Premise
+    You're playing the game of Crafter.
+    Here is some information about this setting
+    <Crafter Information>
+    <Rules>
+    {rules}
+    </Rules>
+    <Tips>
+    {game_tips}
+    </Tips>
+    <Actions Available>
+    {[a for a in list(actions.keys()) if a.lower() not in ['noop']]}
+    </Actions Available>
+    You'll be given your past actions/thoughts, along with recent raw observations from the environment
+    The environment one step in the past is your current environment
+    
+    {self.instructions}
+    """
+            react_history, obs_history = self.render_history()
+            user_message = f"""
+    # Recent Actions / Thoughts
+    {react_history}
+    # Recent Observations
+    {obs_history}
+    
+    Your next actions / thought: """
+    
+            react_step = await self.lm.respond_async(
+                system_message=system_message,
+                user_message=user_message,
+                response_model=ReAct,
+            )
+            illegal_actions = [
+                action
+                for action in react_step.actions
+                if action not in craftax_classic_action_dict.keys()
+            ]
+            legal_actions = [
+                action
+                for action in react_step.actions
+                if action in craftax_classic_action_dict.keys()
+            ]
+            react_info = react_step.dict()
+            react_info["errors"] = {
+                "illegal_actions": illegal_actions,
+            }
+    
+            self.react_history.append(react_info)
+    
+            return legal_actions
+    
+
+## 
+
+​
+
+Configuration
+
+We can configure what model underlies the agent, how long to give the agent before cutting off the trajectory, and the number of agents to run at once via the config. In this example, we’ll run the agent a handful of times to help the Synth platform identify some common failures.
+
+Copy
+
+Ask AI
+    
+    
+    [agent]
+    model_name = "gpt-4o-mini"
+    mode = "classic"
+    max_steps = 25
+    save_upload = false
+    
+    [environment]
+    seeds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    
+    [recording]
+    fps = 3
+    enabled = true
+    
+
+We run a batch of agent episodes and give the Synth platform time to analyze them. Soon enough, we can find breakdowns of each trajectory
+
+![Craftax Agent Analysis](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/public/craftax_system_status.png)
+
+along with an analysis of which errors plague our agent most
+
+![Craftax Cuvier Error Analysis](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/public/cuvier-release/craftax_cuvier_display.png)
+
+The agent seems to consistently struggle with obtaining wood, although it often figures it out eventually!
+
+For the complete implementation, including game rules, agent logic, and configuration options, check out the full source code:
+
+  * [run_agent.py](https://github.com/synth-laboratories/synth-demos/blob/main/crafter_agent/run_agent.py)
+  * [game_info.py](https://github.com/synth-laboratories/synth-demos/blob/main/crafter_agent/game_info.py)
+  * [simple_react_agent.py](https://github.com/synth-laboratories/synth-demos/blob/main/crafter_agent/simple_react_agent.py)
+
+
+
+And follow the walkthrough [here](https://github.com/synth-laboratories/synth-demos/blob/main/README.md)
+
+[Python SDK](/python-sdk/api-reference/introduction)[trace_event](/python-sdk/api-reference/pages/trace-event)
+
+[Powered by Mintlify](https://mintlify.com/preview-request?utm_campaign=poweredBy&utm_medium=referral&utm_source=synth-a7a3d3e9)
+
+On this page
+
+  * Overview
+  * Game Rules and Actions
+  * Configuration
+
+
+
+Assistant
+
+Responses are generated using AI and may contain mistakes.
+
+![Craftax Game Environment](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/public/farming.png)
+
+![Craftax Agent Analysis](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/public/craftax_system_status.png)
+
+![Craftax Cuvier Error Analysis](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/public/cuvier-release/craftax_cuvier_display.png)
+
+
+
+--------------------------------------------------------------------------------
+title: "trace_event - Synth Docs"
+description: "[Synth Docs home page![light logo](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/logo/synth.svg)![dark logo](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/logo/synth.svg)](/)"
+last_updated: "July 01, 2025"
+source: "https://synth-a7a3d3e9.mintlify.app/python-sdk/api-reference/pages/trace-event"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# trace_event - Synth Docs
+
+[Synth Docs home page![light logo](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/logo/synth.svg)![dark logo](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/logo/synth.svg)](/)
+
+Search...
+
+Ctrl KAsk AI
+
+  * [Support](https://join.slack.com/t/synthaicommunity/shared_invite/zt-2uzhr4vjq-FrLQQt9Y6t6A9sSSHpzrtA)
+  * [Home](https://www.usesynth.ai/)
+  * [Home](https://www.usesynth.ai/)
+
+
+
+Search...
+
+Navigation
+
+Data Upload
+
+trace_event
+
+[Documentation](/introduction)[Python SDK](/python-sdk/api-reference/introduction)[TypeScript SDK](/typescript-sdk/introduction)
+
+* [Documentation](/introduction)
+* [Changelog](/changelog)
+
+##### Python SDK
+
+  * [Python SDK](/python-sdk/api-reference/introduction)
+  * Guides
+
+  * Data Upload
+
+    * [trace_event](/python-sdk/api-reference/pages/trace-event)
+    * [track_messages](/python-sdk/api-reference/pages/track-messages)
+    * [upload](/python-sdk/api-reference/pages/upload)
+  * Provider Integrations
+
+
+
+
+Data Upload
+
+# trace_event
+
+Decorator for tracking AI model interactions
+
+The `trace_event` decorators allow you to track and analyze interactions with AI models in your software. They come in two variants:
+
+  * `trace_event_sync` for synchronous functions
+  * `trace_event_async` for asynchronous functions
+
+
+
+## 
+
+​
+
+Requirements
+
+The decorated method must belong to a class that defines:
+
+  * `system_name`: A string identifying the type of agent (e.g., “Math_Agent”, “Translation_Agent”)
+  * `system_instance_id`: A UUID string identifying a specific instance of the agent
+
+
+
+> **Note** : The `system_instance_id` is particularly important when running multiple instances in parallel, as it helps differentiate between records from different runs. The `system_name` allows you to group and analyze data across all instances of the same type of agent.
+
+## 
+
+​
+
+Usage
+
+The decorators can be used with either the [Synth OpenAI](/openai) or [Anthropic](/anthropic) clients, or in combination with [track-messages](/track-messages).
+
+## 
+
+​
+
+Usage with Anthropic
+
+Copy
+
+Ask AI
+    
+    
+    from synth_sdk import Anthropic
+    from synth_sdk import trace_event_sync
+    import uuid
+    
+    class MathAgent:
+        def __init__(self):
+            self.system_instance_id = str(uuid.uuid4())
+            self.system_name = "Math_Agent"
+            self.client = Anthropic(api_key=anthropic_api_key)
+    
+        @trace_event_sync(
+            event_type="math_solution",
+        )
+        def solve_math_problem(self, problem: str) -> str:
+            response = self.client.messages.create(
+                model="claude-3-haiku-20240307",
+                max_tokens=1000,
+                system="You are a math problem solver. Provide step-by-step solutions.",
+                messages=[
+                    {"role": "user", "content": problem},
+                ],
+                temperature=0,
+            )
+            return response.content[0].text
+    
+
+The traced events can later be analyzed and uploaded using the Synth SDK’s dataset and upload functionality.
+
+## 
+
+​
+
+Usage with track_messages
+
+You can combine `trace_event` decorators with [track-messages](/track-messages) for more detailed tracking of model interactions. Here’s an example using the async variant:
+
+Copy
+
+Ask AI
+    
+    
+    from synth_sdk.tracing.decorators import trace_event_async
+    from synth_sdk.tracing.trackers import track_messages_async
+    from anthropic import AsyncAnthropic
+    import uuid
+    
+    class Agent:
+        def __init__(self):
+            self.system_instance_id = str(uuid.uuid4())
+            self.system_name = "Example_System"
+            self.client = AsyncAnthropic()
+    
+        @trace_event_async(
+            event_type="solve_problem",
+        )
+        async def generate_response(self):
+            # Define messages
+            messages = [
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": "What's 2+2?"}
+            ]
+    
+            # Make API call
+            response = await self.client.messages.create(
+                model="claude-3-haiku-20240307",
+                system=messages[0]["content"],
+                messages=messages[1:],
+                temperature=0.7,
+                max_tokens=1000,
+            )
+    
+            assistant_message = [{"role": "assistant", "content": response.content[0].text}]
+    
+            # Track the messages explicitly
+            await track_messages_async(
+                input_messages=messages,
+                output_messages=assistant_message,
+                model_name="claude-3-haiku-20240307",
+                model_params={"temperature": 0.7, "max_tokens": 1000},
+                finetune=False,
+            )
+    
+            return response.content[0].text
+    
+
+This approach allows you to:
+
+  1. Track the overall function execution with `trace_event_async`
+  2. Explicitly track the messages and model parameters with `track_messages_async`
+
+
+
+## 
+
+​
+
+Parameters
+
+  * `event_type` (str, required): A descriptive name for the type of AI interaction being traced. This should reflect what is happening when the AI models are called (e.g., “math_solution”, “content_generation”, “translation”).
+
+
+
+## 
+
+​
+
+Example
+
+Here’s a complete example showing how to use `trace_event_sync` with an Anthropic client:
+
+Copy
+
+Ask AI
+    
+    
+    from synth_sdk.provider_support.anthropic import Anthropic
+    from synth_sdk.tracing.decorators import trace_event_sync
+    
+    class MathAgent:
+        def __init__(self):
+            self.system_instance_id = "math_agent_sync"
+            self.system_name = "math_agent"
+            self.client = Anthropic(api_key=anthropic_api_key)
+    
+        @trace_event_sync(
+            event_type="math_solution",
+        )
+        def solve_math_problem(self, problem: str) -> str:
+            response = self.client.messages.create(
+                model="claude-3-haiku-20240307",
+                max_tokens=1000,
+                system="You are a math problem solver. Provide step-by-step solutions.",
+                messages=[
+                    {"role": "user", "content": problem},
+                ],
+                temperature=0,
+            )
+            return response.content[0].text
+    
+
+The traced events can later be analyzed and uploaded using the Synth SDK’s dataset and upload functionality.
+
+## 
+
+​
+
+Using with track_messages
+
+You can combine `trace_event` decorators with [track-messages](/track-messages) for more detailed tracking of model interactions. Here’s an example using the async variant:
+
+Copy
+
+Ask AI
+    
+    
+    from synth_sdk.tracing.decorators import trace_event_async
+    from synth_sdk.tracing.trackers import track_messages_async
+    from anthropic import AsyncAnthropic
+    
+    class Agent:
+        def __init__(self, system_instance_id: str):
+            self.system_instance_id = system_instance_id
+            self.system_name = "example_system"
+            self.client = AsyncAnthropic()
+    
+        @trace_event_async(
+            event_type="lm_call",
+            manage_event="create_and_end",
+            increment_partition=True,
+        )
+        async def generate_response(self):
+            # Define messages
+            messages = [
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": "What's 2+2?"}
+            ]
+    
+            # Make API call
+            response = await self.client.messages.create(
+                model="claude-3-haiku-20240307",
+                system=messages[0]["content"],
+                messages=messages[1:],
+                temperature=0.7,
+                max_tokens=1000,
+            )
+    
+            assistant_message = [{"role": "assistant", "content": response.content[0].text}]
+    
+            # Track the messages explicitly
+            await track_messages_async(
+                input_messages=messages,
+                output_messages=assistant_message,
+                model_name="claude-3-haiku-20240307",
+                model_params={"temperature": 0.7, "max_tokens": 1000},
+                finetune=False,
+            )
+    
+            return response.content[0].text
+    
+
+This approach allows you to:
+
+  1. Track the overall function execution with `trace_event_async`
+  2. Explicitly track the messages and model parameters with `track_messages_async`
+
+
+
+[Craftax Demo](/python-sdk/api-reference/tutorials/Craftax-Example)[track_messages](/python-sdk/api-reference/pages/track-messages)
+
+[Powered by Mintlify](https://mintlify.com/preview-request?utm_campaign=poweredBy&utm_medium=referral&utm_source=synth-a7a3d3e9)
+
+On this page
+
+  * Requirements
+  * Usage
+  * Usage with Anthropic
+  * Usage with track_messages
+  * Parameters
+  * Example
+  * Using with track_messages
+
+
+
+Assistant
+
+Responses are generated using AI and may contain mistakes.
+
+
+
+--------------------------------------------------------------------------------
+title: "Anthropic Client - Synth Docs"
+description: "Okay, here is the technical documentation for the Synth Anthropic Client page, formatted as requested."
+last_updated: "July 01, 2025"
+source: "https://synth-a7a3d3e9.mintlify.app/python-sdk/api-reference/pages/anthropic"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# Anthropic Client - Synth Docs
+
+Okay, here is the technical documentation for the Synth Anthropic Client page, formatted as requested.
+
+```markdown
+# Anthropic Client
+
+The Synth Python SDK provides specialized client wrappers for interacting with the Anthropic API. These `Anthropic` and `AsyncAnthropic` clients mirror the functionality of the official Anthropic Python SDK but are enhanced to integrate seamlessly with Synth's tracing capabilities.
+
+When used within methods or functions decorated with `@trace_event` or `@trace_event_async`, these clients automatically capture and log all relevant AI message interactions, including inputs, outputs, and model parameters. This eliminates the need for manual tracking calls and ensures comprehensive logging of your AI workflow within Synth.
+
+## Usage {#usage}
+
+To use the Synth Anthropic clients, import `Anthropic` or `AsyncAnthropic` from the `synth_sdk` package. Instantiate the client and use it within a function or method that is decorated with `@trace_event` or `@trace_event_async`.
+
+The client provides the same interface as the standard Anthropic Python SDK, allowing you to call methods like `messages.create` with the familiar parameters.
+
+Here's an example demonstrating how to use `AsyncAnthropic` within an asynchronous traced method:
+
+```python
+from synth_sdk import AsyncAnthropic, trace_event_async
+import uuid
+
+class Agent:
+    def __init__(self):
+        # These attributes are often used for system identification in tracing
+        self.system_instance_id = str(uuid.uuid4())
+        self.system_name = "Example_System"
+        # Instantiate the Synth AsyncAnthropic client
+        self.client = AsyncAnthropic()  # Use Anthropic() for synchronous operations
+
+    @trace_event_async(
+        event_type="solve_problem",
+        # Include system identifiers in the trace event context
+        context=lambda self, *args, **kwargs: {
+            "system_instance_id": self.system_instance_id,
+            "system_name": self.system_name,
+            "problem": args[0] # Assuming 'problem' is the first argument
+        }
+    )
+    async def solve_problem(self, problem: str):
+        """
+        Solves a given problem using the Anthropic Claude model.
+        Messages and parameters are automatically tracked by Synth.
+        """
+        print(f"Attempting to solve problem: {problem}")
+        # Use the Synth client just like the standard Anthropic client
+        # All messages, model, and parameters within this call are tracked
+        response = await self.client.messages.create(
+            model="claude-3-haiku-20240307",
+            system="You are a helpful problem solver.",
+            messages=[{"role": "user", "content": problem}],
+            temperature=0.7,
+            max_tokens=300 # Example of another parameter
+        )
+        
+        # The response object is the same as the standard Anthropic client
+        solution = response.content[0].text
+        print(f"Solution found: {solution}")
+        return solution
+
+# Example usage (assuming you have an async context)
+# async def main():
+#     agent = Agent()
+#     await agent.solve_problem("What is the capital of France?")
+#
+# import asyncio
+# asyncio.run(main())
+```
+
+In this example, the `await self.client.messages.create(...)` call automatically triggers message and parameter tracking because it occurs within the `solve_problem` method, which is decorated with `@trace_event_async`.
+
+## Automatic Tracking {#automatic-tracking}
+
+When you use the Synth `Anthropic` or `AsyncAnthropic` clients within a traced function (`@trace_event` or `@trace_event_async`), the following information is automatically captured and associated with the current trace event:
+
+*   **Input Messages:** The list of messages sent to the model (e.g., user prompts, system messages, previous assistant responses).
+*   **Output Messages:** The response received from the model (e.g., the assistant's generated text, tool calls).
+*   **Model Parameters:** Key parameters used for the API call, such as `model`, `temperature`, `max_tokens`, etc.
+*   **Tool Calls and Responses:** If your interaction involves Anthropic's tool use features, the details of tool calls made by the model and the subsequent tool output provided back to the model are also tracked.
+
+This automatic tracking provides a detailed record of the AI interaction within the context of your application's workflow trace, making it easier to debug, analyze, and understand the behavior of your AI-powered features.
+
+## Integration with trace_event {#integration-with-trace-event}
+
+The core functionality of automatic tracking for the Synth Anthropic clients relies on their usage within methods or functions decorated with Synth's tracing decorators, `@trace_event` and `@trace_event_async`.
+
+Synth's tracing system uses context variables to understand the current trace and event. The Synth Anthropic clients are designed to read this context automatically when their API methods (like `messages.create`) are called. If a trace context is active, the client captures the relevant details of the API call and logs them as part of the current trace event.
+
+If you use a Synth Anthropic client *outside* of a traced function, it will behave like the standard Anthropic client, and no automatic tracking will occur.
+
+For more details on setting up and using tracing in your application, refer to the [trace_event documentation](/trace-event).
+
+##
+
+
+--------------------------------------------------------------------------------
+title: "Python SDK - Synth Docs"
+description: "Okay, here is the technical documentation for the Synth Python SDK Introduction page, based on the provided content and requirements."
+last_updated: "July 01, 2025"
+source: "https://synth-a7a3d3e9.mintlify.app/python-sdk/api-reference/introduction"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# Python SDK - Synth Docs
+
+Okay, here is the technical documentation for the Synth Python SDK Introduction page, based on the provided content and requirements.
+
+```markdown
+# Python SDK Introduction
+
+The Synth Python SDK serves as the primary interface for integrating your Python-based AI agents and applications with the Synth observability platform. Its core purpose is to automatically capture and log detailed telemetry data about your agent's interactions with large language models (LLMs), external tools, and internal logic.
+
+By integrating the SDK, you gain crucial visibility into your agent's runtime behavior. This data is invaluable for debugging complex agentic workflows, analyzing performance bottlenecks, understanding the sequence
+
+
+--------------------------------------------------------------------------------
+title: "Cuvier Release Notes - Synth Docs"
+description: "The Cuvier release introduces Synth's Error Analysis feature, now available in public beta. This powerful tool is designed to address the significant challenges associated with debugging AI agents, pa..."
+last_updated: "July 01, 2025"
+source: "https://synth-a7a3d3e9.mintlify.app/releases/cuvier"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# Cuvier Release Notes - Synth Docs
+
+```markdown
+# Cuvier Release Notes
+
+## Introduction to Synth Error Analysis {#introduction}
+
+The Cuvier release introduces Synth's Error Analysis feature, now available in public beta. This powerful tool is designed to address the significant challenges associated with debugging AI agents, particularly at scale where manual log review becomes impractical.
+
+Synth Error Analysis automates the process of identifying, clustering, and providing tools to investigate common failure modes in agent trajectories. By leveraging Synth's existing capabilities for processing agent logs, it helps developers and operators quickly pinpoint issues, understand their root causes, and accelerate the debugging process for agent-based applications running in development or production environments.
+
+## How Synth Error Analysis Works {#how-it-works}
+
+Synth Error Analysis operates by processing agent execution logs to automatically detect and categorize errors. The core workflow involves the following steps:
+
+1.  **Log Upload and Analysis:** You upload your agent execution logs to the Synth platform. Synth automatically applies standard algorithms to analyze individual agent trajectories, scoring their performance and identifying points of failure or deviation.
+2.  **Error Clustering:** Based on the analysis, Synth groups similar failures into "error clusters." Each cluster represents a common failure mode observed across multiple agent runs.
+3.  **Dashboard Visualization:** The identified error clusters and their instances populate the Errors dashboard. This dashboard provides high-level information about each cluster, including its frequency and a list of individual trajectories (instances) that belong to it.
+4.  **Configurable Review (Paid Customers):** For paid customers, agents can be configured to automatically review and update detected errors offline. This allows for tailoring the error analysis process to specific priorities and ignoring known or irrelevant issues.
+5.  **Proactive Alerting (All Customers):** All users can configure Slack notifications to receive alerts as new error clusters are detected or when existing clusters see significant activity. This enables proactive monitoring and faster response to emerging issues.
+6.  **Deep Dive Investigation:** To investigate a specific error cluster, you select it within the UI. This action brings the cluster into context:
+    *   The left panel displays details about the selected cluster and lists its individual instances (trajectories).
+    *   The right panel activates the AI panel, adding the cluster context for querying.
+7.  **AI-Assisted Querying:** The AI panel provides two primary modes for investigation:
+    *   **Chat Panel:** Suitable for quick queries that can be answered using the high-level data available within the selected error cluster and its instances.
+    *   **Search Agent (Cuvier):** Designed for more complex investigations requiring deeper data access and analysis. Cuvier is equipped with capabilities such as vector search and direct SQL access to the underlying log data. It can handle queries involving many instances, comparing different error clusters, or reviewing un-clustered traces. Cuvier leverages significant compute resources to provide thorough findings on complex problems.
+
+This process allows teams to move beyond manual log inspection, enabling efficient identification and resolution of agent errors at scale.
+
+## Key Features {#key-features}
+
+Synth Error Analysis, powered by the Cuvier search agent, offers several key features designed to streamline the debugging process for AI agents:
+
+*   **Flexible Compute and Agent Configuration:**
+    *   Configure Synth agents (for paid customers) to tailor error analysis, allowing you to ignore errors that have been descoped or prioritize data collection on critical issues.
+    *   Deploy the Cuvier search agent with varying levels of compute power. This allows for rapid answers to simple questions using minimal resources, while allocating more compute for thorough investigations into complex error patterns across large datasets.
+*   **Information-Dense User Interface:**
+    *   Quickly assess large volumes of log data associated with error clusters using Synth's automated analyses and the AI chat feature.
+    *   The dashboard provides an immediate overview of the most common errors detected across your agent runs, allowing teams to focus on the most impactful issues first.
+*   **Streamlined Process and Alerting:**
+    *   Establish automated Slack alerts ([See example image](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/public/cuvier-release/slack-notif.png)) to be notified about new or recurring errors on a customizable cadence. This ensures your team is alerted to problems proactively, reducing the time to detection and resolution.
+
+These features
+
+
+--------------------------------------------------------------------------------
+title: "LangGraph Integration - Synth Docs"
+description: "Okay, here is the technical documentation for the LangGraph Integration page, formatted as requested."
+last_updated: "July 01, 2025"
+source: "https://synth-a7a3d3e9.mintlify.app/releases/langgraph"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# LangGraph Integration - Synth Docs
+
+Okay, here is the technical documentation for the LangGraph Integration page, formatted as requested.
+
+---
+
+# LangGraph Integration
+
+This document provides technical details and a step-by-step guide for integrating your LangGraph agent projects with Synth via LangSmith. This integration allows Synth to automatically analyze your LangGraph agent's execution traces, providing valuable insights into performance, behavior, and potential issues.
+
+By connecting your LangGraph projects hosted on LangSmith, you can leverage Synth's analysis capabilities without modifying your agent code. This is particularly useful for teams already using LangGraph for complex agent orchestration and LangSmith for observability and debugging.
+
+## Prerequisites {#prerequisites}
+
+Before you begin the integration process, ensure you have the following:
+
+*   An active Synth account.
+*   A LangSmith account with an **active Pro or Enterprise plan**. *Note: Synth integration currently relies on features available only in LangSmith's Pro and Enterprise tiers. Please check LangSmith documentation for any changes to their API access policies.*
+*   Access to your LangSmith **Workspace ID** and **Project ID** for the project containing your LangGraph flows.
+*   Your LangSmith **API Key**.
+
+## Integration Steps {#integration-steps}
+
+Integrating your LangGraph project with Synth is a straightforward process completed within the Synth web interface.
+
+### Step 1: Add Your LangSmith API Key {#add-api-key}
+
+To allow Synth to securely access your LangSmith data, you must first add your LangSmith API key to your Synth account credentials.
+
+1.  Log in to your Synth account.
+2.  Navigate to **Settings**. This is typically accessible by clicking your profile icon or initial in the top right corner of the Synth dashboard.
+3.  Select the **Credentials** tab from the settings menu.
+4.  Locate the section for LangSmith API Key and enter your key in the provided field.
+5.  Save your credentials.
+
+*Note:* Ensure the API key you provide has the necessary permissions within LangSmith to read data from the workspace and project you intend to connect.
+
+### Step 2: Connect Your LangSmith Project {#connect-project}
+
+Next, you will configure a new system in Synth that points to your specific LangSmith project.
+
+1.  In Synth, navigate back to **Settings**.
+2.  Select the **Systems** tab.
+3.  Click the **New System** button.
+4.  In the dialog or page that appears, select **LangSmith** as the integration type.
+5.  You will be prompted to enter your LangSmith credentials for the specific project:
+    *   **Workspace ID:** This unique identifier for your LangSmith workspace can typically be found in the URL when viewing your workspace dashboard (`https://smith.langchain.com/o/<Workspace ID>/...`) or within your LangSmith workspace settings.
+    *   **Project ID:** This unique identifier for your specific LangSmith project can be found in the URL when viewing traces within that project (`https://smith.langchain.com/o/<Workspace ID>/p/<Project ID>/...`) or within the project settings in LangSmith.
+6.  Enter the required IDs and any other requested configuration details. Refer to the visual guides provided in the Synth UI (similar to the "Connect LangGraph Project" image) if you need help locating these IDs within the
+
+
+--------------------------------------------------------------------------------
+title: "Introduction - Synth Docs"
+description: "Okay, here is the technical documentation for the Synth Introduction page, formatted for inclusion in a larger documentation set."
+last_updated: "July 01, 2025"
+source: "https://synth-a7a3d3e9.mintlify.app/introduction"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# Introduction - Synth Docs
+
+Okay, here is the technical documentation for the Synth Introduction page, formatted for inclusion in a larger documentation set.
+
+---
+
+# Introduction to Synth
+
+Synth is a platform designed to simplify the development, debugging, and maintenance of state-of-the-art AI agents and software. It provides developers with the tools needed to gain visibility into their agent's execution, identify areas of failure or inefficiency, and iteratively improve performance based on real-world usage data. By integrating Synth into your agent's workflow, you can move beyond guesswork and build more robust, reliable, and effective AI applications.
+
+The core mechanism of Synth involves logging detailed execution traces of your agent's activities. This data is then used by the Synth platform to provide insights and analysis. Integration is made straightforward through dedicated SDKs (currently available for Python and TypeScript) which offer simple methods like decorators and direct support for popular LLM clients (such as OpenAI and Anthropic) to enable automatic tracing with minimal code changes.
+
+## Overview
+
+Synth addresses the challenges inherent in building complex AI agents, which often involve multiple steps, tool interactions, and dynamic decision-making. Understanding *why* an agent behaves in a certain way, *where* it fails, and *how* to fix it can be difficult without proper observability.
+
+The platform provides a structured way to:
+
+1.  **Log Agent Activity:** Capture detailed traces of inputs, outputs, intermediate thoughts, tool calls, and other relevant data points during an agent's execution.
+2.  **Analyze Performance:** Utilize the collected data to analyze agent performance against desired outcomes, identify common failure modes, measure latency, and track key metrics.
+3.  **Iterate and Improve:** Use the insights gained from the analysis to refine the agent's logic, prompts, tool usage, or underlying models, leading to continuous improvement.
+
+By providing this end-to-end workflow, Synth empowers developers to build more reliable and higher-performing AI agents efficiently.
+
+## How Synth Works
+
+At its core, Synth operates on a feedback loop driven by data:
+
+1.  **Data Collection:** Your AI agent is instrumented using the Synth SDK. As the agent runs, the SDK automatically or explicitly logs relevant events and data points, creating a detailed trace of each execution run. This includes inputs to the agent, outputs from LLMs, arguments to tools, results from tool executions, and any custom data you choose to log.
+2.  **Data Processing and Analysis:** The logged data is sent to the Synth platform. The platform processes these traces, aggregates metrics, and performs analysis to identify patterns, performance bottlenecks, and failure points. This analysis can highlight issues such as incorrect tool usage, poor LLM responses for specific inputs, high latency steps, or frequent errors.
+3.  **Insight Generation:** The analysis results are presented through the Synth UI or potentially via APIs, providing actionable insights into your agent's behavior and performance. This allows developers to pinpoint exactly where and why the agent is underperforming.
+4.  **Agent Improvement:** Based on the insights, developers can make targeted improvements to the agent. This might involve adjusting prompts, fine-tuning models, modifying tool logic, or changing the agent's overall control flow.
+5.  **Validation and Repetition:** The improved agent is deployed, and the process repeats. New execution data is logged, analyzed, and used to further refine the agent in a continuous cycle of data-driven development.
+
+This iterative process, powered by comprehensive logging and analysis, is key to building and maintaining state-of-the-art AI agents.
+
+## Integration Methods
+
+Integrating your AI agent with Synth is primarily achieved through the dedicated SDKs. These SDKs are designed to minimize the effort required to start logging data.
+
+Currently, Synth provides SDKs for:
+
+*   **Python:** The Python SDK is the most mature and widely used. It offers several convenient integration methods.
+*   **TypeScript/JavaScript:** A TypeScript SDK is also available for agents built using Node.js or other JavaScript runtimes.
+
+Within the SDKs, common integration patterns include:
+
+*   **Decorators:** For Python, decorators provide a simple way to automatically trace function or method calls within your agent's code. By applying a Synth decorator to a function, its inputs, outputs, execution time, and potential errors are automatically logged. This is particularly useful for tracing individual steps, tool calls, or components of your agent.
+*   **Client Wrappers/Support:** The SDKs offer built-in support for popular LLM clients like OpenAI and Anthropic. By initializing these clients through the Synth SDK or wrapping existing client instances, all interactions (like chat completions or text generations) are automatically logged, capturing prompts, responses, models used, tokens, and latency.
+*   **Manual Logging:** For more granular control or logging custom data, the SDKs provide functions for explicitly logging specific events, data points, or creating custom spans within a trace.
+
+Choosing the appropriate integration method depends on your agent's architecture and the level of detail you need to capture. Often, a combination of methods is used for comprehensive tracing.
+
+
+--------------------------------------------------------------------------------
+title: "upload - Synth Docs"
+description: "[Synth Docs home page![light logo](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/logo/synth.svg)![dark logo](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/logo/synth.svg)](/)"
+last_updated: "July 01, 2025"
+source: "https://synth-a7a3d3e9.mintlify.app/python-sdk/api-reference/pages/upload"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# upload - Synth Docs
+
+[Synth Docs home page![light logo](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/logo/synth.svg)![dark logo](https://mintlify.s3.us-west-1.amazonaws.com/synth-a7a3d3e9/logo/synth.svg)](/)
+
+Search...
+
+Ctrl KAsk AI
+
+  * [Support](https://join.slack.com/t/synthaicommunity/shared_invite/zt-2uzhr4vjq-FrLQQt9Y6t6A9sSSHpzrtA)
+  * [Home](https://www.usesynth.ai/)
+  * [Home](https://www.usesynth.ai/)
+
+
+
+Search...
+
+Navigation
+
+Data Upload
+
+upload
+
+[Documentation](/introduction)[Python SDK](/python-sdk/api-reference/introduction)[TypeScript SDK](/typescript-sdk/introduction)
+
+* [Documentation](/introduction)
+* [Changelog](/changelog)
+
+##### Python SDK
+
+  * [Python SDK](/python-sdk/api-reference/introduction)
+  * Guides
+
+  * Data Upload
+
+    * [trace_event](/python-sdk/api-reference/pages/trace-event)
+    * [track_messages](/python-sdk/api-reference/pages/track-messages)
+    * [upload](/python-sdk/api-reference/pages/upload)
+  * Provider Integrations
+
+
+
+
+Data Upload
+
+# upload
+
+Upload traced events and evaluation data
+
+The `upload` function sends traced events and optional evaluation data to Synth’s backend for analysis. It works in conjunction with the logging mode set via environment variables.
+
+## 
+
+​
+
+Logging Modes
+
+### 
+
+​
+
+Deferred Mode
+
+Set as an environment variable:
+
+Copy
+
+Ask AI
+    
+    
+    export SYNTH_LOGGING_MODE="deferred"
+    
+
+This mode stores traces in memory until explicitly uploaded:
+
+  * Traces are held in memory until `upload()` is called
+  * Supports batching multiple agent runs
+  * Required for uploading questions and reward signals
+  * Ideal for evaluation runs with scoring data
+
+
+
+### 
+
+​
+
+Instant Mode
+
+Set as an environment variable:
+
+Copy
+
+Ask AI
+    
+    
+    export SYNTH_LOGGING_MODE="instant"
+    
+
+This mode provides immediate trace uploads:
+
+  * Traces are sent as soon as each decorated method completes
+  * No need to call `upload()`
+  * Lower memory usage
+  * Faster for single runs
+  * Cannot include questions or reward signals
+  * Default mode if not specified
+
+
+
+## 
+
+​
+
+Usage
+
+Copy
+
+Ask AI
+    
+    
+    from synth_sdk import upload
+    from synth_sdk.tracing.abstractions import Dataset, TrainingQuestion, RewardSignal
+    import uuid
+    
+    # Create dataset (required, but can be empty)
+    dataset = Dataset(
+        questions=[
+            TrainingQuestion(
+                id=str(uuid.uuid4()),
+                intent="Solve a math problem",
+                criteria="Correct numerical answer with work shown"
+            )
+        ],
+        reward_signals=[
+            RewardSignal(
+                question_id=question_id,
+                system_instance_id=agent.system_instance_id,
+                reward=1.0,
+                annotation="Correct answer provided"
+            )
+        ]
+    )
+    
+    # Upload traces and dataset
+    upload_id, questions, rewards, traces = upload(dataset=dataset)
+    
+
+## 
+
+​
+
+Parameters
+
+  * `dataset` (Dataset, required): Contains questions and reward signals 
+    * Can be initialized with empty lists: `Dataset(questions=[], reward_signals=[])`
+  * `verbose` (bool, optional): Enable detailed logging
+
+
+
+## 
+
+​
+
+Common Usage Patterns
+
+Most customers use:
+
+  * **Instant mode** in prod for real-time tracking
+  * **Deferred mode** for evaluation runs where they have: 
+    * Specific test questions
+    * Automated scoring systems
+    * Multiple agent runs to batch
+
+
+
+> **Note** : All Synth products support data uploaded without questions or reward signals. These are optional enrichments that can improve agent optimization results.
+
+[track_messages](/python-sdk/api-reference/pages/track-messages)[OpenAI Client](/python-sdk/api-reference/pages/openai)
+
+[Powered by Mintlify](https://mintlify.com/preview-request?utm_campaign=poweredBy&utm_medium=referral&utm_source=synth-a7a3d3e9)
+
+On this page
+
+  * Logging Modes
+  * Deferred Mode
+  * Instant Mode
+  * Usage
+  * Parameters
+  * Common Usage Patterns
+
+
+
+Assistant
+
+Responses are generated using AI and may contain mistakes.
+
+
+
+--------------------------------------------------------------------------------
+title: "track_messages - Synth Docs"
+description: "Okay, here is the technical documentation for the `track_messages` page, formatted as requested and incorporating the provided content while expanding on it."
+last_updated: "July 01, 2025"
+source: "https://synth-a7a3d3e9.mintlify.app/python-sdk/api-reference/pages/track-messages"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# track_messages - Synth Docs
+
+Okay, here is the technical documentation for the `track_messages` page, formatted as requested and incorporating the provided content while expanding on it.
+
+```markdown
+# track_messages
+
+Functions for tracking LLM message interactions
+
+The `track_messages` functions are essential components of the Synth Python SDK's data upload capabilities, specifically designed to capture and record interactions with Large Language Models (LLMs). By using these functions, you can log the input prompts, model responses, and associated metadata for each LLM call made within your application. This data is crucial for understanding model behavior, debugging, performance analysis, and generating datasets for fine-tuning or evaluation.
+
+These functions act as specialized data collectors for LLM calls. They must be invoked within the context of a method or function that has been decorated with the [`@trace_event`](/python-sdk/api-reference/pages/trace-event) decorator. This ensures that the message data is correctly associated with a specific event or step within a larger trace, providing valuable context for each LLM interaction.
+
+## Overview
+
+The `track_messages` functionality is provided through two functions to accommodate both synchronous and asynchronous programming patterns:
+
+*   `track_messages_sync`: For use in synchronous code execution.
+*   `track_messages_async`: For use in asynchronous code execution (e.g., within `async def` functions using `await`).
+
+Both functions serve the same core purpose: sending structured data about an LLM interaction to the Synth backend for storage and analysis.
+
+## Requirements
+
+To successfully use the `track_messages` functions, the following conditions must be met:
+
+*   **Context:** The call to `track_messages_sync` or `track_messages_async` must occur within a Python method or function that is decorated with `@trace_event` or `@trace_event_async`, respectively. This decorator establishes the necessary tracing context for the message data.
+*   **System Identification:** The class or object containing the method decorated with `@trace_event` (and thus calling `track_messages`) must define two attributes:
+    *   `system_name` (string): A descriptive name identifying the type or role of the agent, service, or system making the LLM call (e.g., `"Math_Agent"`, `"Translation_Service"`, `"Chatbot_Core"`).
+    *   `system_instance_id` (UUID string): A unique identifier for the specific instance of the system making the call. This should typically be a UUID (Universally Unique Identifier) string, allowing you to distinguish between different running instances of the same system type. This helps in tracking data from specific deployments or processes.
+
+Failure to meet these requirements will result in the message data not being correctly associated with a trace or system, potentially leading to data loss or errors.
+
+## Function Signatures
+
+The signatures for the synchronous and asynchronous variants are identical in terms of parameters:
+
+```python
+def track_messages_sync(
+    input_messages: List[Dict],
+    output_messages: List[Dict],
+    model_name: str,
+    model_params: Optional[Dict] = None,
+    finetune: Optional[bool] = None, # Note: 'finetune' is
+
+
+--------------------------------------------------------------------------------
+title: "Roadmap & Changelog - Synth Docs"
+description: "The Roadmap & Changelog page serves as the central hub for tracking the evolution of the Synth platform. It provides users with a transparent view of past product updates, including new features, enha..."
+last_updated: "July 01, 2025"
+source: "https://synth-a7a3d3e9.mintlify.app/changelog"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# Roadmap & Changelog - Synth Docs
+
+```markdown
+# Roadmap & Changelog
+
+## Overview {#overview}
+
+The Roadmap & Changelog page serves as the central hub for tracking the evolution of the Synth platform. It provides users with a transparent view of past product updates, including new features, enhancements, bug fixes, and performance improvements, as well as a glimpse into future development plans.
+
+This page is an essential resource for users who want to stay informed about the latest capabilities of Synth, understand the history of changes, and anticipate upcoming features. It helps users leverage new functionalities as they are released and plan for potential impacts of updates on their integrations or workflows.
+
+## Accessing the Page {#accessing}
+
+The Roadmap & Changelog page is accessible within the Synth documentation set.
+
+*   **Direct URL:** `https://synth-a7a3d3e9.mintlify.app/changelog`
+*   **Navigation:** Within the documentation sidebar, the page is typically listed under a section like "Getting Started" or "About Synth Docs". It is explicitly linked in the provided navigation structure under "Getting Started".
+
+## Understanding the Page Structure {#structure}
+
+The page is divided into two primary sections:
+
+### Up Next {#up-next}
+
+This section provides insight into features and initiatives currently planned for future releases.
+
+*   **Purpose:** To communicate upcoming developments and give users a preview of what to expect from the Synth platform.
+*   **Content:** Lists features or projects that are under consideration or actively being developed.
+*   **Current Status:** As indicated on the page, this section may show "TBA" (To Be Announced) if specific upcoming features are not yet ready for public disclosure or their timelines are not finalized. Users should check back periodically for updates to this section.
+
+### Changelog {#changelog-section}
+
+This section is a historical record of all significant updates released for the Synth platform.
+
+*   **Purpose:** To provide a detailed, chronological list of changes, allowing users to see what has been added, improved, or fixed in past releases.
+*   **Content:** Organized by month and year, listing individual release items. Each item typically describes a specific feature, enhancement, or fix.
+*   **Chronological Order:** Entries are listed with the most recent updates appearing first.
+
+## Interpreting Changelog Entries {#interpreting-entries}
+
+The Changelog section is structured chronologically by month and year. Within each month, specific updates are listed as bullet points.
+
+*   **Date Grouping:** Updates are grouped under headings like "February 2025" or "January 2025".
+*   **Entry Format:** Each bullet point represents a distinct change or feature release. The format is generally a brief description of the change.
+    *   **Example 1:** `Langsmith integration for Enterprise partners` - This indicates a new integration feature specifically available to users on an Enterprise plan.
+    *   **Example 2:** `Python SDK v0.3 (simplified API, Anthropic support)` - This details an update to a specific software development kit (SDK), mentioning the version number (v0.3) and key changes or additions (simplified API, support for Anthropic).
+*   **Linked Entries:** Some entries may include a link to a separate, more detailed release note page.
+    *   **Example:** `[Cuvier Error Search](releases/cuvier.mdx) 02/03` - This entry indicates the release of a feature named "Cuvier Error Search" on February 3rd and provides a link (`releases/cuvier.mdx`) to dedicated documentation or release notes for this specific feature. Clicking this link provides in-depth information about the Cuvier Error Search functionality.
+
+## How to Use This Information {#best-practices}
+
+Leveraging the Roadmap & Changelog page effectively can help you maximize your use of Synth:
+
+1.  **Stay Updated:** Regularly check the Changelog to discover new features and improvements that you can immediately utilize.
+2.  **Plan Integrations:** Review the "Up Next" section (when populated) to anticipate future capabilities that might align with your planned projects or integrations.
+3.  **Understand Changes:** If you notice a change in behavior or encounter a new feature, the Changelog provides context on when and why that change was introduced.
+4.  **Explore Detailed Releases:** For significant features like "Cuvier Error Search", always follow the provided links to access detailed release notes, which may include technical specifications, usage instructions, and configuration details.
+5.  **Identify Relevant Updates:** Pay attention to details like "for Enterprise partners" or specific SDK versions to understand the scope and applicability of an update to your specific Synth setup.
+
+## Related Resources {#related-resources}
+
+*   **Introduction:** For a general overview of the Synth platform and its core concepts.
+    *   [Documentation Overview](/introduction)
+*   **Specific Release Notes:** For in-depth information on features linked from the Changelog.
+    *   [Cuvier Release Notes](/releases/cuvier) (Example based on Changelog entry)
+*   **Support:** If you have questions about a
+
+
+--------------------------------------------------------------------------------
+title: "TypeScript SDK - Synth Docs"
+description: "Okay, here is the technical documentation for the Synth TypeScript SDK page, structured according to your requirements and acknowledging the 'Coming Soon' status based on the provided content."
+last_updated: "July 01, 2025"
+source: "https://synth-a7a3d3e9.mintlify.app/typescript-sdk/introduction"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# TypeScript SDK - Synth Docs
+
+Okay, here is the technical documentation for the Synth TypeScript SDK page, structured according to your requirements and acknowledging the "Coming Soon" status based on the provided content.
+
+```markdown
+# TypeScript SDK
+
+This page provides an overview of the upcoming Synth TypeScript SDK. Currently under active development, this SDK is designed to offer developers a native and idiomatic way to interact with the Synth platform using TypeScript and JavaScript.
+
+While the SDK is not yet released, this documentation outlines its planned features and structure, serving as a preview of what to expect. It will be updated with detailed installation instructions, API references, and usage examples upon the SDK's official launch.
+
+## Status: Coming Soon {#status-coming-soon}
+
+The Synth TypeScript SDK is currently in active development and is not yet available for public use. The content on this page represents a preview of the SDK and its planned capabilities.
+
+We are working diligently to bring you a robust and developer-friendly SDK. Please stay tuned for official announcements regarding its release. You can also join the [Synth AI Community on Slack](https://join.slack.com/t/synthaicommunity/shared_invite/zt-2uzhr4vjq-FrLQQt9Y6t6A9sSSHp2rtA) for updates and to connect with other users.
+
+## Planned Features {#planned-features}
+
+The Synth TypeScript SDK is being built with the following key features in mind:
+
+*   **Full TypeScript/JavaScript Support:** The SDK will be written in TypeScript, providing excellent type safety and autocompletion for TypeScript users. It will also be fully compatible with plain JavaScript projects, offering a familiar interface for all developers in the ecosystem.
+*   **Async/Await Patterns:** All asynchronous operations, such as making API calls to the Synth platform, will leverage modern JavaScript Promises and be designed for use with `async`/`await` syntax. This promotes cleaner, more readable code compared to traditional callback patterns.
+*   **Browser and Node.js Compatibility:** The SDK will be designed to run seamlessly in both client-side browser environments (e.g., web applications) and server-side Node.js environments (e.g., backend services, command-line tools). This broad compatibility ensures flexibility in how you integrate Synth into your projects.
