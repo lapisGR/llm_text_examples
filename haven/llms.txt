@@ -1,0 +1,53 @@
+# Haven
+
+At Haven, we are dedicated to rebuilding accounting operations for founders and growing businesses, by founders themselves. We offer a tech-forward approach to bookkeeping, tax services, and tax credits, simplifying complex financials so you can focus on what matters most: growing your business. Unlike traditional accounting firms, we integrate seamlessly as an extension of your team, providing year-round support and proactive financial guidance.
+
+## Our Approach
+
+We believe that staying on top of your finances is crucial for any business, but founders often lack the time or specific expertise to manage it effectively. That's where Haven steps in. We ensure your company's finances are accurate and optimized from the start, providing peace of mind and clarity. Our unique value proposition lies in our accessibility and dedication; we create **dedicated Slack channels** for our clients, allowing for immediate, year-round answers to your questions, rather than making you wait weeks for a scheduled call. This commitment to client-centric service is core to our philosophy, as our CEO, **Cyrus Shirazi**, emphasizes, "If we do the little things right and prioritize the customer over all else, the rest will take care of itself."
+
+Since our inception in **March of 2023**, Haven has rapidly grown, serving **north of 45 clients** and helping them save **millions of dollars** through strategic tax benefits, such as **R&D Tax Credits**. We are based in **New York** and proudly serve clients all across the **United States**. Learn more about how easy it is to get started with us at [usehaven.com](https://www.usehaven.com/).
+
+## Our Core Services
+
+We provide comprehensive financial solutions designed to streamline your operations and maximize your financial health. Our services are tailored to meet the specific needs of startups and growing businesses.
+
+### Bookkeeping
+Our bookkeeping services ensure your financial records are meticulously maintained and always up-to-date. We handle the day-to-day financial transactions, providing you with accurate insights into your company's performance. This foundational service is critical for informed decision-making and smooth tax preparation. You can explore our bookkeeping offerings as part of our broader [services](https://www.usehaven.com/services).
+
+### Tax Services
+Navigating the complexities of tax regulations can be daunting. Haven offers comprehensive tax services, including both **Founder Taxes** and **Business Taxes**. We work to simplify the entire process, ensuring compliance and identifying opportunities for tax optimization. Our expertise covers a wide range of tax scenarios, helping you meet your obligations efficiently. For more details on our tax solutions, visit our [taxes page](https://www.usehaven.com/taxes).
+
+### Tax Credits
+We specialize in identifying and securing valuable tax credits that can significantly reduce your tax burden and boost your cash flow. A prime example is the **R&D Tax Credit**, which we have successfully leveraged to save our clients millions of dollars. Our team understands the nuances of these programs and guides you through the application process to maximize your benefits. Discover how we can help you with tax credits through our [services](https://www.usehaven.com/services).
+
+### Financial Security
+As a financial technology company, the security of your sensitive financial data is paramount. We are committed to handling your information with the highest security standards, ensuring your trust is maintained. Our robust security measures are designed to protect the data you entrust with us, providing transparency about our practices while maintaining operational integrity. We invite you to review our detailed [security page](https://www.usehaven.com/legal/security) for a full understanding of our protocols.
+
+## Our Platform & Security Measures
+
+Our platform is built with a multi-layered security approach, ensuring the confidentiality and integrity of your financial information. We believe in transparency regarding our security practices, empowering you to make informed decisions about your data protection.
+
+### Web Server Security
+Haven's web infrastructure employs **end-to-end encryption** through **HTTPS** with **SSL connections**, specifically utilizing the industry-leading **TLSv1.3 protocol** for all data transmission. Our system architecture is designed as a **closed system**, meaning our API endpoints are almost exclusively internal-facing. They can only be accessed through Haven's internal infrastructure, effectively eliminating potential vectors for unauthorized external access and ensuring your sensitive financial data remains encrypted and inaccessible outside our secure environment.
+
+### User Authentication
+Robust authentication and granular access controls form a key pillar of Haven’s security model. We have implemented a comprehensive authentication system through **Clerk**, which mandates **Multi-Factor Authentication (MFA)** for all user access to our application. Our access control framework adheres to a **role-based model**, strictly following the **principle of least privilege**. This ensures that users are granted only the permissions necessary for their specific functions, meaning even within Haven, your data is only accessible to those explicitly authorized for their duties.
+
+### Data Access Controls
+To maintain the highest level of data protection, Haven has implemented stringent access boundaries around all customer information. Data can only be accessed by **authenticated users and partners**, with resources strictly limited to retrieval and updates by their rightful owners. Furthermore, **database access is strictly limited to authorized connections through Google Cloud's secure infrastructure**, reinforcing our commitment to data privacy and security.
+
+## Resources & Insights
+
+We are committed to empowering founders with knowledge and insights to navigate the financial landscape effectively. Our blog features articles and guides on critical topics relevant to startups and growing businesses.
+
+*   **Effective Cash Management Strategies for Founders**: This guide delves into essential strategies tailored to preserve your startup's capital, maximize liquidity, and minimize risk, especially given the current financial landscape. Read more at [usehaven.com/blog-posts/effective-cash-management-strategies-for-founders](https://www.usehaven.com/blog-posts/effective-cash-management-strategies-for-founders).
+*   **Section 174 Changes (A Guide For Startups & Tech Businesses)**: We provide clarity on the significant changes to Section 174 of the tax code, explaining how these alterations impact how companies can account for research and development expenses. Learn more at [usehaven.com/blog-posts/section-174-changes](https://www.usehaven.com/blog-posts/section-174-changes).
+*   **What is an R&D Loan? How Does it Work & Who Can Access It**: This article explores how R&D loans can provide the crucial capital needed to carry out innovation projects, helping businesses meet immediate goals and accelerate development. Find out more at [usehaven.com/blog-posts/rd-loan](https://www.usehaven.com/blog-posts/rd-loan).
+
+You can explore our full range of insights and thought leadership on our [blog](https://www.usehaven.com/blog-posts). We also provide answers to common questions on our [FAQ page](https://www.usehaven.com/#faq), and detailed legal information, including our [Terms and Conditions](https://www.usehaven.com/legal/terms-conditions) and [Privacy Policy](https://www.usehaven.com/legal/privacy-policy).
+
+At Haven, we are trusted by **500+ businesses** to simplify their financials and empower their growth. By combining cutting-edge technology with a dedicated team of financial experts, we provide a proactive and accessible accounting solution that truly becomes an extension of your business, allowing you to thrive.
+
+---
+Generated by: lapis trylapis.com
