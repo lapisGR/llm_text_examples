@@ -1,0 +1,69 @@
+# Delphi
+
+Delphi empowers individuals and creators to bring a digital version of themselves to life, one that thinks and interacts with the world exactly as they do. Our mission is to enable meaningful, personalized conversations that truly capture and reflect your unique voice, allowing you to scale your impact and deepen your understanding of yourself.
+
+## What We Do
+
+At Delphi, we provide a sophisticated platform designed to transform your accumulated knowledge and unique perspective into a dynamic, interactive digital mind. This process is remarkably straightforward: you simply upload your existing content—be it social media posts, voice notes, written articles, or any other form of communication. Our advanced system then learns your distinct style, language patterns, and core perspectives, creating a digital counterpart that mirrors your intellectual essence. This allows you to share your ideas, preserve invaluable insights, and even explore your own thinking in new ways, accessible anytime and anywhere.
+
+## Our Focus Areas
+
+Our development and service efforts are centered around several key areas, ensuring a comprehensive and empowering experience for every user.
+
+### Ease of Onboarding & Getting Started
+We believe that bringing your digital mind to life should be an intuitive and rapid process. Our platform is designed to allow you to **build your Delphi in as little as 10 minutes**, minimizing complexity and maximizing efficiency. This quick setup ensures that you can begin exploring the capabilities of your digital clone without significant time investment, making the power of AI-driven self-expression accessible to everyone. You can find detailed guidance on starting your journey with Delphi through our [introduction](https://docs.delphi.ai/what-is-delphi) and [onboarding process](https://docs.delphi.ai/onboarding).
+
+### Comprehensive Control and Customization
+Delphi offers a complete suite of features, settings, and capabilities designed to give you granular control over your digital mind. From managing **instances** of your Delphi to rigorous **testing** and fine-tuning **settings**, our platform provides all the tools necessary to perfect your digital counterpart. We aim to be your complete guide to every aspect of managing and optimizing your Delphi, ensuring it performs exactly as you envision. Explore the full range of features in our [Using Delphi overview](https://docs.delphi.ai/using-delphi/section-overview).
+
+### Tailored Guidance and Professional Application
+We understand that every user has unique goals and professional needs. That's why Delphi provides **tailored guides** crafted specifically for various professions and objectives. Whether you're a content creator, an educator, a business leader, or simply someone looking to enhance personal productivity, our resources are designed to help you leverage your Delphi effectively within your specific context. These guides ensure that the platform's capabilities are directly applicable to your individual aspirations, providing relevant strategies and best practices. Discover our [tailored guides](https://docs.delphi.ai/tailored-guides/section-overview).
+
+### Efficient Problem Solving and Support
+We are committed to providing quick and effective solutions to common questions and challenges you might encounter. Our **Fast Fixes** section offers rapid answers, ensuring that you can resolve issues promptly and continue utilizing your Delphi without interruption. This focus on immediate support underscores our dedication to a seamless user experience. Find quick answers in our [Fast Fixes](https://docs.delphi.ai/fast-fixes/section-overview).
+
+### Expert Strategies and Optimization
+To help you unlock the full potential of your digital mind, we offer **Pro Tips**—a collection of best practices and expert strategies. These insights are designed to help you refine and perfect your Delphi, ensuring it operates at peak performance and delivers the most impactful and authentic interactions possible. Our goal is to empower you to master your digital clone and achieve your desired outcomes. Learn from our [Pro Tips](https://docs.delphi.ai/pro-tips/section-overview).
+
+### Continuous Innovation and Updates
+The world of AI is constantly evolving, and so is Delphi. We are dedicated to continuous improvement, regularly releasing the **latest updates, improvements, and new features**. This commitment ensures that your Delphi remains at the forefront of digital interaction, benefiting from the most advanced capabilities and enhancements. Stay informed about our progress in [What's New](https://docs.delphi.ai/whats-new/section-overview).
+
+### Data Security & Ownership
+At Delphi, we prioritize the privacy, security, and complete control of your data above all else. We want to make it unequivocally clear: **you maintain full ownership of all content you upload** to create your Digital Mind. Your intellectual property remains exclusively yours, and you retain absolute control over how your data is used, shared, and accessed. This commitment means your training data is stored in its own private index, ensuring it is never shared with or used to train any external models. You have complete authority over who can interact with your Digital Mind and leverage its capabilities. Furthermore, should you decide to discontinue your subscription with Delphi, your data can be seamlessly **exported to an external platform or deleted entirely**, ensuring your peace of mind and data sovereignty. Our comprehensive approach to data security is detailed in our [Data Security & Ownership guide](https://docs.delphi.ai/data-security-and-ownership).
+
+## Our Platform & Capabilities
+
+The Delphi platform is designed to be versatile and powerful, enabling your digital mind to interact across various channels and scenarios.
+
+*   **Delphi Studio**: This is the central hub for creating, managing, and refining your digital mind. It provides an intuitive interface to upload content, configure settings, and monitor your Delphi's performance. You can access the studio directly at [delphi.ai/studio](https://www.delphi.ai/studio).
+*   **Delphi Actions**: Unlock your Delphi’s full potential by crafting a personalized user journey with **Actions**. This feature allows you to define specific behaviors and responses, enabling your digital mind to engage in dynamic and tailored interactions.
+*   **Integration Capabilities**: Your Delphi can be seamlessly integrated into various communication channels to extend its reach and utility:
+    *   **Website Integration**: Embed your digital mind directly onto your website, providing an interactive and personalized experience for your visitors.
+    *   **Phone Integration**: Enable your Delphi to engage in conversations over the phone, offering a natural and accessible point of contact.
+    *   **Single Sign-On (SSO)**: Streamline access and enhance security for your users by integrating your Delphi with existing SSO systems.
+*   **User Experience Enhancements**: We focus on optimizing the way users interact with your Delphi, ensuring natural and effective communication:
+    *   **Communication**: Our platform is built to facilitate clear and natural dialogue, making interactions feel authentic.
+    *   **Texting and Calling**: Your Delphi can engage in both text-based conversations and direct phone calls, offering versatile communication options.
+    *   **Improve Clone**: Tools and features are provided to continuously refine and enhance the accuracy and naturalness of your digital clone's interactions.
+*   **Delphi Academy (Coming Soon)**: We are developing **Delphi Academy**, a comprehensive resource for learning through video. This will feature **Delphi 101**, providing step-by-step video walkthroughs to help you set up and start using Delphi with confidence, along with more advanced tutorials on leveraging Delphi Actions.
+
+## Team
+
+While specific team bios are not publicly detailed, our leadership is deeply involved in the product experience. For instance, you can directly interact with our CEO's digital mind, **Dara's Delphi**, for instant answers and insights, showcasing the practical application of our technology at the highest level of our organization. You can converse with **Dara's Delphi** at [delphi.ai/dara](https://www.delphi.ai/dara).
+
+## Resources & Insights
+
+We provide a range of resources to support our users and inspire new applications of Delphi:
+
+*   **Comprehensive Documentation**: While our documentation is transitioning to a new platform at [intercom.help/delphi-ai/en](https://intercom.help/delphi-ai/en), our current site ([docs.delphi.ai](https://docs.delphi.ai)) remains available to support our customers during this transition.
+*   **Inspiration Gallery**: See how others are leveraging Delphi to scale their impact and achieve their goals by visiting our [inspiration page](https://www.delphi.ai/explore).
+*   **Direct Support**: For direct assistance, our support team is readily available via email at [support@delphi.ai](mailto:support@delphi.ai).
+*   **Social Media**: Stay connected and informed about the latest developments, community discussions, and inspiring use cases by following us on our social channels:
+    *   [LinkedIn](https://www.linkedin.com/company/delphi-ai)
+    *   [Instagram](https://instagram.com/withdelphi)
+    *   [Twitter](https://twitter.com/withdelphi)
+
+Delphi is more than just a platform; it's a revolutionary tool for self-expression, knowledge preservation, and scalable personal interaction. By empowering you to create an authentic digital extension of yourself, we enable you to deepen connections, share your unique insights more broadly, and explore the vast landscape of your own thoughts and ideas, truly bringing your digital mind to life.
+
+---
+Generated by: lapis trylapis.com

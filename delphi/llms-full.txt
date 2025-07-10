@@ -1,0 +1,950 @@
+--------------------------------------------------------------------------------
+title: "www.delphi.ai Documentation"
+description: "Welcome to the comprehensive documentation for Delphi.ai, your guide to creating, managing, and maximizing the impact of your digital mind. This resource is designed to help you harness the power of A..."
+last_updated: "July 10, 2025"
+source: "https://www.delphi.ai"
+total_pages: 5
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# www.delphi.ai Documentation
+
+# Introduction to Delphi.ai Documentation
+
+Welcome to the comprehensive documentation for Delphi.ai, your guide to creating, managing, and maximizing the impact of your digital mind. This resource is designed to help you harness the power of AI to scale your expertise and connect with your audience in unprecedented ways.
+
+## Overview
+
+Delphi.ai is an innovative AI platform that empowers individuals and organizations to create a "digital twin" or "digital mind" of their expertise. This digital representation of your knowledge, insights, and communication style becomes an always-on, interactive resource. Delphi addresses the inherent limitations of traditional, static content – such as books, videos, or courses – which often lack personalized interaction, adaptive support, and 24/7 availability. For experts, coaches, and educators, it solves the critical challenge of scaling their knowledge and reach beyond the constraints of their personal time and physical presence.
+
+The core value proposition of Delphi is to make an individual's unique insights, coaching, and educational capabilities available on demand, around the clock. This allows knowledge holders to amplify their influence, expand their reach, and generate new income streams, all while staying focused on their core activities. Its key differentiator lies in transforming static knowledge into an interactive, dynamic, and personalized experience, providing tailored responses and continuous support that traditional content cannot.
+
+Delphi is designed for a diverse range of knowledge holders, including coaches, educators, thought leaders, subject matter experts, and anyone looking to share their brilliance more broadly. Common use cases include providing personalized coaching sessions, answering frequently asked questions from a large audience, delivering scalable educational content, offering continuous support, and creating a persistent, accessible version of one's expertise for global reach.
+
+## Key Features
+
+### Digital Mind Creation
+Delphi enables you to effortlessly create an AI-powered "digital you" or "digital mind" by training it with your unique knowledge, insights, and communication style. The platform is designed for rapid deployment, allowing experts to launch their digital mind in minutes.
+
+### 24/7 On-Demand Interaction
+Your digital mind is available around the clock, providing instant answers, guidance, and support to users globally, regardless of time zones or your personal availability.
+
+### Personalized Engagement
+Moving beyond static content, Delphi offers interactive experiences through chat and self-call access, ensuring that users receive tailored responses and adaptive support based on their unique circumstances.
+
+### Dedicated Delphi Page
+Each digital mind comes with its own customizable web page, serving as a central hub for users to discover and interact with your AI, providing a professional and accessible online presence.
+
+### Scalable Knowledge Delivery
+Amplify your reach and impact without requiring additional personal time. Delphi allows you to serve a larger audience effectively, making your expertise accessible to more people than ever before.
+
+### Technical Advantages
+Powered by advanced AI, Delphi processes and understands your content to deliver intelligent, context-aware responses. The platform is built to scale, accommodating extensive knowledge bases (e.g., 100K training words) and a growing user base, ensuring robust performance as your influence expands.
+
+### Integration Options
+While Delphi provides a comprehensive standalone platform with dedicated pages for each digital mind, specific external integration options (e.g., APIs for embedding into other websites or applications) are not detailed in the current public information. The platform primarily functions as a self-contained solution for knowledge dissemination and interaction.
+
+## Documentation Structure
+
+This documentation serves as your comprehensive guide to understanding, creating, and maximizing the potential of your Delphi digital mind. It is organized into logical sections to help you quickly find the information you need, whether you are just getting started or looking to optimize your existing digital presence.
+
+You will find detailed guides on:
+*   **Getting Started:** Account creation, initial setup, and understanding the Delphi interface.
+*   **Creating Your Digital Mind:** Best practices for content ingestion, training your AI, and defining its persona.
+*   **Interaction Features:** How users can engage with your digital mind via chat and self-call, and how to monitor these interactions.
+*   **Customization & Branding:** Personalizing your Delphi page and ensuring your digital mind reflects your unique brand.
+*   **Analytics & Performance:** Understanding how your digital mind is being used and its impact.
+*   **Troubleshooting & Support:** Common issues and how to get help.
+
+We encourage you to explore the sections relevant to your needs and leverage this resource to fully unlock the power of your mind, now on demand.
+
+
+
+--------------------------------------------------------------------------------
+title: "Delphi | Scale Your Insight. Stay Focused on What Matters."
+description: "This document provides technical documentation for the Delphi AI homepage (https://www.delphi.ai/), serving as an introductory guide to the platform's core functionalities, value propositions, and tec..."
+last_updated: "July 10, 2025"
+source: "https://www.delphi.ai/"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# Delphi | Scale Your Insight. Stay Focused on What Matters.
+
+This document provides technical documentation for the Delphi AI homepage (https://www.delphi.ai/), serving as an introductory guide to the platform's core functionalities, value propositions, and technical architecture. It is designed for technical users, developers, and stakeholders seeking to understand the underlying principles and operational aspects of creating and deploying a "Digital Mind" with Delphi AI.
+
+The Delphi AI platform enables individuals and organizations to create an AI-powered digital replica of their knowledge, personality, and communication style. This "Digital Mind" is designed to scale expertise, automate interactions, and generate new revenue streams by providing 24/7 access to personalized coaching, Q&A, education, and more across various digital channels.
+
+---
+
+## Table of Contents
+*   [Introduction to Delphi AI](#introduction-to-delphi-ai)
+*   [Core Capabilities and Value Proposition](#core-capabilities-and-value-proposition)
+*   [Deployment and Integration](#deployment-and-integration)
+*   [Security, Privacy, and Data Ownership](#security-privacy-and-data-ownership)
+*   [Target Audiences and Use Cases](#target-audiences-and-use-cases)
+*   [Digital Mind Creation Process](#digital-mind-creation-process)
+*   [Navigation and Resources](#navigation-and-resources)
+
+---
+
+## Introduction to Delphi AI {#introduction-to-delphi-ai}
+Delphi AI is a cutting-edge platform that allows users to create a "Digital Mind" – an AI-powered representation of their unique knowledge, insights, and communication style. This digital entity is designed to be available on demand, 24/7, for a variety of applications including personalized coaching, answering frequently asked questions, delivering educational content, and engaging with an audience at scale. The primary goal of Delphi AI is to multiply an individual's presence and impact, enabling them to reclaim time, manage relationships efficiently, and future-proof their intellectual assets.
+
+The platform leverages advanced artificial intelligence and machine learning techniques to ingest and process diverse forms of content (text, audio, video), learn from it, and then generate contextual, authentic responses. It aims to provide an interactive and personalized experience for the end-user, moving beyond passive content consumption to active, conversational engagement.
+
+## Core Capabilities and Value Proposition {#core-capabilities-and-value-proposition}
+Delphi AI offers a suite of capabilities designed to amplify an individual's reach and impact. These capabilities are built upon a foundation of sophisticated AI models and data processing pipelines.
+
+*   **Automated Contextual Responses:**
+    *   **Technical Detail:** Utilizes Natural Language Processing (NLP) and Large Language Models (LLMs) trained on the user's specific content to generate highly relevant and personalized responses. The system employs semantic search and retrieval-augmented generation (RAG) to ensure accuracy and context.
+    *   **Best Practice:** To maximize accuracy and relevance, provide a diverse and comprehensive dataset during the content ingestion phase. Regularly review and refine the "Digital Mind's" responses, providing feedback to the system for continuous improvement.
+    *   **Example:** A coach's Delphi can provide instant, personalized guidance to clients based on their pre-recorded sessions and written materials, freeing up the coach's time.
+
+*   **Relationship Management at Scale:**
+    *   **Technical Detail:** Integrates CRM-like functionalities, allowing for contact tagging, audience segmentation, and targeted broadcast messaging. This likely involves a backend database for user profiles and interaction logs.
+    *   **Best Practice:** Leverage segmentation features to deliver highly relevant information to different audience groups, enhancing engagement and perceived value.
+    *   **Example:** An author's Delphi can segment readers based on their interests (e.g., specific book series) and send targeted updates or answer questions related to those topics.
+
+*   **Knowledge Future-Proofing and Continuous Learning:**
+    *   **Technical Detail:** Employs robust data ingestion pipelines capable of processing various media formats (text, audio, video). The AI model is designed for continuous learning, adapting and evolving as new content is provided, ensuring the "Digital Mind" remains current with the user's latest insights.
+    *   **Best Practice:** Regularly update your Delphi with new content (e.g., latest blog posts, podcast episodes, video lectures) to ensure its knowledge base is always current and comprehensive.
+    *   **Example:** A consultant can upload new research papers or client case studies, and their Delphi will instantly incorporate this new knowledge into its responses.
+
+*   **Audience Insights and Analytics:**
+    *   **Technical Detail:** Collects and analyzes interaction data (e.g., common questions, trending topics, engagement patterns) to provide actionable insights. This involves data warehousing and business intelligence tools.
+    *   **Best Practice:** Periodically review the insights dashboard to identify content gaps, popular topics, and opportunities for new content creation or service offerings.
+    *   **Example:** Delphi can identify that a significant portion of an expert's audience frequently asks about a specific sub-topic, indicating a demand for more in-depth content on that subject.
+
+*   **Monetization Capabilities:**
+    *   **Technical Detail:** Supports various monetization models, including paid memberships, per-conversation fees, and direct upsells of products or services. This requires secure payment gateway integrations and subscription management systems.
+    *   **Best Practice:** Clearly define your monetization strategy and pricing tiers. Promote the value of interacting with your Digital Mind as a premium service.
+    *   **Example:** A musician could offer paid Q&A sessions with their Delphi, providing exclusive insights into their creative process or music production techniques.
+
+## Deployment and Integration {#deployment-and-integration}
+Delphi AI is designed for ubiquitous deployment, allowing the "Digital Mind" to operate across a wide range of digital channels and platforms. This multi-channel capability is crucial for maximizing reach and accessibility.
+
+*   **Multi-Channel Deployment:**
+    *   **Technical Detail:** The platform provides APIs and embeddable widgets for seamless integration into websites, mobile applications, and popular messaging platforms. It supports integration with:
+        *   **Web:** Embeddable chat widgets on any website.
+        *   **Messaging:** SMS, WhatsApp, Slack.
+        *   **Voice/Video:** Integration with platforms like Zoom for real-time conversational AI. This likely involves speech-to-text (STT) and text-to-speech (TTS) capabilities, potentially with voice cloning for authentic voice replication.
+    *   **Best Practice:** Identify the primary channels where your audience interacts and prioritize deployment there. Ensure the user experience is consistent across all integrated platforms.
+    *   **Example:** A business owner can embed their Delphi on their company website for customer support, integrate it into their Slack channel for internal team queries, and use it for automated responses via WhatsApp.
+
+*   **API Accessibility:**
+    *   **Technical Detail:** While not explicitly detailed on the homepage, the mention of "Share everywhere" and integration with various platforms implies a robust API layer for custom integrations and advanced deployments.
+    *   **Best Practice:** For custom applications, consult the [Delphi AI Documentation](https://docs.delphi.ai/home) for API specifications and integration guides.
+
+## Security, Privacy, and Data Ownership {#security-privacy-and-data-ownership}
+Delphi AI places a strong emphasis on the security, privacy, and ownership of user data and the generated "Digital Mind." These principles are fundamental to building trust and ensuring the integrity of the intellectual property.
+
+*   **Data Integrity and Authenticity:**
+    *   **Technical Detail:** Mechanisms are in place to ensure the "Digital Mind" maintains fidelity to the original content and persona over time, preventing degradation or unauthorized alteration of its core characteristics. This involves robust versioning and content validation.
+    *   **Best Practice:** Regularly review the "Digital Mind's" performance and responses to ensure it accurately reflects your current views and knowledge.
+
+*   **Privacy-First Architecture:**
+    *   **Technical Detail:** Adheres to strict privacy standards. User conversations with the "Digital Mind" are kept private, and audience data is protected. This implies data encryption at rest and in transit, access controls, and compliance with relevant data protection regulations (e.g., GDPR, CCPA).
+    *   **Best Practice:** Familiarize yourself with Delphi's [Privacy Policy](https://www.delphi.ai/privacy-policy) to understand how your data and your audience's data are handled.
+
+*   **Complete Ownership and Encryption:**
+    *   **Technical Detail:** The user retains complete ownership of their "Digital Mind" and the underlying content. Data is securely stored and fully encrypted, ensuring it is never shared or sold to third parties without explicit consent.
+    *   **Best Practice:** Understand the terms of service regarding data ownership and usage, as outlined in Delphi's [Terms of Use](https://www.delphi.ai/terms-of-use).
+
+*   **User Control and Consent:**
+    *   **Technical Detail:** The "Digital Mind" operates under the explicit control of the user. It is designed to speak only the user's words and insights, with safeguards against improvisation or generation of content without the user's consent. This implies configurable guardrails and content moderation features.
+    *   **Best Practice:** Utilize the customization and training features to fine-tune your Delphi's behavior and ensure it aligns perfectly with your desired communication style and content boundaries.
+
+## Target Audiences and Use Cases {#target-audiences-and-use-cases}
+Delphi AI is designed to serve a broad spectrum of professionals and individuals who wish to scale their expertise and reach. The platform's flexibility allows for diverse applications across various industries.
+
+*   **Primary Target Audiences:**
+    *   **Experts:** Professionals in any field seeking to disseminate specialized knowledge and answer questions at scale.
+    *   **Coaches:** Life coaches, business coaches, and mentors looking to provide personalized guidance 24/7.
+    *   **Business Owners/Executives:** Leaders aiming to streamline internal communications, qualify leads, or provide automated customer support.
+    *   **Celebrities:** Public figures seeking to engage with fans, answer common questions, and manage their public persona.
+    *   **Writers/Authors:** Individuals looking to provide interactive experiences around their published works, answer reader questions, or offer insights into their creative process.
+    *   **Content Creators:** Podcasters, YouTubers, bloggers, and social media influencers aiming to deepen engagement and monetize their content.
+    *   **Investors:** Providing insights and answering questions about market trends or investment strategies.
+    *   **Speakers/Consultants:** Scaling their advisory services and knowledge sharing.
+    *   **Legacy:** Creating a lasting digital legacy of one's knowledge and insights.
+
+*   **Key Use Cases:**
+    *   **Interactive Q&A:** Instantly answer questions at unlimited scale, reducing manual effort.
+    *   **Personalized Learning:** Create adaptive and interactive educational experiences tailored to individual user needs.
+    *   **Expert Monetization:** Generate passive income through paid conversations, memberships, or product upsells.
+    *   **Knowledge Transfer:** Efficiently share specialized insights, fostering deeper engagement and understanding.
+    *   **Customer/Audience Engagement:** Provide consistent, high-quality interactions without the need for constant human intervention.
+
+For more detailed information on specific industry applications, refer to the [Industries section](https://www.delphi.ai/industries/experts) of the main website (e.g., [Delphi for Experts](https://www.delphi.ai/industries/experts), [Delphi for Coaches](https://www.delphi.ai/industries/coaches)).
+
+## Digital Mind Creation Process {#digital-mind-creation-process}
+The process of creating a "Digital Mind" with Delphi AI is streamlined into three primary steps, designed to be intuitive while allowing for deep customization.
+
+1.  **Connect Your Content:**
+    *   **Technical Detail:** This initial phase involves ingesting the source material that will form the knowledge base of your Digital Mind. Delphi's ingestion engine supports a wide array of formats and sources:
+        *   **Text:** Documents, articles, books, blog posts, transcripts.
+        *   **Audio:** Podcasts, lectures, interviews.
+        *   **Video:** Speeches, webinars, tutorials.
+        *   **Live Feeds/Links:** Integration with external platforms or content repositories (e.g., YouTube channels, personal websites, social media feeds) for continuous content updates.
+    *   **Best Practice:** Provide as much high-quality, diverse content as possible to ensure your Delphi has a comprehensive understanding of your knowledge and communication style. Organize your content logically before upload.
+
+2.  **Train and Customize:**
+    *   **Technical Detail:** Once content is ingested, Delphi's AI models process and learn from it. This involves:
+        *   **Tone and Style Mirroring:** NLP techniques analyze linguistic patterns to replicate your unique voice and personality.
+        *   **Knowledge Graph Construction:** Building an internal representation of your expertise, allowing for contextual understanding and accurate retrieval.
+        *   **Customization Notes:** Users can provide explicit instructions or "guardrails" on how their Delphi should behave, what topics it should prioritize, or what actions it should take (e.g., "always refer to pricing on the pricing page," "do not answer questions about personal life").
+    *   **Best Practice:** Spend time on customization. Clearly define your Delphi's persona, boundaries, and specific objectives. Test its responses thoroughly during this phase.
+
+3.  **Share Everywhere:**
+    *   **Technical Detail:** The final step involves deploying your trained Digital Mind across your desired channels. This is facilitated by:
+        *   **Embeddable Widgets:** Pre-built code snippets for easy integration into websites.
+        *   **API Endpoints:** For custom integrations with applications, CRMs, or internal systems.
+        *   **Platform Integrations:** Direct connectors for SMS, WhatsApp, Slack, and other chat platforms.
+    *   **Best Practice:** Promote your Digital Mind's availability across your existing channels. Provide clear calls to action (e.g., "Talk to my Delphi now!"). Monitor engagement and gather user feedback post-deployment.
+
+To begin the creation process, visit the [Get Started page](https://www.delphi.ai/pricing).
+
+## Navigation and Resources {#navigation-and-resources}
+The Delphi AI website provides comprehensive navigation to various sections and resources, supporting users from initial exploration to ongoing operation.
+
+*   **Main Navigation:**
+    *   **Industries:** Links to specific use cases and benefits for different professional categories.
+    *   **Pricing:** Details on subscription plans and features. ([./pricing](https://www.delphi.ai/pricing))
+    *   **Resources:** Likely contains FAQs, guides, and support materials.
+    *   **Explore:** Discover existing Digital Minds and experts. ([https://www.delphi.ai/explore](https://www.delphi.ai/explore))
+    *   **Sign In:** Access to the user dashboard. ([https://www.delphi.ai/login](https://www.delphi.ai/login))
+    *   **Get Started:** Direct link to the pricing and signup page. ([./pricing](https://www.delphi.ai/pricing))
+
+*   **Footer Navigation and Additional Resources:**
+    *   **Features:** Overview of Delphi's capabilities. ([./](https://www.delphi.ai/))
+    *   **About:** Information about Delphi AI as a company. ([./about](https://www.delphi.ai/about))
+    *   **Careers:** Job opportunities at Delphi AI. ([./careers](https://www.delphi.ai/careers))
+    *   **Blog:** Latest news, updates, and insights from Delphi AI. ([./blog](https://www.delphi.ai/blog))
+    *   **Documentation:** Comprehensive technical guides and API references. ([https://docs.delphi.ai/home](https://docs.delphi.ai/home))
+    *   **Operational Status:** Real-time status of Delphi AI services. ([https://status.delphi.ai/](https://status.delphi.ai/))
+    *   **Legal:**
+        *   [Terms of Use](https://www.delphi.ai/terms-of-use)
+        *   [Privacy Policy](https://www.delphi.ai/privacy-policy)
+    *   **Social Media:** Links to Delphi AI's presence on Instagram, X (Twitter), YouTube, and LinkedIn for community engagement and updates.
+
+This documentation provides a foundational understanding of the Delphi AI platform as presented on its homepage. For in-depth technical specifications, API documentation, and detailed implementation guides, please refer to the official [Delphi AI Documentation](https://docs.delphi.ai/home).
+
+
+--------------------------------------------------------------------------------
+title: "Delphi"
+description: "This document provides technical documentation for the Delphi AI 'Explore' page, serving as a comprehensive guide for understanding its functionality, underlying technologies, and best practices for n..."
+last_updated: "July 10, 2025"
+source: "https://www.delphi.ai/explore"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# Delphi
+
+This document provides technical documentation for the Delphi AI "Explore" page, serving as a comprehensive guide for understanding its functionality, underlying technologies, and best practices for navigation. This page is a central hub within the Delphi platform, designed to allow users to discover and interact with a diverse range of AI personalities and curated collections.
+
+The "Explore" page showcases the breadth of Delphi's AI capabilities, featuring AI models trained on the knowledge and personas of prominent figures across various domains such as health, business, personal development, and more. It serves as the primary entry point for users to find an AI personality that aligns with their interests and begin a conversational experience.
+
+---
+
+## The Explore Page Overview {#explore-overview}
+
+The Delphi "Explore" page (`https://www.delphi.ai/explore`) is structured to provide an intuitive and engaging discovery experience for users seeking to interact with AI personalities. It features a dynamic layout that highlights key AI offerings, facilitates easy navigation through categories, and presents a comprehensive list of available AI personalities and collections.
+
+The page is broadly divided into three main interactive sections:
+1.  **Featured AI Personalities Carousel**: A prominent, rotating display of key AI personalities.
+2.  **Discovering AI Personalities**: A filterable list of all available AI personalities.
+3.  **Featured Collections**: Curated groupings of AI personalities or thematic content.
+
+---
+
+## Featured AI Personalities Carousel {#featured-carousel}
+
+At the top of the "Explore" page, a visually prominent carousel showcases a selection of featured AI personalities. This section is designed to immediately capture user attention and highlight popular or newly added AI models.
+
+**Functionality:**
+*   **Dynamic Display**: The carousel cycles through various AI personalities, each presented with a large, high-quality image and a headline indicating their area of expertise or a key message (e.g., "Get Pumped with Arnold Schwarzenegger," "Achieving Greatness with Lewis Howes").
+*   **Call to Action (CTA)**: Each slide typically includes a clear call to action, such as "Talk with Arnold," prompting users to directly engage with the featured AI.
+*   **Navigation Controls**: "Previous slide" and "Next slide" buttons allow users to manually navigate through the carousel content.
+
+**Technical Details:**
+*   **Image Optimization**: Images within the carousel are served from a Content Delivery Network (CDN) (`cdn.sanity.io`) and are optimized for web delivery using `_next/image` (indicating a Next.js frontend framework). This ensures fast loading times and responsiveness across different devices and network conditions.
+*   **Carousel Implementation**: The carousel likely utilizes a JavaScript library or custom component for smooth transitions and responsive behavior, ensuring a seamless user experience.
+*   **Content Management**: The content for the carousel (images, headlines, associated AI links) is dynamically loaded, likely managed through a headless CMS like Sanity.io, allowing for easy updates and curation by the Delphi team without requiring code deployments.
+
+---
+
+## Discovering AI Personalities {#discover-ai-personalities}
+
+This is the core section for exploring the full range of AI personalities available on Delphi. It provides filtering options and a comprehensive list of AI models, each with a direct link to initiate a conversation.
+
+### Category Filtering {#category-filtering}
+
+Above the list of AI personalities, a set of category filters allows users to narrow down their search based on specific interests or domains.
+
+**Available Categories:**
+*   **Spotlight**: Highlights key or trending AI personalities.
+*   **Marketing**: AI personalities focused on marketing strategies and insights.
+*   **Tech**: AI personalities specializing in technology, innovation, and development.
+*   **Health**: AI personalities offering guidance and information on health and wellness.
+*   **Business**: AI personalities providing business advice, entrepreneurship, and financial insights.
+*   **Life**: AI personalities covering broader life topics, personal development, and relationships.
+*   **All**: Displays all available AI personalities without any filtering.
+
+**Technical Details:**
+*   **Client-Side Filtering**: The filtering mechanism is likely implemented client-side using JavaScript, which dynamically updates the displayed list of AI personalities without requiring a full page reload. This provides a fast and responsive user experience.
+*   **Data Structure**: Each AI personality in the backend data model is tagged with one or more categories, enabling efficient filtering based on user selection.
+
+### AI Personality Listings {#personality-listings}
+
+Below the category filters, a grid or list displays individual AI personalities. Each listing provides essential information and a direct interaction point.
+
+**Structure of Each Listing:**
+*   **"Talk" Button**: The primary call to action, initiating a chat session with the AI.
+*   **AI Personality Image**: A thumbnail image of the individual the AI represents. These images are also optimized and served via CDN.
+*   **Name**: The name of the individual (e.g., "Arnold Schwarzenegger," "Dr. Mark Hyman").
+*   **Brief Description**: A concise summary of the AI's focus or the individual's expertise (e.g., "Arnold Bot. The Positive Corner Of The Internet. Ask questions about the app, training, or just life."). Some descriptions also include professional titles or achievements (e.g., "3-time NYT bestselling author").
+
+**Examples of AI Personalities:**
+*   **Arnold Schwarzenegger (Arnold Bot)**: Focuses on training, life advice, and positive reinforcement.
+*   **Dr. Mark Hyman (AI Mark)**: Provides health and wellness answers based on Dr. Hyman's teachings.
+*   **Codie Sanchez**: Offers insights on business and entrepreneurship.
+*   **Brendon Burchard**: Specializes in high performance and personal development.
+*   **Vanessa Van Edwards**: Focuses on communication and social intelligence.
+*   **Matthew Hussey**: Provides guidance on love and relationships.
+*   **Lewis Howes**: Offers coaching on achieving greatness.
+
+**Technical Details:**
+*   **Dynamic Loading**: The list of AI personalities is dynamically loaded, potentially with pagination or a "Show more" button to load additional entries as the user scrolls or requests more content. This optimizes initial page load performance.
+*   **Routing**: Clicking the "Talk" button directs the user to a specific URL associated with that AI personality (e.g., `/arnold-schwarz/trial/talk`, `http://www.delphi.ai/drmarkhyman/public`). These URLs often indicate a trial period or a public access point for the AI. Some links might redirect to external domains (e.g., `https://ai.matthewhussey.com/`, `https://koyawebb.com/ai`), indicating integrations or partnerships.
+
+---
+
+## Featured Collections {#featured-collections}
+
+At the bottom of the "Explore" page, "Featured Collections" highlight curated groupings of AI personalities or thematic content. These collections offer a structured way to explore related AI models.
+
+**Examples of Collections:**
+*   **Philosophers**: A collection likely featuring AI personalities representing historical or contemporary philosophical thinkers.
+*   **Iconic Historical Figures**: A collection focusing on AI models embodying significant figures from history.
+
+**Functionality:**
+*   **Thematic Grouping**: Collections allow users to explore AI personalities based on broader themes rather than individual expertise.
+*   **"Explore" Link**: Each collection features an "Explore" link that navigates the user to a dedicated collection page (e.g., `/explore/collections/30fa7649-b1e3-4a55-acb1-2741d3af197c`), where they can view all AI personalities within that specific collection.
+
+**Technical Details:**
+*   **Backend Data Model**: Collections are defined in the backend data model, associating specific AI personalities or content with a collection ID.
+*   **Dedicated Collection Pages**: Each collection has a unique URL, indicating that there are separate pages designed to display the content of each collection, offering a more focused exploration experience.
+
+---
+
+## Interacting with AI Personalities {#interacting-with-ai}
+
+The primary interaction on the "Explore" page is initiating a conversation with an AI personality.
+
+**User Flow:**
+1.  **Discovery**: Users browse the carousel, use category filters, or scroll through the list to find an AI personality of interest.
+2.  **Initiate Chat**: Click the "Talk" button associated with the desired AI personality.
+3.  **Conversation Interface**: The user is redirected to a dedicated chat interface where they can begin interacting with the AI. Depending on the AI, this might be a trial experience, a public access chat, or a full conversational interface for subscribed users.
+
+**Best Practices for Interaction:**
+*   **Clarity**: Formulate clear and concise questions to get the most accurate and relevant responses from the AI.
+*   **Context**: Provide sufficient context in your queries, especially for complex topics, to help the AI understand your intent.
+*   **Iteration**: If the initial response isn't what you expected, try rephrasing your question or asking follow-up questions to refine the AI's understanding.
+
+---
+
+## Technical Considerations {#technical-considerations}
+
+The "Explore" page leverages several technical components to deliver its functionality and user experience.
+
+### AI Model Training and Data Sources {#ai-training}
+
+The core of Delphi's offering is its AI personalities, each powered by sophisticated AI models.
+*   **Foundation Models**: These AI personalities are built upon advanced Large Language Models (LLMs), which provide the foundational conversational capabilities.
+*   **Fine-tuning and Personalization**: Each AI personality is extensively fine-tuned using a comprehensive corpus of data specific to the individual it represents. This data includes:
+    *   **Public Works**: Books, articles, interviews, speeches, podcasts, and public appearances.
+    *   **Private Archives**: In some cases, exclusive access to personal notes, unreleased content, or direct input from the individual or their estate.
+*   **Knowledge Graph Integration**: To ensure accuracy and depth, the AI models may integrate with knowledge graphs or structured databases that contain factual information about the individual's life, work, and specific domains of expertise.
+*   **Continuous Learning**: While the primary training is based on historical data, some AI models may incorporate mechanisms for continuous learning or updates to reflect new information or evolving perspectives, ensuring the AI remains current and relevant.
+*   **Ethical AI**: Delphi adheres to ethical AI principles in data sourcing and model training, focusing on responsible AI development and ensuring that the AI personalities reflect the authentic voice and knowledge of the individuals they represent, while avoiding harmful biases.
+
+### Image and Content Delivery {#content-delivery}
+
+*   **Content Delivery Network (CDN)**: Images and other static assets are served via `cdn.sanity.io`, a robust CDN. This global network of servers ensures that content is delivered quickly to users regardless of their geographical location, reducing latency and improving page load times.
+*   **Headless CMS (Sanity.io)**: The dynamic content on the "Explore" page (AI personality details, descriptions, collection information, and potentially carousel content) is managed through a headless CMS like Sanity.io. This allows content creators to update information independently of the frontend development, ensuring content freshness and agility.
+*   **Next.js Image Optimization**: The use of `/_next/image` in image URLs indicates that the frontend is built with Next.js, which provides built-in image optimization features. These features automatically resize, format (e.g., WebP), and lazy-load images, further enhancing performance and user experience.
+
+### User Interface and Experience {#ui-ux}
+
+*   **Responsive Design**: The "Explore" page is designed to be fully responsive, adapting its layout and elements to provide an optimal viewing and interaction experience across various devices, including desktops, tablets, and mobile phones.
+*   **Intuitive Navigation**: Clear headings, filter options, and prominent calls to action contribute to an intuitive user interface, making it easy for users to find and engage with AI personalities.
+*   **Accessibility**: Efforts are made to ensure the page is accessible, with considerations for screen readers, keyboard navigation, and appropriate color contrast, adhering to web accessibility standards.
+
+---
+
+## Best Practices for Exploration {#best-practices}
+
+To make the most of the Delphi "Explore" page:
+
+*   **Utilize Filters**: If you have a specific interest, use the category filters (e.g., "Health," "Business") to quickly narrow down the list of AI personalities.
+*   **Explore Collections**: Check out the "Featured Collections" for curated groups of AI personalities that might align with broader themes you're interested in, such as "Philosophers" or "Iconic Historical Figures."
+*   **Read Descriptions**: Pay attention to the brief descriptions under each AI personality to understand their focus and expertise before initiating a chat.
+*   **Try Different Personalities**: Don't hesitate to interact with multiple AI personalities. Each offers a unique perspective and knowledge base.
+
+---
+
+## Related Documentation {#related-docs}
+
+For further information on Delphi AI and its features, please refer to the following documentation pages:
+
+*   **[Pricing](https://www.delphi.ai/pricing)**: Details on subscription plans and features.
+*   **[Studio](/studio)**: Information on creating and managing your own AI personalities.
+*   **[About](https://www.delphi.ai/about)**: Learn more about Delphi AI, its mission, and the team.
+*   **[FAQ](/faqs)**: Frequently asked questions about the platform.
+*   **[Documentation](https://docs.delphi.ai/)**: The main documentation portal for Delphi AI.
+*   **[Privacy Policy](/privacy-policy)**: Information on how Delphi handles user data and privacy.
+*   **[Terms of Use](/terms-of-use)**: The legal terms governing the use of Delphi AI services.
+
+
+--------------------------------------------------------------------------------
+title: "Careers at Delphi | Help Build the Future of Expertise"
+description: "This document provides technical documentation for the 'Careers at Delphi' page, located at `https://www.delphi.ai/careers`, as part of a larger documentation set for Delphi AI. This page serves as th..."
+last_updated: "July 10, 2025"
+source: "https://www.delphi.ai/careers"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# Careers at Delphi | Help Build the Future of Expertise
+
+This document provides technical documentation for the "Careers at Delphi" page, located at `https://www.delphi.ai/careers`, as part of a larger documentation set for Delphi AI. This page serves as the primary portal for prospective employees, articulating the company's mission, values, and available job opportunities. It aims to attract talent by showcasing Delphi's unique approach to scaling human expertise through AI, emphasizing a culture of innovation, ownership, and excellence.
+
+The Careers page is crucial for talent acquisition, offering a comprehensive overview of Delphi's work environment, strategic vision, and specific roles. It seamlessly integrates branding elements, cultural principles, and a direct link to the product's core value proposition, ensuring candidates understand both the company's ethos and its technological impact.
+
+## Page Structure and Navigation {#page-structure}
+
+The Careers page is meticulously structured to provide a logical flow of information, guiding potential candidates from an initial understanding of Delphi's mission to exploring specific job roles.
+
+*   **Global Navigation:** The page includes standard global navigation elements at the top and bottom, consistent with the rest of the Delphi website.
+    *   **Top Navigation:** `Industries`, `Pricing`, `Resources`, `Explore`, `Sign in`, `Get Started`. These links facilitate navigation to other key areas of the site, such as the [Pricing page](./pricing) or the [Explore page](https://www.delphi.ai/explore), allowing candidates to delve deeper into Delphi's offerings and understand the product context.
+    *   **Footer Navigation:** A comprehensive footer mirrors some top navigation links (`Features`, `About`, `Pricing`, `Explore`, `Careers`, `Blog`, `Documentation`) and expands on `Industries` with specific links like `Experts`, `Coaches`, `Business Owners`, `Celebrities`, `Authors`, `Speakers`, `Investors`, and `Content Creators`. This consistency ensures a cohesive user experience across the entire site and provides additional context on Delphi's target markets.
+*   **Hero Section (`Join us. We’re hiring humans.`):** This section immediately sets the tone, highlighting Delphi's unique value proposition: scaling human expertise. It presents the problem (static content vs. personalized guidance) and Delphi's solution (scaling in-demand experts).
+    *   **Call to Action (CTA):** A prominent "See open positions" button links directly to the `#roles` section on the same page, ensuring a smooth user journey for interested candidates. This internal anchor link (`./careers#roles`) is a best practice for improving user experience and reducing load times by avoiding a full page reload.
+
+## Company Culture and Values {#company-culture-and-values}
+
+This section is dedicated to articulating the core principles that define Delphi's work environment and employee expectations. It uses a clear list format to present each principle, fostering transparency and attracting candidates whose values align with the company's ethos.
+
+*   **Principles We Live By:** These eight principles serve as the cultural bedrock of Delphi, guiding employee behavior and decision-making.
+    *   **Focus on Inputs:** Emphasizes process-oriented thinking and consistent execution over outcome obsession.
+    *   **Underdog Mentality:** Promotes agility, creative problem-solving, and resilience, encouraging a proactive and humble approach.
+    *   **Antimimeticism:** Encourages first-principles thinking, questioning conventions, and rejecting copycat tendencies to foster true innovation.
+    *   **Treat the Brand as You Would Treat Your Mother:** Highlights the importance of brand reverence, trust, and delivering exceptional "20/10" experiences. This principle is particularly relevant given Delphi's focus on scaling *human* expertise, where trust and authenticity are paramount.
+    *   **You are Not a Cog:** Fosters a culture of ownership and leadership at all levels, empowering employees to act autonomously.
+    *   **Walk the Walk:** Stresses accountability, integrity, and taking ownership of results and mistakes without blame or excuses.
+    *   **Obsess Over Excellence:** Drives a pursuit of mastery in all areas, embracing constructive conflict for better ideas and never settling for mediocrity.
+    *   **Embrace the Marathon:** Encourages a long-term vision, resilience through adversity, and building for generations, rejecting shortcuts for lasting impact.
+*   **Office Location:** A visual and textual representation of Delphi's physical presence in "Jackson Square, San Francisco," providing a tangible connection for potential local candidates. The image (`jolgAxfC6vtisjN52CFpcRxLtQ.webp`) is optimized for web delivery, contributing to page performance.
+
+## Market Vision and Axioms {#market-vision}
+
+This section delves into Delphi's strategic perspective on the market and its foundational beliefs that guide product development and brand positioning. These "Market Axioms" provide insight into the company's long-term aspirations and philosophical underpinnings, crucial for candidates to understand Delphi's strategic direction.
+
+*   **Market Axioms:** These five axioms articulate Delphi's unique stance in the market and its approach to technology and brand.
+    *   **We are aiming for iconic status:** Articulates a grand vision for long-term brand endurance and impact, transcending current technologies and competitors to establish a lasting legacy.
+    *   **Ideas x Interactivity = Magic:** Explains the core value proposition of the Delphi platform – the dynamic evolution of ideas through interactive engagement. This axiom directly relates to the product's functionality, where users interact with "Digital Minds" to unlock new insights.
+    *   **It's not what it is, it's what it does:** Positions Delphi's AI technology as an enhancer of human capabilities rather than a replacement, aligning with a human-centric AI philosophy. This is a crucial differentiator in the AI landscape, emphasizing augmentation over automation.
+    *   **Trust is foundational:** Emphasizes trust as a core, implicit value demonstrated through the platform's utility and value delivery. This is especially important for a technology dealing with personal expertise and data, where user confidence is paramount.
+    *   **High status, low exclusivity:** Describes a brand strategy that aims for the highest caliber in quality and innovation while remaining accessible and welcoming. This balance is key for broad adoption of a sophisticated AI product, reflecting rarity while remaining open.
+
+## Career Opportunities {#career-opportunities}
+
+This is the central section for job seekers, providing a categorized list of open positions and a unique interactive element.
+
+*   **Interactive Job Exploration:** A unique and innovative feature is the prompt: "Tired of reading job descriptions? Learn more about a position by calling the CEO’s digital mind [here](https://www.delphi.ai/dara)!" This serves as a direct demonstration of Delphi's product in action, allowing candidates to interact with an AI-powered "digital mind" of the CEO to gain insights into roles and company culture. This "dogfooding" (using your own product) strategy builds confidence in the technology and provides an engaging candidate experience.
+*   **Categorized Job Listings:** Roles are clearly categorized by department, facilitating easy navigation for candidates with specific skill sets.
+    *   **Engineering:** Includes `Backend Product Engineer`, `Design Engineer`, `AI Engineer`, `Customer Success Engineer`, `Full Stack Engineer`, `Infrastructure Engineer`, `Security Engineer`.
+    *   **Product:** `Design Lead`.
+    *   **Brand and Growth:** `Creative Director`, `GTM`, `Account Specialist`.
+    *   **Other:** `Pitch Us A Role` (a unique open application option for candidates who believe they can contribute in an unlisted capacity).
+*   **External Application Links:** Each job title links directly to an external application platform (AshbyHQ), streamlining the application process. For example, the "Backend Product Engineer" role links to `https://jobs.ashbyhq.com/delphi/a027ea85-a8c5-4ea8-a5a6-e625c18f7328`. This integration with a specialized Applicant Tracking System (ATS) like AshbyHQ is a best practice for managing recruitment workflows efficiently and securely.
+
+## Product Showcase: Create Your Digital Mind {#product-showcase}
+
+Following the career opportunities, the page transitions into a direct promotion of Delphi's core product, reinforcing the company's mission and what employees would be building. This section serves as a powerful reminder of the company's core offering.
+
+*   **Call to Action:** "Create your Digital Mind" with a prominent "Get Started" button linking to the [Pricing page](./pricing). This encourages prospective users (who might also be job seekers) to explore the product's commercial aspects.
+*   **Three-Step Process:** A concise explanation of how the "Digital Mind" works, broken down into easily digestible steps:
+    *   **01 Connect your content:** `Upload writing, videos, podcasts, or link to live feeds – Delphi indexes it all.` This highlights the broad data ingestion capabilities.
+    *   **02 Train and customize:** `We mirror your tone, style, and knowledge. Add notes on what your Delphi should do.` This emphasizes the personalization and control users have over their Digital Mind.
+    *   **03 Share everywhere:** `Deploy on your site, via SMS, or in any chat platform so your audience can talk to you.` This showcases the versatility of deployment options, indicating a robust API or integration framework.
+    This section effectively summarizes the product's value proposition and functionality, providing essential context for the career opportunities listed above and reinforcing the innovative nature of Delphi's work.
+
+## Technical Considerations and Best Practices {#technical-considerations}
+
+The implementation of the Careers page demonstrates several technical best practices for web development and content delivery, contributing to a high-quality user experience.
+
+*   **Responsive Design:** The implied use of Framer (indicated by `framerusercontent.com` image URLs) suggests a focus on responsive design principles. This ensures the page renders optimally across various devices (desktop, tablet, mobile), providing a consistent experience for all users.
+*   **Image Optimization:** All images (`.webp` format) are served from `framerusercontent.com`, indicating the use of a Content Delivery Network (CDN). WebP is a modern image format offering superior compression for both lossy and lossless compression, leading to faster page load times and reduced bandwidth consumption.
+    *   **Example:** `https://framerusercontent.com/images/E2afVlQsVIsygCISraPDLmguZs.webp`
+    *   **Best Practice:** While not explicitly verifiable from the provided content, implementing lazy loading for images not immediately in the viewport would further enhance initial page load performance.
+*   **External Integrations:**
+    *   **AshbyHQ:** The seamless integration with AshbyHQ for job applications demonstrates efficient use of third-party services for specialized functionalities (Applicant Tracking System). This offloads the complexity of managing applications directly on Delphi's servers, allowing them to focus on core product development.
+    *   **Delphi's Own Product:** The link to `https://www.delphi.ai/dara` (the CEO's digital mind) is a clever and effective way to showcase the product's capabilities directly on a recruitment page. This "dogfooding" strategy builds confidence in the technology and provides a unique interactive element for candidates.
+*   **Semantic HTML and SEO:** The consistent use of `##` for main sections (translating to `<h2>` in HTML) and `###` for sub-sections (translating to `<h3>`) implies a well-structured HTML document. This semantic structuring is crucial for search engine optimization (SEO) and accessibility, allowing screen readers and search engine crawlers to better understand the page content hierarchy and improve discoverability.
+*   **Clear Calls to Action (CTAs):** Multiple, strategically placed CTAs (`See open positions`, `Get Started`) guide user interaction effectively. The use of internal anchor links for "See open positions" improves navigation within the page, reducing friction.
+*   **Consistent Branding:** The page maintains consistent branding elements (logo, color scheme, tone of voice) with the rest of the Delphi website, reinforcing brand identity and providing a cohesive user experience.
+
+## Cross-Referencing and Documentation Integration {#cross-referencing}
+
+This Careers page is designed to be part of a larger documentation set and website ecosystem, with numerous internal and external links that enhance its utility and provide a comprehensive user journey.
+
+*   **Internal Links:**
+    *   **Pricing:** Links to `./pricing` are present in both the top navigation and the "Create your Digital Mind" section, encouraging prospective users (who might also be job seekers) to explore the product's commercial aspects.
+    *   **Explore:** Links to `https://www.delphi.ai/explore` provide access to examples or demonstrations of Delphi's technology in action, showcasing the product's capabilities.
+    *   **About:** The footer links to `./about`, which would likely provide more detailed information on the company's history, leadership, and broader mission.
+    *   **Blog:** The footer links to `./blog`, offering insights into company news, industry trends, and thought leadership, which can further engage potential candidates.
+    *   **Documentation:** The footer explicitly links to `https://docs.delphi.ai/home`, indicating a dedicated documentation portal where this page's technical documentation would reside. This ensures users can find comprehensive information about the product and company.
+    *   **Industries:** Links to specific industry pages (e.g., `./industries/experts`, `./industries/coaches`) help candidates understand the target market for Delphi's product and its diverse applications.
+*   **External Links:**
+    *   **AshbyHQ:** Links to `jobs.ashbyhq.com` for job applications, leveraging a specialized external platform for recruitment management.
+    *   **Delphi's Digital Mind:** Links to `https://www.delphi.ai/dara` as a live product demonstration, providing a unique interactive experience.
+
+This extensive internal and external linking strategy ensures that the Careers page is not an isolated entity but a well-integrated component of Delphi's overall web presence, providing a rich and interconnected user experience for both job seekers and potential customers.
+
+
+--------------------------------------------------------------------------------
+title: "Delphi Pricing | Plans to Grow Your Impact and Reach"
+description: "This document provides technical documentation for the Delphi AI Pricing page, outlining the various subscription tiers and their associated features. It is intended to help users understand the capab..."
+last_updated: "July 10, 2025"
+source: "https://www.delphi.ai/pricing"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# Delphi Pricing | Plans to Grow Your Impact and Reach
+
+This document provides technical documentation for the Delphi AI Pricing page, outlining the various subscription tiers and their associated features. It is intended to help users understand the capabilities of each plan and make informed decisions about scaling their Digital Mind.
+
+The Delphi AI Pricing page (delphi.ai/pricing) serves as the central hub for prospective and existing users to understand the various subscription plans available for creating and deploying their "Digital Mind." This page outlines the features, capabilities, and associated costs for each tier, designed to cater to a range of users from individual professionals to large enterprises and growing teams. It provides a clear pathway for users to select a plan that aligns with their specific needs for scaling their expertise, reach, and income through AI-powered digital replicas.
+
+This documentation provides a comprehensive breakdown of each pricing tier, detailing the technical specifications, feature sets, and best practices for leveraging Delphi AI's capabilities. It aims to assist users in making informed decisions about their subscription, ensuring they can maximize the value derived from their Digital Mind.
+
+---
+
+## Pricing Tiers {#pricing-tiers}
+
+The Delphi AI platform offers four distinct pricing tiers: Starter, Builder, Scaler, and Unlimited. Each tier is designed to provide increasing levels of functionality, capacity, and support, catering to different user requirements from basic digital presence to advanced, large-scale operations. Users can typically choose between monthly and annual billing, with annual plans offering a cost saving of up to 20%.
+
+### Starter Tier {#starter-tier}
+
+The **Starter** tier is the entry-level option, ideal for individuals looking to explore the concept of a Digital Mind and establish a basic AI presence. It's designed to help users "say more than a website can" by providing fundamental AI interaction capabilities.
+
+*   **Pricing:** $0 per month (Free)
+*   **Key Features:**
+    *   **Chat + self-call access:** Allows users to interact with their Digital Mind via text chat and initiate self-calls for testing or personal use.
+    *   **Your own Delphi page:** Provides a dedicated web page for the Digital Mind, making it accessible online.
+    *   **100K training words:** This is the capacity for the AI to learn from your content. 100,000 words is roughly equivalent to a medium-sized book or a collection of blog posts.
+    *   **40+ Languages:** Supports multilingual interactions, enabling a broader reach.
+    *   **Basic CRM • 100 Contacts:** A foundational Customer Relationship Management system to store and manage up to 100 contacts interacting with your Digital Mind.
+    *   **Public and Private Mode:** Offers flexibility to control the visibility and accessibility of your Digital Mind. Private mode is useful for internal testing or limited access.
+    *   **Always on. Unlimited chats:** Ensures continuous availability of your Digital Mind for interactions without limits on chat volume.
+*   **Use Cases:** Personal branding, basic Q&A for a small audience, testing the Digital Mind concept.
+*   **Technical Notes:** The 100K training words limit requires careful selection of core content. For more extensive knowledge bases, an upgrade is recommended. The basic CRM is suitable for initial lead capture but lacks advanced segmentation or integration capabilities.
+*   **Call to Action:** [Join Waitlist](https://airtable.com/appLN6DjyFtb68EaQ/pagPQCYh4uLm19vur/form)
+
+### Builder Tier {#builder-tier}
+
+The **Builder** tier is tailored for professionals and creators who are ready to actively grow their audience and leverage their Digital Mind for more advanced engagement and monetization. It includes all Starter features plus significant enhancements.
+
+*   **Pricing:** $79 per month (or equivalent annual saving)
+*   **Key Features:**
+    *   **Voice calling:** Enables real-time voice interactions with the Digital Mind, offering a more personal and dynamic experience.
+    *   **Analytics dashboard:** Provides insights into Digital Mind performance, user interactions, and engagement metrics. This is crucial for optimizing content and strategy.
+    *   **5M training words:** A substantial increase in training capacity, allowing for comprehensive knowledge integration (e.g., multiple books, extensive blog archives, course materials).
+    *   **Sync your YouTube + Podcasts:** Automated content ingestion from popular media platforms, streamlining the training process. This leverages existing media assets for your Digital Mind.
+    *   **5 Products • 5 Actions:** Allows the Digital Mind to promote or facilitate up to 5 distinct products/services and perform 5 specific actions (e.g., booking a call, directing to a sales page).
+    *   **Integrations: Slack, Zoom, Zapier:** Connects your Digital Mind to essential business tools for workflow automation and enhanced communication.
+        *   **Slack:** For internal team notifications or direct interaction within Slack channels.
+        *   **Zoom:** For scheduling or initiating calls.
+        *   **Zapier:** Enables connections to thousands of other applications for advanced automation (e.g., adding leads to a CRM, sending emails).
+    *   **Monetization: earn 85% of revenue:** Allows users to directly monetize interactions or content through their Digital Mind, with Delphi taking a 15% platform fee.
+    *   **CRM • 1,000 Contacts • Segmentation:** Expanded CRM with capacity for 1,000 contacts and the ability to segment audiences for targeted communication or analysis.
+    *   **Standard Insights:** More detailed analytics compared to the basic dashboard, offering deeper understanding of user behavior.
+    *   **RSS Feeds:** Automated content ingestion from RSS feeds, keeping your Digital Mind updated with new blog posts or news.
+    *   **2 locations • 1 Collaborator:** Supports deploying the Digital Mind in two distinct digital locations (e.g., website and a social media platform) and allows one additional team member to manage the Digital Mind.
+*   **Use Cases:** Coaches, consultants, content creators, small businesses looking to automate customer support, lead generation, and sales.
+*   **Technical Notes:** The 5M training words require a structured approach to content organization for optimal AI performance. Leveraging Zapier integration can significantly extend the Digital Mind's capabilities by connecting it to your existing tech stack. For details on setting up integrations, refer to the [Integrations Guide](/docs/integrations).
+*   **Call to Action:** [Get Started](https://delphi.ai/api/pricing/initiate?tierId=BUILDER&basis=YEARLY)
+
+### Scaler Tier {#scaler-tier}
+
+The **Scaler** tier is designed for experts and growing teams who need to run their brand like a professional operation, demanding higher capacity, advanced features, and deeper brand integration. It builds upon the Builder tier's offerings.
+
+*   **Pricing:** $399 per month (or equivalent annual saving)
+*   **Key Features:**
+    *   **Video calling:** Enables face-to-face interactions with the Digital Mind, enhancing engagement and trust.
+    *   **Professional Voice w/ EQ:** Advanced voice synthesis with emotional intelligence, allowing the Digital Mind to convey nuances in tone and sentiment.
+    *   **12M training words:** Doubled training capacity from Builder, suitable for extensive archives, multiple courses, or large organizational knowledge bases.
+    *   **Intelligent analytics:** More sophisticated data analysis, potentially including predictive insights or deeper behavioral patterns.
+    *   **20 Products • 20 Actions:** Significantly increased capacity for product promotion and action execution, ideal for diverse offerings.
+    *   **Brand Kit: Custom domain, colors, SSO:** Essential for maintaining a consistent brand identity.
+        *   **Custom domain:** Deploy your Digital Mind on your own domain (e.g., `mind.yourbrand.com`).
+        *   **Custom colors:** Align the Digital Mind's interface with your brand's visual identity.
+        *   **SSO (Single Sign-On):** Streamlines user access and enhances security for team members.
+    *   **Monetization: earn 85% of revenue:** Same revenue share as Builder.
+    *   **CRM Sync • 10,000 Contacts • Import audiences:** Advanced CRM capabilities, including synchronization with external CRM systems, a 10x increase in contact capacity, and the ability to import existing audience lists.
+    *   **SMS Number & Messaging credits:** Provides a dedicated SMS number for your Digital Mind, enabling direct text-based communication with your audience. Includes initial messaging credits.
+    *   **Internal Mode:** A dedicated mode for internal team use, allowing the Digital Mind to serve as an internal knowledge base or assistant.
+    *   **10 locations • 3 Collaborators:** Supports deployment across 10 digital touchpoints and allows up to 3 team members to manage the Digital Mind.
+*   **Use Cases:** Large-scale content creators, agencies, educational institutions, medium-sized businesses, and experts with significant audience engagement.
+*   **Technical Notes:** Implementing the Brand Kit requires DNS configuration for custom domains and potentially API integration for SSO. The CRM Sync feature is critical for businesses with established CRM workflows. For detailed setup instructions, refer to the [Brand Kit Setup Guide](/docs/brand-kit-setup) and [CRM Integration Guide](/docs/crm-integration).
+*   **Call to Action:** [Get Started](https://delphi.ai/api/pricing/initiate?tierId=SCALER&basis=YEARLY)
+
+### Unlimited Tier {#unlimited-tier}
+
+The **Unlimited** tier is the pinnacle offering, designed for experts with very large audiences, enterprises, or those requiring bespoke solutions and maximum scalability. This tier is highly customized.
+
+*   **Pricing:** Starting from $2,499 per month
+*   **Key Features:**
+    *   **Advanced mind architecture:** Tailored AI architecture optimized for extremely large knowledge bases and complex interaction patterns.
+    *   **White-glove setup + API:** Dedicated support for initial setup and full access to the Delphi API for deep integration into existing systems and custom development.
+    *   **Unlimited training words:** No constraints on the volume of content used to train the Digital Mind, allowing for comprehensive knowledge transfer.
+    *   **Pro video setup • IP protection:** Professional-grade video capabilities and legal safeguards for the intellectual property embedded within your Digital Mind.
+    *   **Unlimited locations, products, actions, collaborators & contacts:** Removes all quantitative limits, providing ultimate flexibility and scale.
+    *   **Earn >85% of Revenue, based on audience size:** Negotiable revenue share, potentially offering a higher percentage back to the user based on the scale of their monetization.
+    *   **SMS & WhatsApp at scale:** Enterprise-grade messaging capabilities, including high-volume SMS and WhatsApp integration.
+    *   **Marketplace spotlight & early features:** Priority access to new features and potential promotion within Delphi's ecosystem.
+*   **Use Cases:** Large enterprises, global brands, celebrities, high-volume educational platforms, and users requiring complete customization and direct API control.
+*   **Technical Notes:** The API access is a significant feature, enabling developers to build custom applications, integrate with proprietary systems, and extend Delphi's functionality. White-glove setup includes dedicated technical account management. For API documentation, refer to the [Delphi API Reference](/docs/api-reference).
+*   **Call to Action:** [Contact Us](mailto:support@delphi.ai)
+
+---
+
+## Key Features and Capabilities {#key-features}
+
+Beyond the tier-specific offerings, several core features underpin the Delphi AI platform, providing the foundation for your Digital Mind. Understanding these features is crucial for maximizing your investment and optimizing your Digital Mind's performance.
+
+### Digital Mind Training Words {#training-words-details}
+
+**Description:** This metric represents the total volume of text content that your Digital Mind can process and learn from. This includes uploaded documents, transcribed audio/video, linked articles, and synced feeds. The AI uses this content to build its knowledge base, enabling it to answer questions, provide information, and engage in conversations relevant to your expertise.
+
+**Technical Details:**
+*   **Processing:** Delphi AI employs advanced Natural Language Processing (NLP) and machine learning algorithms to ingest, index, and understand the semantic meaning of your content.
+*   **Indexing:** Content is broken down, vectorized, and stored in a highly optimized knowledge graph, allowing for rapid retrieval and synthesis during interactions.
+*   **Limits:** Tiers have specific limits (100K, 5M, 12M, Unlimited). Exceeding these limits requires an upgrade or content pruning.
+
+**Best Practices:**
+*   **Quality over Quantity:** Focus on providing high-quality, accurate, and relevant content. Redundant or contradictory information can degrade performance.
+*   **Structured Content:** While Delphi can process unstructured data, well-organized content (e.g., FAQs, categorized articles) can improve the AI's ability to provide precise answers.
+*   **Regular Updates:** Keep your Digital Mind's knowledge base current by regularly updating content, especially for dynamic information.
+*   **Content Strategy:** Prioritize core expertise and frequently asked questions. For large content libraries, consider a phased approach to ingestion.
+
+### CRM and Contact Management {#crm-management}
+
+**Description:** The integrated CRM allows you to manage interactions and store information about individuals who engage with your Digital Mind. This helps in understanding your audience, segmenting them, and potentially following up.
+
+**Technical Details:**
+*   **Basic CRM (Starter):** Simple contact storage (name, basic interaction history).
+*   **Advanced CRM (Builder+):** Includes contact limits (1,000, 10,000, Unlimited), segmentation capabilities, and interaction logs.
+*   **CRM Sync (Scaler+):** Enables integration with external CRM systems (e.g., Salesforce, HubSpot) to synchronize contact data and interaction history. This typically involves API keys or OAuth authentication.
+
+**Best Practices:**
+*   **Data Privacy:** Adhere to data privacy regulations (e.g., GDPR, CCPA) when collecting and storing contact information.
+*   **Segmentation:** Utilize segmentation to categorize your audience based on interests, interaction history, or demographics for targeted outreach.
+*   **Integration:** For Scaler and Unlimited tiers, integrate with your primary CRM to maintain a unified view of your customer data. Refer to the [CRM Integration Guide](/docs/crm-integration) for setup.
+
+### Integrations {#integrations}
+
+**Description:** Delphi AI offers various integrations to connect your Digital Mind with popular platforms and tools, enhancing its functionality and workflow automation.
+
+**Technical Details:**
+*   **Content Sync:**
+    *   **YouTube + Podcasts (Builder+):** Automated transcription and ingestion of content from specified YouTube channels or podcast RSS feeds. Requires linking accounts.
+    *   **RSS Feeds (Builder+):** Automatically pulls new content from any valid RSS feed for training.
+*   **Communication & Workflow:**
+    *   **Slack (Builder+):** Enables your Digital Mind to interact within Slack channels or send notifications. Requires Slack app installation and permissions.
+    *   **Zoom (Builder+):** Facilitates scheduling or initiating Zoom calls through your Digital Mind. Requires Zoom API integration.
+    *   **Zapier (Builder+):** A powerful automation tool that connects Delphi to thousands of other web applications (e.g., email marketing platforms, project management tools, other CRMs). Requires a Zapier account and setting up "Zaps."
+
+**Best Practices:**
+*   **Automate Content Ingestion:** Use YouTube, Podcast, and RSS feed integrations to keep your Digital Mind's knowledge base automatically updated with your latest content.
+*   **Streamline Workflows:** Leverage Zapier to connect your Digital Mind to your existing business processes, such as lead capture to CRM, or scheduling appointments.
+*   **Security:** Ensure proper authentication and authorization for all integrations to protect your data.
+
+### Monetization {#monetization}
+
+**Description:** Delphi AI allows users to monetize their Digital Mind by selling products, services, or access directly through interactions.
+
+**Technical Details:**
+*   **Revenue Share:** Users earn 85% of the revenue generated through their Digital Mind (Builder, Scaler). For Unlimited, the percentage can be higher (>85%) based on audience size and negotiation.
+*   **Payment Processing:** Delphi handles the underlying payment processing, simplifying the setup for users.
+*   **Product/Action Limits:** Tiers specify the number of distinct products or actions (e.g., "buy this course," "book a consultation") the Digital Mind can facilitate.
+
+**Best Practices:**
+*   **Clear Value Proposition:** Ensure your Digital Mind clearly communicates the value of your offerings.
+*   **Seamless User Experience:** Design interactions that guide users smoothly through the purchase or action process.
+*   **Track Performance:** Use the analytics dashboard to monitor monetization effectiveness and optimize your strategy.
+
+### Brand Kit and Customization {#brand-kit}
+
+**Description:** For Scaler and Unlimited tiers, the Brand Kit enables deep customization of your Digital Mind's appearance and deployment, ensuring it aligns perfectly with your brand identity.
+
+**Technical Details:**
+*   **Custom Domain:** Allows you to host your Delphi page on your own domain (e.g., `mind.yourcompany.com`). Requires DNS CNAME record configuration.
+*   **Custom Colors:** Adjust the color scheme of the Digital Mind's interface to match your brand's palette.
+*   **SSO (Single Sign-On):** Integrates with your existing identity provider (IdP) to allow team members to log into Delphi using their organizational credentials. This enhances security and simplifies user management.
+
+**Best Practices:**
+*   **Brand Consistency:** Utilize the Brand Kit to ensure a cohesive brand experience across all your digital touchpoints.
+*   **Security:** Implement SSO for enhanced security and streamlined access for your team. Consult your IT department for SSO integration.
+
+### Collaboration and Locations {#collaboration}
+
+**Description:** These features allow you to manage your Digital Mind with a team and deploy it across multiple digital touchpoints.
+
+**Technical Details:**
+*   **Collaborators:** The number of additional team members who can access and manage your Digital Mind's settings, content, and analytics.
+*   **Locations:** Refers to the number of distinct places where your Digital Mind can be embedded or deployed (e.g., your website, a specific landing page, a messaging app).
+
+**Best Practices:**
+*   **Role-Based Access:** Assign clear roles and responsibilities to collaborators to maintain content quality and operational efficiency.
+*   **Strategic Deployment:** Identify key touchpoints where your audience interacts most to maximize the Digital Mind's impact.
+
+### API Access {#api-access}
+
+**Description:** Available with the Unlimited tier, full API (Application Programming Interface) access allows for programmatic interaction with your Digital Mind, enabling deep custom integrations and bespoke applications.
+
+**Technical Details:**
+*   **RESTful API:** Typically a RESTful API, allowing developers to send and receive data using standard HTTP methods (GET, POST, PUT, DELETE).
+*   **Endpoints:** Provides access to various functionalities, such as content ingestion, chat interaction, analytics retrieval, and user management.
+*   **Authentication:** Requires API keys or OAuth tokens for secure access.
+
+**Best Practices:**
+*   **Custom Applications:** Develop custom front-ends, integrate with proprietary internal systems, or build unique AI-powered services.
+*   **Scalability:** Leverage the API for high-volume, automated content updates or complex interaction flows.
+*   **Security:** Secure your API keys and follow best practices for API development. Refer to the [Delphi API Reference](/docs/api-reference) for detailed documentation.
+
+---
+
+## Getting Started with Delphi {#getting-started}
+
+Regardless of the chosen tier, the process of bringing your Digital Mind to life follows a consistent, intuitive three-step journey. This section outlines these steps, providing a high-level overview of the initial setup process. For detailed instructions, please refer to the [Getting Started Guide](/docs/getting-started).
+
+### 01. Connect Your Content {#connect-content}
+
+This initial phase involves feeding your Digital Mind with the knowledge it needs to represent you. Delphi is designed to ingest a wide variety of content formats.
+
+*   **Process:** Upload documents (PDFs, Word docs), link to videos (YouTube), podcasts, articles, or connect live feeds (RSS).
+*   **Technical Note:** The system automatically transcribes audio/video and extracts text from documents, converting it into a format suitable for AI training. The volume of content you can connect is limited by your tier's [training words capacity](#training-words-details).
+
+### 02. Train and Customize {#train-customize}
+
+Once your content is connected, you'll refine your Digital Mind's personality, tone, and specific behaviors.
+
+*   **Process:** Mirror your unique tone and style, define how your Digital Mind should respond to certain queries, and add specific instructions or "notes" on what it should prioritize or avoid. This phase is crucial for ensuring the Digital Mind accurately reflects your brand and expertise.
+*   **Technical Note:** This involves fine-tuning the AI model's parameters and adding contextual rules. For advanced customization, Scaler and Unlimited tiers offer more granular control and potentially access to professional voice options.
+
+### 03. Share Everywhere {#share-everywhere}
+
+The final step is to deploy your Digital Mind where your audience can interact with it.
+
+*   **Process:** Embed your Digital Mind on your website, share its dedicated Delphi page, integrate it into messaging platforms (SMS, WhatsApp for Unlimited), or deploy it via custom integrations.
+*   **Technical Note:** Deployment options vary by tier, with higher tiers offering more "locations" and advanced integration capabilities (e.g., custom domains, API access). Ensure your deployment strategy aligns with your audience's preferred communication channels.
+
+---
+
+## Best Practices and Considerations {#best-practices}
+
+To maximize the value and effectiveness of your Delphi Digital Mind, consider the following best practices and strategic considerations.
+
+### Choosing the Right Tier {#choose-tier}
+
+*   **Assess Current Needs:** Start by evaluating your current audience size, content volume, and desired level of interaction. The Starter tier is excellent for exploration, while Builder supports active growth.
+*   **Anticipate Future Growth:** Consider your growth projections. Upgrading tiers is straightforward, but planning ahead can prevent feature limitations.
+*   **Feature Prioritization:** Identify which features are critical for your operations (e.g., voice calling, integrations, CRM capacity, custom branding).
+*   **Budget vs. Value:** Balance your budget with the long-term value and ROI that a more advanced Digital Mind can provide in terms of time savings, audience engagement, and monetization.
+
+### Content Strategy for Training {#content-strategy}
+
+*   **Curate Content:** Don't just upload everything. Curate your most valuable, accurate, and frequently referenced content.
+*   **Maintain Consistency:** Ensure your content is consistent in tone, style, and factual information to avoid confusing the AI.
+*   **Regular Review:** Periodically review your Digital Mind's responses and update its training content to address any inaccuracies or outdated information.
+*   **Feedback Loop:** Utilize analytics and user feedback to identify gaps in your Digital Mind's knowledge and areas for improvement.
+
+### Leveraging Analytics {#leveraging-analytics}
+
+*   **Monitor Engagement:** Regularly check your analytics dashboard (Builder+ tiers) to understand how users are interacting with your Digital Mind.
+*   **Identify Trends:** Look for common questions, popular topics, and areas where your Digital Mind might be struggling to provide comprehensive answers.
+*   **Optimize Performance:** Use insights from analytics to refine your training content, adjust your Digital Mind's persona, and improve the overall user experience.
+
+### Security and Privacy {#security-privacy}
+
+*   **Public vs. Private Mode:** Utilize the Public and Private Mode feature (Starter+) to control access to your Digital Mind. Private mode is ideal for internal testing or limited, controlled access.
+*   **Data Handling:** Be mindful of the data you feed into your Digital Mind, especially if it contains sensitive or proprietary information. For Unlimited tier, IP protection is offered.
+*   **Integration Security:** When setting up integrations (Slack, Zoom, Zapier), ensure you understand the permissions granted and follow security best practices for API keys and account linking.
+*   **Compliance:** Ensure your use of Delphi AI, especially with CRM features and data collection, complies with relevant data protection regulations (e.g., GDPR, CCPA). Refer to Delphi's [Privacy Policy](https://www.delphi.ai/privacy-policy) and [Terms of Use](https://www.delphi.ai/terms-of-use).
+
+---
+
+## Related Documentation {#related-documentation}
+
+For further information and detailed guides on specific aspects of the Delphi AI platform, please refer to the following documentation pages:
+
+*   **[Delphi Features Overview](/docs/features)**: A comprehensive breakdown of all features available across Delphi AI.
+*   **[Getting Started Guide](/docs/getting-started)**: Step-by-step instructions for setting up your first Digital Mind.
+*   **[Integrations Guide](/docs/integrations)**: Detailed setup and usage instructions for connecting Delphi with Slack, Zoom, Zapier, YouTube, Podcasts, and RSS feeds.
+*   **[CRM Integration Guide](/docs/crm-integration)**: Specific instructions for synchronizing Delphi's CRM with external systems.
+*   **[Brand Kit Setup Guide](/docs/brand-kit-setup)**: How to configure custom domains, colors, and SSO for your Digital Mind.
+*   **[Delphi API Reference](/docs/api-reference)**: Technical documentation for developers leveraging the Delphi API (Unlimited tier).
+*   **[Delphi Blog](https://www.delphi.ai/blog)**: Latest news, updates, and use cases for Delphi AI.
+*   **[Delphi Status Page](https://status.delphi.ai/)**: Real-time operational status of Delphi AI services.
+
+
+--------------------------------------------------------------------------------
+title: "Delphi | Sign up"
+description: "This document provides technical specifications and operational details for the Delphi AI Affiliate Program sign-up page, located at `https://www.delphi.ai/affiliate`. As Page 5 of 5 in the documentat..."
+last_updated: "July 10, 2025"
+source: "https://www.delphi.ai/affiliate"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# Delphi | Sign up
+
+This document provides technical specifications and operational details for the Delphi AI Affiliate Program sign-up page, located at `https://www.delphi.ai/affiliate`. As Page 5 of 5 in the documentation set, it focuses on the entry point for new users to register for the "Oracles of Delphi" affiliate program and for existing users to access their accounts.
+
+The primary purpose of this page is to facilitate user authentication and registration, enabling individuals to join the Delphi AI affiliate network. It clearly communicates the core value proposition of the program—earning 30% of referred users' monthly subscription fees for two years—and provides the necessary form fields for new account creation, alongside a direct link for existing affiliates to log in.
+
+---
+
+## [Page Overview](#page-overview)
+
+The Delphi AI Affiliate Program sign-up page (`https://www.delphi.ai/affiliate`) serves as the gateway for prospective affiliates to register and for existing affiliates to log in. The page prominently features the Delphi AI logo and a clear call to action: "You need to login or sign up before continuing." This ensures users understand the immediate requirement for engagement.
+
+Key elements present on the page include:
+*   **Delphi AI Logo:** A visual identifier for the brand.
+*   **Program Title:** "Oracles of Delphi," branding the affiliate program.
+*   **Program Value Proposition:** A concise statement detailing the earning potential (30% of monthly subscription fees for two years).
+*   **Registration Form:** Fields for new user account creation (First name, Last name, Email, Password, Confirm password).
+*   **Login Link:** A direct link (`/login`) for users who already possess an account.
+
+## [Affiliate Program Details](#affiliate-program-details)
+
+The "Oracles of Delphi" is the official name for the Delphi AI Affiliate Program. This page briefly highlights the core incentive: "Refer someone to Delphi and you'll earn 30% of their monthly subscription fees for the next two years."
+
+While this page is the entry point for registration, comprehensive details regarding the affiliate program's terms, payout structures, tracking mechanisms, and promotional guidelines are covered in a dedicated section of the documentation.
+
+**Cross-reference:** For a complete understanding of the program, refer to the [Delphi AI Affiliate Program Overview (Page 3)](/docs/affiliate-program-overview).
+
+## [User Registration Form](#user-registration-form)
+
+The central component of this page is the user registration form, designed to capture essential information for creating a new affiliate account.
+
+### [Form Fields](#form-fields)
+
+The form includes the following input fields, each with specific validation requirements:
+
+*   **First name:**
+    *   **Type:** Text
+    *   **Requirement:** Mandatory
+    *   **Validation:** Alphanumeric characters, typically limited in length (e.g., 2-50 characters).
+*   **Last name:**
+    *   **Type:** Text
+    *   **Requirement:** Mandatory
+    *   **Validation:** Alphanumeric characters, typically limited in length (e.g., 2-50 characters).
+*   **Email:**
+    *   **Type:** Email
+    *   **Requirement:** Mandatory
+    *   **Validation:** Must conform to standard email address format (e.g., `user@example.com`). Server-side validation also checks for uniqueness (no duplicate email registrations) and potentially for disposable email addresses.
+*   **Password:**
+    *   **Type:** Password
+    *   **Requirement:** Mandatory
+    *   **Validation:** See [Password Policy](#password-policy) below.
+*   **Confirm password:**
+    *   **Type:** Password
+    *   **Requirement:** Mandatory
+    *   **Validation:** Must exactly match the value entered in the "Password" field. This is a client-side and typically server-side validation to prevent typos.
+
+### [Password Policy](#password-policy)
+
+The password field includes a hint: "Minimum 8 characters, ideally more." This indicates the baseline requirement for user-defined passwords.
+
+**Best Practices for Password Security:**
+*   **Minimum Length:** Enforced at 8 characters.
+*   **Complexity:** While not explicitly stated on the UI, the backend system should ideally enforce or strongly recommend a mix of uppercase letters, lowercase letters, numbers, and special characters for enhanced security.
+*   **Hashing:** Passwords are never stored in plain text. Upon submission, passwords are cryptographically hashed using a strong, slow hashing algorithm (e.g., bcrypt, Argon2) with a unique salt for each user.
+*   **No Re-use:** Users should be discouraged from re-using passwords across multiple services.
+
+## [Existing User Login](#existing-user-login)
+
+Below the registration form, a clear link is provided for users who already have an account: "Already have an account? [Login](/login)". This link directs users to the dedicated login page, streamlining the access process for returning affiliates.
+
+**Cross-reference:** For detailed information on the login process and authentication mechanisms, refer to the [Delphi AI User Login Page Documentation (Page 4)](/docs/user-login).
+
+## [Technical Considerations](#technical-considerations)
+
+This section outlines the underlying technical aspects of the registration process, including data handling, validation, and security.
+
+### [Data Validation and Submission](#data-validation-and-submission)
+
+*   **Client-Side Validation:** Implemented using JavaScript to provide immediate feedback to the user regarding invalid input (e.g., incorrect email format, non-matching passwords, empty required fields). This enhances user experience by reducing server round-trips for common errors.
+*   **Server-Side Validation:** Crucial for data integrity and security. All submitted data is re-validated on the server to ensure it meets business rules and security requirements, regardless of client-side validation. This includes:
+    *   Checking for unique email addresses.
+    *   Enforcing password policy.
+    *   Sanitizing inputs to prevent injection attacks (e.g., XSS, SQL injection).
+*   **HTTP Method:** The form submission uses the `POST` method to securely transmit user data to the backend server.
+*   **Expected Responses:**
+    *   **HTTP 200 OK:** For successful registration, typically followed by a redirect.
+    *   **HTTP 400 Bad Request:** For validation errors (e.g., invalid email, password not meeting criteria, email already registered). The response body should contain specific error messages.
+    *   **HTTP 500 Internal Server Error:** For unexpected server-side issues.
+*   **Error Handling:** User-friendly error messages are displayed prominently on the page to guide users in correcting their input. For server-side errors, generic messages may be shown, with detailed errors logged internally for debugging.
+
+### [Security Best Practices](#security-best-practices)
+
+*   **HTTPS Encryption:** All data transmitted to and from the page is encrypted using HTTPS, protecting sensitive information (passwords, personal details) from interception.
+*   **Password Hashing:** As mentioned in [Password Policy](#password-policy), passwords are never stored in plain text.
+*   **Rate Limiting:** Implementations should include rate limiting on registration attempts to mitigate brute-force attacks and prevent spam registrations.
+*   **CAPTCHA/reCAPTCHA:** While not explicitly visible on the provided content, integrating a CAPTCHA solution (e.g., Google reCAPTCHA v3) is a recommended best practice to prevent automated bot registrations.
+*   **Session Management:** Upon successful registration/login, a secure session is established using industry-standard practices (e.g., secure, HTTP-only cookies, proper session expiration).
+
+### [Post-Registration/Login Flow](#post-registrationlogin-flow)
+
+*   **Successful Registration:**
+    1.  User data is stored securely in the database.
+    2.  A welcome email (and potentially an email verification link) is sent to the registered email address.
+    3.  The user is typically automatically logged in and redirected to their affiliate dashboard or a welcome page.
+*   **Successful Login:**
+    1.  User credentials are authenticated against stored hashes.
+    2.  A secure session is established.
+    3.  The user is redirected to their affiliate dashboard.
+*   **Failed Attempts:**
+    1.  Appropriate error messages are displayed (e.g., "Invalid email or password," "Email already registered").
+    2.  No sensitive information (like which specific field was incorrect) is revealed to prevent enumeration attacks.
+    3.  Login attempts are logged for security monitoring.
+
+## [Best Practices and Troubleshooting](#best-practices-and-troubleshooting)
+
+**For Users:**
+*   **Strong Passwords:** Always use a unique, strong password that meets or exceeds the minimum requirements. Consider using a password manager.
+*   **Email Verification:** Check your spam/junk folder for the welcome or verification email after registration.
+*   **Browser Compatibility:** Ensure your browser is up-to-date for optimal performance and security.
+
+**For Developers/Administrators:**
+*   **Monitor Logs:** Regularly review server logs for registration errors, failed login attempts, and suspicious activity.
+*   **Update Validation Rules:** Keep client-side and server-side validation rules synchronized and updated based on evolving security threats or business requirements.
+*   **Performance Monitoring:** Monitor page load times and form submission latency to ensure a smooth user experience.
+*   **Accessibility:** Ensure the form fields and instructions are accessible to users with disabilities (e.g., proper ARIA attributes, keyboard navigation).
+
+## [Related Documentation](#related-documentation)
+
+*   [Delphi AI Affiliate Program Overview (Page 3)](/docs/affiliate-program-overview)
+*   [Delphi AI User Login Page Documentation (Page 4)](/docs/user-login)
+*   [Delphi AI Affiliate Dashboard Guide (Page 6 - *Anticipated*)](/docs/affiliate-dashboard)
+*   [Delphi AI User Account Management (Page 7 - *Anticipated*)](/docs/user-account-management)
+
+
+## Website Map
+
+- [Delphi](https://www.delphi.ai/): Industries  [Pricing](.
+- [Affiliate](https://www.delphi.ai/affiliate): You need to login or sign up before continuing.
+- [Careers](https://www.delphi.ai/careers): Industries  [Pricing](.
+- [Explore](https://www.delphi.ai/explore): ai/explore)[Pricing](https://delphi.
+- [Pricing](https://www.delphi.ai/pricing): Industries  [Pricing](.
