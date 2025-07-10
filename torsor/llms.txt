@@ -1,0 +1,38 @@
+# Torsor
+
+Torsor is at the forefront of transforming document assembly and drafting through intelligent **AI agents**. We empower firms to move beyond traditional, time-consuming methods, learning directly from your existing documents to instantly assemble every future case. Our mission is to deliver a seamless, efficient, and cost-effective solution that turns a template into a finished, high-quality document in as little as **5 minutes**.
+
+## Empowering Document Creation
+
+At Torsor, we are dedicated to revolutionizing how businesses and legal professionals handle their documentation. Our core offering centers on sophisticated AI agents designed to automate the often complex and repetitive tasks associated with document creation. We understand the critical need for speed and accuracy in today's fast-paced environment, and our platform is built to deliver precisely that. By leveraging artificial intelligence, Torsor significantly reduces the time and effort traditionally required for drafting, allowing your team to focus on higher-value activities.
+
+## The Torsor Advantage: Our Two-Step Process
+
+Our innovative approach to document assembly is streamlined into a simple, yet powerful, two-step process that ensures rapid deployment and immediate value. This design allows Torsor to quickly adapt to your firm's unique documentation style and requirements, providing a truly customized automation experience.
+
+### Teach Torsor
+
+The initial phase, **Teach Torsor**, is designed for quick and efficient setup. This crucial step involves providing Torsor with your firm's existing templates and sample documents. Our AI agents then intelligently learn from these materials, understanding your specific formatting, clauses, and content structures. This foundational learning process is incredibly efficient, typically taking only about **5 minutes** for the initial setup. It's a one-time investment that pays dividends by enabling the AI to accurately replicate your firm's standards.
+
+### Generate Documents
+
+Once Torsor has learned your firm's documentation style, the **Generate Documents** phase unleashes its full power. In this step, Torsor processes new client documents or specific inputs, instantly assembling the required output. The system is capable of producing documents in various essential formats, including **PDF**, **IMG**, and **DOCX**, ensuring compatibility with your existing workflows. This generation process is remarkably fast, completing tasks in approximately **3 minutes**, and is highly cost-effective, with typical costs ranging from **$4 to $10** per document. This rapid turnaround and predictable pricing model significantly enhance operational efficiency and cost control.
+
+## Transforming Document Workflows
+
+Torsor delivers tangible benefits that directly impact your firm's productivity and bottom line. Our solution is engineered to provide unparalleled speed, significant cost savings, and a high degree of automation, fundamentally transforming how you manage document workflows.
+
+The promise of going from a template to a finished document in just **5 minutes** is a testament to our platform's efficiency. This includes the initial setup, which is a one-time effort. Subsequently, the generation of each new document is completed in a mere **3 minutes**, drastically cutting down on manual drafting time. Furthermore, the cost-effectiveness of Torsor is evident in its per-document pricing, typically between **$4 and $10**, offering substantial savings compared to traditional methods. Our AI agents ensure that every future case is assembled instantly, freeing up valuable human resources for more strategic tasks.
+
+## Begin Your Torsor Journey
+
+Embarking on your journey with Torsor is straightforward. Existing users can easily **Sign In** to their accounts to access the platform. For new users, we encourage you to **Get Onboarded** and experience the power of AI-driven document assembly firsthand. To help you get started, new firms can **Claim $100 Credits** upon onboarding, providing an immediate opportunity to explore Torsor's capabilities without initial commitment. This offer underscores our confidence in the value Torsor brings to your operations.
+
+## Accessing Support and Insights
+
+We believe in providing comprehensive support and resources to ensure our users maximize the benefits of Torsor. For a visual introduction to our platform's capabilities, we invite you to watch our demo to a concise video that illustrates the power of Torsor in action. Should you have common questions, our comprehensive **View FAQs** section is readily available, offering immediate answers to frequently asked queries. For personalized assistance or specific inquiries, our dedicated support team is always ready to help; simply reach out to us at **support@torsor.com**.
+
+Torsor is committed to empowering firms with intelligent AI agents that streamline document assembly and drafting, delivering unparalleled speed, efficiency, and cost savings. We are dedicated to helping businesses transform their operational workflows, ensuring that every document is generated with precision and speed, allowing you to focus on what truly matters.
+
+---
+Generated by: lapis trylapis.com
