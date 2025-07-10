@@ -1,0 +1,216 @@
+--------------------------------------------------------------------------------
+title: "Tour.video - Interactive, virtual tours that get your apartment more leases"
+description: "Tour.video is a cutting-edge platform designed to revolutionize the apartment leasing process by leveraging interactive video tours and advanced artificial intelligence. It serves as a comprehensive v..."
+last_updated: "July 10, 2025"
+source: "https://tour.video/"
+domain: "tour.video"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# Tour.video - Interactive, virtual tours that get your apartment more leases
+
+Tour.video is a cutting-edge platform designed to revolutionize the apartment leasing process by leveraging interactive video tours and advanced artificial intelligence. It serves as a comprehensive virtual leasing agent, empowering property managers and real estate professionals to significantly enhance lead engagement, streamline the tour booking process, and ultimately drive higher lease conversions. By integrating seamlessly into existing digital infrastructures, Tour.video transforms passive website visitors into active, qualified leads, providing an immersive and personalized experience that mimics the effectiveness of a human leasing agent, 24/7.
+
+The core value proposition of Tour.video lies in its ability to automate and optimize critical stages of the leasing funnel. It addresses common challenges such as low website conversion rates, inefficient lead follow-up, and the scalability limitations of traditional in-person tours. Through its innovative blend of guided video content, strategic calls-to-action, and intelligent AI-driven communication, Tour.video enables properties to book up to **4x more tours**, generate **75% more qualified leads**, and secure **more leases** with unprecedented efficiency.
+
+This documentation provides a comprehensive overview of Tour.video's features, technical implementation details, and best practices for maximizing its impact on your leasing operations. Whether you're looking to understand the underlying technology, integrate the platform with your existing Property Management System (PMS), or optimize your virtual tour strategy, this guide will equip you with the knowledge to leverage Tour.video to its fullest potential.
+
+---
+
+## Key Features & Value Proposition{#key-features-value-proposition}
+
+Tour.video functions as an all-encompassing solution for modern property leasing, offering a suite of features designed to enhance every stage of the prospect journey from initial interest to lease signing. Its primary aim is to automate and scale the personalized engagement typically provided by a human leasing agent.
+
+### Virtual Leasing Agent Capabilities{#virtual-leasing-agent-capabilities}
+
+At its heart, Tour.video acts as a **virtual leasing agent**, capable of handling inquiries, guiding prospects through properties, and nurturing leads around the clock. This significantly reduces the burden on human staff, allowing them to focus on high-value interactions.
+
+*   **24/7 Availability**: Engage website visitors at any time, regardless of office hours.
+*   **Scalability**: Handle an unlimited number of simultaneous tours and inquiries without additional staffing.
+*   **Consistency**: Deliver a consistent, high-quality tour experience every time.
+
+### Core Components of the Tour.video Platform{#core-components-of-the-tour-video-platform}
+
+Tour.video is built upon several interconnected components that work in synergy to deliver its powerful capabilities:
+
+*   **Interactive Video Tours**:
+    These are not just static videos. Tour.video enables the creation of **guided video experiences** that incorporate interactive elements. Prospects can navigate through different rooms, click on hotspots for more information, and engage with calls-to-action (CTAs) directly within the video. This dynamic approach keeps viewers engaged and allows them to explore at their own pace, mimicking a personalized in-person tour.
+    > **Best Practice**: Design tours that highlight key selling points of each unit or amenity. Use clear, concise narration and strategically placed CTAs to guide the prospect.
+
+*   **Questions & Lead Capture**:
+    Throughout the interactive tour, Tour.video can prompt prospects with questions to gather valuable information, qualify their interest, and capture their contact details. This data is crucial for subsequent personalized follow-ups.
+    *   **Customizable Forms**: Tailor questions to gather specific prospect preferences (e.g., desired move-in date, number of bedrooms, budget).
+    *   **Progressive Profiling**: Collect information incrementally to avoid overwhelming prospects.
+
+*   **AI Follow-ups**:
+    A cornerstone of Tour.video's automation, the AI follow-up system ensures that no lead falls through the cracks. Based on prospect interactions during the tour and their provided information, the AI can trigger personalized email or SMS sequences. These communications can include:
+    *   Recaps of the toured unit.
+    *   Links to schedule a live tour or apply.
+    *   Answers to common questions.
+    *   Information about special offers.
+    This intelligent nurturing significantly increases the likelihood of conversion.
+
+*   **Video Ads Integration**:
+    Extend the reach of your interactive tours by repurposing segments or entire tours into compelling video advertisements. This allows for consistent branding and messaging across various marketing channels, driving more qualified traffic back to your website and Tour.video experiences.
+
+## Getting Started: Integration & Embedding{#getting-started-integration-embedding}
+
+Integrating Tour.video into your existing website is designed to be a quick and straightforward process, typically taking less than five minutes. The primary method involves embedding a lightweight JavaScript snippet, which then dynamically loads your interactive tours.
+
+### Embedding the Tour.video Player{#embedding-the-tour-video-player}
+
+To display Tour.video content on your webpage, you simply need to include a single `<script>` tag in your HTML. This script will handle the rendering of your interactive tours.
+
+#### Basic Embed Code
+
+Place the following script tag within the `<body>` section of your HTML, ideally just before the closing `</body>` tag, or within the `<head>` section if asynchronous loading is preferred.
+
+```html
+<script src="https://tour.video/embed.js"></script>
+```
+
+Once this script is loaded, Tour.video's system will detect designated elements on your page (e.g., `div` elements with specific `data-` attributes) and automatically inject the interactive tour player.
+
+#### Configuration and Customization
+
+While the basic embed works out-of-the-box, you can often customize the behavior or appearance of the embedded tour using `data-` attributes on a container element or through a global configuration object.
+
+For example, to embed a specific tour, you might use a `div` element with a `data-tour-id` attribute:
+
+```html
+<div data-tour-video-player data-tour-id="YOUR_TOUR_ID_HERE"></div>
+<script src="https://tour.video/embed.js"></script>
+```
+
+> **Note**: Replace `YOUR_TOUR_ID_HERE` with the unique ID of the tour you wish to embed, which can be obtained from your Tour.video dashboard. Specific `data-` attributes and their values will be detailed within your Tour.video account's integration section.
+
+#### Asynchronous Loading
+
+For optimal page load performance, it is recommended to load the embed script asynchronously. This prevents the script from blocking the rendering of other page content.
+
+```html
+<script async src="https://tour.video/embed.js"></script>
+```
+
+### Integration with Property Management Systems (PMS){#integration-with-property-management-systems}
+
+Tour.video offers robust integration capabilities with leading Property Management Systems (PMS) such as **Entrata** and **Yardi**. These integrations are crucial for a seamless workflow, allowing for:
+
+*   **Automated Data Sync**: Synchronize unit availability, pricing, and prospect information between Tour.video and your PMS.
+*   **Lead Management**: Automatically push qualified leads captured by Tour.video directly into your PMS's lead management system.
+*   **Scheduling Integration**: Link Tour.video's scheduler directly with your PMS's calendar or leasing agent availability.
+
+While specific integration steps vary by PMS, Tour.video typically provides:
+
+1.  **API Endpoints**: For direct programmatic integration, allowing developers to build custom connections.
+2.  **Pre-built Connectors**: Out-of-the-box solutions for popular PMS platforms, often requiring minimal configuration within your Tour.video dashboard.
+
+> **Consult Support**: For detailed instructions on integrating with your specific PMS, refer to the dedicated integration guides within your Tour.video account or contact Tour.video support.
+
+## Advanced Features & Workflow Optimization{#advanced-features-workflow-optimization}
+
+Beyond basic embedding, Tour.video provides a suite of advanced features designed to optimize your leasing workflow, enhance personalization, and provide deep insights into prospect behavior.
+
+### Cloneable Templates{#cloneable-templates}
+
+Streamline the creation of new tours with **cloneable templates**. These pre-designed tour structures allow you to quickly duplicate and customize existing successful tour layouts for new units or properties.
+
+*   **Efficiency**: Rapidly deploy new tours without starting from scratch.
+*   **Consistency**: Maintain brand and experience consistency across all your virtual tours.
+*   **Customization**: Easily modify content, CTAs, and interactive elements within the cloned template.
+
+### Share Personalized Tours & Follow-ups{#share-personalized-tours-followups}
+
+Tour.video enables the delivery of **highly personalized tour experiences** and subsequent follow-up communications. This goes beyond generic video links by tailoring the content to the individual prospect's expressed interests or previous interactions.
+
+*   **Dynamic Content**: Show specific units or amenities based on prospect preferences.
+*   **Targeted Messaging**: Craft follow-up emails and SMS messages that reference the specific tour taken and questions asked.
+*   **Automated Nurturing**: Set up automated sequences that deliver relevant content at optimal times, moving prospects further down the leasing funnel.
+
+### Robust Analytics & Multi-Source Attribution{#robust-analytics-multi-source-attribution}
+
+Understanding prospect behavior is key to optimizing your leasing strategy. Tour.video provides **robust analytics** that offer deep insights into how prospects interact with your tours.
+
+*   **Engagement Metrics**: Track views, completion rates, interaction points, and time spent on each segment of a tour.
+*   **Lead Source Attribution**: Identify which marketing channels (e.g., website, social media, paid ads) are driving the most engaged prospects and conversions. This **multi-source attribution** helps you allocate marketing spend effectively.
+*   **Conversion Funnel Analysis**: Visualize where prospects drop off in the tour or follow-up process, allowing for continuous optimization.
+
+### Integrated Scheduler{#integrated-scheduler}
+
+Simplify the process of booking live tours or consultations with an integrated scheduler. Prospects can seamlessly book appointments directly from within the interactive tour or follow-up communications.
+
+*   **Real-time Availability**: Syncs with your leasing team's calendars to show accurate availability.
+*   **Automated Reminders**: Sends automated confirmations and reminders to reduce no-shows.
+*   **Direct Booking**: Eliminates friction in the booking process, increasing conversion rates for live interactions.
+
+### AI Chat & Live Engagement{#ai-chat-live-engagement}
+
+Enhance real-time prospect engagement with **AI Chat** capabilities. This feature allows prospects to ask questions directly within the tour interface, receiving instant, intelligent responses.
+
+*   **Instant Answers**: Address common questions immediately, improving prospect satisfaction.
+*   **Lead Qualification**: AI can ask qualifying questions to better understand prospect needs.
+*   **Seamless Hand-off**: If the AI cannot answer a complex question, it can seamlessly hand off the conversation to a live leasing agent, ensuring no inquiry goes unanswered. This is exemplified by the "Mariana" virtual agent on the Tour.video website, offering options to "Schedule a Tour," "Ask a Question," or "Talk Now."
+
+## Use Cases & Best Practices{#use-cases-best-practices}
+
+Tour.video is designed to be versatile, serving various critical functions within the property leasing ecosystem.
+
+### Common Use Cases{#common-use-cases}
+
+*   **Website Lead Conversion**: Embed interactive tours directly on your property website to convert more visitors into qualified leads.
+*   **Digital Marketing Campaigns**: Use tour links in email campaigns, social media posts, and paid advertisements to drive engagement and capture interest.
+*   **After-Hours Leasing**: Provide a comprehensive tour experience and lead capture mechanism when your leasing office is closed.
+*   **Pre-Qualification**: Use interactive questions within tours to pre-qualify prospects before a live showing, saving valuable time for your leasing team.
+*   **Remote Leasing**: Facilitate leasing for out-of-state or international prospects who cannot visit in person.
+*   **Follow-up Nurturing**: Automate personalized follow-ups based on tour interactions, keeping your property top-of-mind.
+
+### Best Practices for Maximizing Impact{#best-practices-for-maximizing-impact}
+
+*   **High-Quality Video Content**: Invest in professional videography to showcase your property in the best light. Clear visuals and audio are paramount.
+*   **Strategic CTAs**: Place calls-to-action (e.g., "Schedule a Tour," "Apply Now," "View Floor Plan") at logical points within the tour to guide prospects to the next step.
+*   **Concise Information**: While comprehensive, ensure tour segments are concise. Prospects have short attention spans.
+*   **Mobile Optimization**: Ensure your tours are fully responsive and provide an excellent experience on all devices, especially mobile phones.
+*   **A/B Testing**: Experiment with different tour structures, questions, and follow-up messages to identify what resonates best with your target audience.
+*   **Leverage Analytics**: Regularly review your Tour.video analytics to understand prospect behavior, identify bottlenecks, and continuously optimize your tours and follow-up strategies.
+
+## Success Metrics & Customer Validation{#success-metrics-customer-validation}
+
+Tour.video's effectiveness is demonstrated through significant improvements in key leasing metrics for its partners. The platform has facilitated over **1,100,000+ tours delivered** and is trusted by **130+ property managers**.
+
+### Quantifiable Impact{#quantifiable-impact}
+
+*   **Increased Tours Booked**: Properties using Tour.video report booking up to **4x more tours**. This indicates a highly effective system for converting passive interest into active engagement.
+*   **Higher Lead Conversion**: A reported **75% increase in qualified leads** highlights the platform's ability to capture and nurture prospects more efficiently than traditional methods.
+*   **More Leases Closed**: The ultimate goal of any leasing strategy, Tour.video contributes directly to securing **more leases**, enabling property managers to "close deals while they sleep."
+
+### Partner Testimonials & Trust{#partner-testimonials-trust}
+
+Tour.video is partnered with a growing list of reputable property management companies, underscoring its proven track record and reliability in the industry. These partnerships validate the platform's ability to deliver tangible results and provide a competitive edge.
+
+> "We've helped 130+ property managers close deals while they sleep."
+> — Tour.video
+
+## Support & Next Steps{#support-next-steps}
+
+Tour.video is committed to providing comprehensive support to ensure your success with the platform.
+
+### Getting Started with a Free Test Drive{#getting-started-with-a-free-test-drive}
+
+Experience the power of Tour.video firsthand with a **30-day free test drive**. This allows you to explore the features and see the impact on your leasing operations without any initial commitment.
+
+*   **Try it out**: [https://app.usetour.com/signup](https://app.usetour.com/signup)
+
+### Booking a Consultation or Demo{#booking-a-consultation-or-demo}
+
+For a personalized walkthrough of the platform and to discuss how Tour.video can specifically address your property's needs, you can schedule a 1:1 consultation or a quick 15-minute demo.
+
+*   **Book a Demo**: [Book a Demo](/book-demo)
+*   **Book 1:1 Consultation**: [Book 1:1 Consultation](/book-demo)
+
+### Contacting Support{#contacting-support}
+
+For any technical inquiries, integration assistance, or general support, Tour.video's team is available to help. The platform often features an in-app chat or dedicated support channels accessible from your dashboard.
+
+---
+
+By leveraging Tour.video, property managers can transform their online presence into a powerful, automated leasing engine, driving higher engagement, more qualified leads, and ultimately, more leases.
