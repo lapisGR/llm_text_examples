@@ -1,0 +1,81 @@
+# Pensar
+
+Pensar is a cutting-edge vulnerability management platform that leverages advanced AI to identify and automatically remediate security issues directly within your codebase. Our mission is to empower developers and security teams to fix vulnerabilities swiftly and effectively, ensuring code is secure before it ever reaches production and impacts customers. We stand out by understanding your codebase contextually, catching issues that traditional scanners miss, and eliminating false positives, allowing you to champion security without compromising development velocity.
+
+## What We Do
+
+At Pensar, we are dedicated to transforming how organizations approach code security. We provide a comprehensive solution that proactively finds and addresses security vulnerabilities, integrating seamlessly into your development workflow. Our platform is designed to give you unparalleled visibility into your codebase's security posture, offering precise detection and actionable remediation. We believe in fostering a collaborative environment where security is an enabler, not a blocker, ensuring your applications are robust and protected from the ground up.
+
+## Our Core Capabilities
+
+Our platform is built upon several powerful, AI-driven capabilities that redefine vulnerability management. We focus on delivering accuracy, speed, and relevance, ensuring that every security effort translates into tangible protection for your software.
+
+### AI-powered Vulnerability Detection
+# Pensar
+
+Pensar is a cutting-edge vulnerability management platform that leverages advanced AI to identify and automatically remediate security issues directly within your codebase. Our mission is to empower developers and security teams to fix vulnerabilities swiftly and effectively, ensuring code is secure before it ever reaches production and impacts customers. We stand out by understanding your codebase contextually, catching issues that traditional scanners miss, and eliminating false positives, allowing you to champion security without compromising development velocity.
+
+## What We Do
+
+At Pensar, we are dedicated to transforming how organizations approach code security. We provide a comprehensive solution that proactively finds and addresses security vulnerabilities, integrating seamlessly into your development workflow. Our platform is designed to give you unparalleled visibility into your codebase's security posture, offering precise detection and actionable remediation. We believe in fostering a collaborative environment where security is an enabler, not a blocker, ensuring your applications are robust and protected from the ground up.
+
+## Our Core Capabilities
+
+Our platform is built upon several powerful, AI-driven capabilities that redefine vulnerability management. We focus on delivering accuracy, speed, and relevance, ensuring that every security effort translates into tangible protection for your software.
+
+### AI-powered Vulnerability Detection
+
+We utilize sophisticated **AI models** to detect security issues that often elude traditional rules-based scanners and even human review. Pensar delves deep into your code's logic and context, uncovering subtle vulnerabilities that might otherwise go unnoticed until they become critical production problems. For instance, our system can identify a **Missing authentication check** (CWE 306) in a critical function like `transfer_document_ownership` or `update_document_sharing` within a `DocumentService` class, providing a clear understanding of the security flaw. This deep contextual analysis ensures comprehensive coverage and proactive identification of risks.
+
+### Auto-remediation
+
+Pensar accelerates your remediation process with **auto-generated patches**. These patches are not generic; they are intelligently crafted to align with your specific coding style, leveraging your existing functions and libraries. This ensures that fixes are not only effective but also integrate seamlessly into your codebase, minimizing friction for developers. For example, if a `Missing authentication check` is detected, Pensar can generate a patch that adds the necessary authentication and user verification logic, even opening a pull request, such as **Pull request #34**, ready for review. This capability drastically reduces the time and effort required to secure your applications.
+
+### Context-based Triaging
+
+We understand that not all security warnings are equally critical. Pensar employs **context-based triaging** to filter out false positives, allowing your team to focus exclusively on security issues that genuinely matter most to your business and customers. By analyzing the context of the code, such as how inputs are validated or where data originates, Pensar can accurately differentiate between a real threat and a benign pattern. For instance, a basic scanner might flag an "Untrusted input in SQL query" in a `ReportGenerator` class, but Pensar intelligently recognizes that `region` values are derived from a strictly controlled source (like a validated frontend dropdown), correctly identifying it as a **false positive**. This intelligent filtering ensures your team's efforts are directed where they have the greatest impact.
+
+## Our Platform
+
+Pensar offers a unified platform for comprehensive **vulnerability management**, designed to secure your codebase from development to deployment. Our solution serves as a powerful **Snyk alternative**, providing an advanced, AI-driven approach to code security. It integrates seamlessly into your existing workflows, allowing you to manage and mitigate risks efficiently. You can explore our platform and begin securing your codebase today by logging into our console at [https://console.pensar.dev](https://console.pensar.dev).
+
+## Resources & Insights
+
+We believe in empowering our users with knowledge and continuous learning. Pensar provides various resources to help you maximize your security posture and stay informed about the latest in code security.
+
+*   **Blog**: Our blog offers insights, best practices, and updates on code security and vulnerability management. You can read our latest articles and thought leadership pieces by visiting our [Blog](/blog).
+*   **Documentation**: For in-depth technical details, integration guides, and platform usage, our comprehensive documentation is an invaluable resource. Access our detailed guides at [https://docs.pensar.dev](https://docs.pensar.dev).
+*   **AI Agents**: Discover more about the intelligent AI agents that power our detection and remediation capabilities. Learn how our AI works to protect your code by visiting our [AI Agents](/ai-agents) section.
+*   **Pricing**: Understand our flexible pricing models designed to fit organizations of all sizes. Details on our offerings can be found on our [Pricing](/#pricing) page.
+
+Pensar is committed to helping organizations build and maintain secure software by providing an intelligent, automated, and context-aware vulnerability management solution. We enable teams to fix security issues proactively, ensuring robust applications and fostering a culture of security without sacrificing the speed and agility of modern development. We invite you to secure your codebase with Pensar and experience the future of code security.
+
+---
+Generated by: lapis trylapis.com
+We utilize sophisticated **AI models** to detect security issues that often elude traditional rules-based scanners and even human review. Pensar delves deep into your code's logic and context, uncovering subtle vulnerabilities that might otherwise go unnoticed until they become critical production problems. For instance, our system can identify a **Missing authentication check** (CWE 306) in a critical function like `transfer_document_ownership` or `update_document_sharing` within a `DocumentService` class, providing a clear understanding of the security flaw. This deep contextual analysis ensures comprehensive coverage and proactive identification of risks.
+
+### Auto-remediation
+
+Pensar accelerates your remediation process with **auto-generated patches**. These patches are not generic; they are intelligently crafted to align with your specific coding style, leveraging your existing functions and libraries. This ensures that fixes are not only effective but also integrate seamlessly into your codebase, minimizing friction for developers. For example, if a `Missing authentication check` is detected, Pensar can generate a patch that adds the necessary authentication and user verification logic, even opening a pull request, such as **Pull request #34**, ready for review. This capability drastically reduces the time and effort required to secure your applications.
+
+### Context-based Triaging
+
+We understand that not all security warnings are equally critical. Pensar employs **context-based triaging** to filter out false positives, allowing your team to focus exclusively on security issues that genuinely matter most to your business and customers. By analyzing the context of the code, such as how inputs are validated or where data originates, Pensar can accurately differentiate between a real threat and a benign pattern. For instance, a basic scanner might flag an "Untrusted input in SQL query" in a `ReportGenerator` class, but Pensar intelligently recognizes that `region` values are derived from a strictly controlled source (like a validated frontend dropdown), correctly identifying it as a **false positive**. This intelligent filtering ensures your team's efforts are directed where they have the greatest impact.
+
+## Our Platform
+
+Pensar offers a unified platform for comprehensive **vulnerability management**, designed to secure your codebase from development to deployment. Our solution serves as a powerful **Snyk alternative**, providing an advanced, AI-driven approach to code security. It integrates seamlessly into your existing workflows, allowing you to manage and mitigate risks efficiently. You can explore our platform and begin securing your codebase today by logging into our console at [https://console.pensar.dev](https://console.pensar.dev).
+
+## Resources & Insights
+
+We believe in empowering our users with knowledge and continuous learning. Pensar provides various resources to help you maximize your security posture and stay informed about the latest in code security.
+
+*   **Blog**: Our blog offers insights, best practices, and updates on code security and vulnerability management. You can read our latest articles and thought leadership pieces by visiting our [Blog](/blog).
+*   **Documentation**: For in-depth technical details, integration guides, and platform usage, our comprehensive documentation is an invaluable resource. Access our detailed guides at [https://docs.pensar.dev](https://docs.pensar.dev).
+*   **AI Agents**: Discover more about the intelligent AI agents that power our detection and remediation capabilities. Learn how our AI works to protect your code by visiting our [AI Agents](/ai-agents) section.
+*   **Pricing**: Understand our flexible pricing models designed to fit organizations of all sizes. Details on our offerings can be found on our [Pricing](/#pricing) page.
+
+Pensar is committed to helping organizations build and maintain secure software by providing an intelligent, automated, and context-aware vulnerability management solution. We enable teams to fix security issues proactively, ensuring robust applications and fostering a culture of security without sacrificing the speed and agility of modern development. We invite you to secure your codebase with Pensar and experience the future of code security.
+
+---
+Generated by: lapis trylapis.com
