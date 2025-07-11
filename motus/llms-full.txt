@@ -1,0 +1,370 @@
+--------------------------------------------------------------------------------
+title: "Motus - Call Review Automation"
+description: "Welcome to the comprehensive documentation for Motus, an advanced AI-powered platform designed to revolutionize sales call review and coaching. In today's fast-paced sales environment, the sheer volum..."
+last_updated: "July 11, 2025"
+source: "https://motustech.io/"
+domain: "motustech.io"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# Motus - Call Review Automation
+
+Welcome to the comprehensive documentation for Motus, an advanced AI-powered platform designed to revolutionize sales call review and coaching. In today's fast-paced sales environment, the sheer volume of calls often makes thorough manual review impossible, leading to missed coaching opportunities, repetitive mistakes, and ultimately, lost deals. Motus addresses this critical challenge by providing automated, intelligent feedback and real-time guidance, ensuring every sales interaction is optimized for success.
+
+Motus leverages cutting-edge artificial intelligence, natural language processing (NLP), and proprietary sales frameworks to analyze sales conversations with unparalleled accuracy. Whether you need deep post-call insights to refine strategies or live, in-the-moment coaching to guide reps through complex scenarios, Motus delivers actionable intelligence. Our mission is to empower sales teams to identify subtle deal-killers, capitalize on buying signals, and consistently apply best practices, all without the need for time-consuming manual review.
+
+This documentation provides a deep dive into Motus's capabilities, architecture, integration options, and best practices. It is designed for sales leaders, operations managers, and technical users who want to understand how Motus works under the hood and how to effectively integrate it into their existing sales tech stack to drive measurable improvements in sales performance and conversion rates.
+
+---
+
+## Understanding the Challenge: Why Manual Call Reviews Fail {#understanding-the-challenge}
+
+In high-performing sales organizations, continuous improvement is paramount. However, the traditional approach to sales call review often falls short, leading to significant inefficiencies and missed opportunities. Motus was built to directly address these pervasive issues:
+
+*   **Time Constraints and Missed Reviews:** Sales managers are often overwhelmed with pipeline management, forecasting, and team leadership, leaving little to no time for comprehensive call reviews. Consequently, a vast majority of sales calls go unreviewed, meaning valuable learning opportunities are lost. This lack of feedback prevents reps from understanding their performance gaps.
+*   **Repetitive Mistakes and Stagnant Performance:** Without targeted, actionable feedback, sales representatives frequently repeat the same mistakes unknowingly. These could be anything from rushing through discovery questions to failing to address key objections or missing crucial buying signals. This stagnation directly impacts individual performance and overall team conversion rates.
+*   **Guesswork and Lack of Direction:** When feedback is absent, reps are left to guess what went well or poorly, leading to inconsistent performance. Similarly, sales leaders lack precise data to identify systemic issues or pinpoint specific coaching needs, making strategic adjustments difficult and often based on intuition rather than concrete evidence.
+
+Motus steps in to fill this critical gap, providing the insights and guidance necessary to transform sales performance without adding to the operational burden of sales leadership.
+
+## Core Features of Motus {#core-features}
+
+Motus offers a powerful suite of features designed to provide comprehensive sales call intelligence, both retrospectively and in real-time.
+
+### Automated Post-Call Analysis {#automated-post-call-analysis}
+
+Motus's post-call analysis capabilities provide an in-depth, AI-driven review of recorded sales conversations, delivering actionable insights that would typically require hours of manual listening. This feature is ideal for managers and reps who want to understand past performance, identify trends, and refine their sales strategies.
+
+#### How it Works
+
+1.  **Call Ingestion:** Motus integrates with popular conferencing platforms (e.g., Zoom, Google Meet, Microsoft Teams) and CRM systems (e.g., Salesforce, HubSpot) to automatically ingest call recordings or transcripts. Users can also manually upload audio files or provide text transcripts via API.
+2.  **Speech-to-Text Transcription:** For audio inputs, Motus's highly accurate speech-to-text engine converts spoken words into a detailed transcript, identifying speakers and timestamps.
+3.  **AI-Powered Analysis:** Our proprietary AI models, trained on millions of sales conversations and established sales methodologies, perform a multi-faceted analysis:
+    *   **Sentiment Analysis:** Identifies emotional tone shifts from both the rep and the prospect, flagging moments of hesitation, interest, frustration, or enthusiasm.
+    *   **Topic Extraction & Keyword Tracking:** Pinpoints key discussion points, product mentions, competitor references, and compliance-related terms.
+    *   **Sales Framework Adherence:** Evaluates how well the conversation aligns with proven sales methodologies (e.g., discovery, objection handling, value proposition delivery, closing techniques).
+    *   **Engagement Metrics:** Calculates talk-to-listen ratio, identifies periods of silence, and tracks customer engagement levels throughout the call.
+    *   **Identification of Subtle Signals:** Motus excels at detecting nuanced cues often missed by human listeners, such as a prospect's subtle hesitation, a change in tone indicating disinterest, or a missed opportunity to follow up on a buying signal.
+
+#### Key Outputs and Insights
+
+Motus presents the analysis in an intuitive, actionable format:
+
+*   **Interactive Call Timeline:** A visual representation of the call, highlighting key moments, sentiment shifts, and identified opportunities or mistakes.
+    ```json
+    {
+      "callId": "call_abc123",
+      "durationSeconds": 1200,
+      "insights": [
+        {
+          "timestampSeconds": 324,
+          "type": "EngagementDecreased",
+          "description": "Customer interest dropped during technical explanation. Consider using simpler language.",
+          "severity": "medium",
+          "speaker": "customer"
+        },
+        {
+          "timestampSeconds": 522,
+          "type": "BuyingSignalDetected",
+          "description": "Customer mentioned budget approval. This was a chance to discuss next steps.",
+          "severity": "high",
+          "speaker": "customer",
+          "actionableTip": "Next time, immediately pivot to discussing next steps or a demo."
+        },
+        {
+          "timestampSeconds": 675,
+          "type": "EffectiveValueStatement",
+          "description": "Strong ROI explanation that resonated with the customer. Use this approach more often.",
+          "severity": "positive",
+          "speaker": "rep"
+        },
+        {
+          "timestampSeconds": 980,
+          "type": "MissedObjectionHandling",
+          "description": "Rep talked over customer concern about pricing instead of addressing it directly.",
+          "severity": "high",
+          "speaker": "rep",
+          "actionableTip": "Acknowledge and validate the concern before providing a solution."
+        }
+      ],
+      "summary": "Overall, a strong call with good value delivery, but missed opportunities to address concerns and follow up on buying signals. Focus on active listening and objection handling."
+    }
+    ```
+*   **Actionable Feedback:** Specific, prescriptive advice modeled after top sales performers, helping reps course-correct quickly. Examples include:
+    *   "You rushed the pricing discussion; slow down and tie it back to value."
+    *   "You missed a clear buying signal when the prospect asked about implementation timelines."
+    *   "Excellent job handling the budget objection by reframing the ROI."
+*   **Repeat Mistake Identification:** Motus tracks patterns across multiple calls for a rep, flagging recurring issues (e.g., consistently skipping pain points, weak discovery questions) before they become ingrained habits.
+*   **CRM Integration:** Automatically log key insights, call summaries, and identified next steps directly into your CRM, enriching deal data and improving forecasting accuracy.
+
+> **Tip:** Leverage the "Repeat Mistake Identification" feature during 1:1 coaching sessions to focus on high-impact areas for improvement across your team.
+
+### Live Call Assistant {#live-call-assistant}
+
+The Live Call Assistant provides real-time, in-the-moment coaching and guidance to sales representatives *during* a live sales call. This proactive approach helps reps stay sharp, avoid missteps, and capitalize on opportunities as they unfold, significantly increasing their confidence and effectiveness.
+
+#### How it Works
+
+1.  **Real-time Audio Stream:** Motus securely connects to your conferencing platform (e.g., Zoom, Google Meet) to access the live audio stream of the ongoing call.
+2.  **Low-Latency Processing:** Utilizing optimized speech-to-text and AI models, Motus processes the conversation in near real-time, with minimal latency.
+3.  **Contextual Analysis:** The AI continuously analyzes the dialogue, speaker turns, sentiment, and adherence to predefined sales playbooks.
+4.  **Instantaneous Suggestions:** Based on its analysis, Motus displays discreet, actionable prompts and suggestions directly on the rep's screen, visible only to them.
+
+#### Examples of Live Suggestions
+
+*   **Missed Tie to Pain Point:** "Bring it back to their pain, why does this matter to them?"
+*   **Prospect Hesitation:** "Call that out, they’re not sold yet. Ask: 'I sense some hesitation, what are your thoughts?'"
+*   **Avoiding the Real Objection:** "Don’t let that slide, there’s something real under that. Dig deeper: 'What's your biggest concern with this?'"
+*   **Buying Signal Detected:** "Prospect just mentioned 'next steps' – time to propose a demo or follow-up meeting."
+*   **Tone Adjustment:** "Your tone is flat; try to sound more enthusiastic here."
+*   **Talk-to-Listen Ratio Alert:** "You've been talking for 2 minutes straight. Ask a question to re-engage."
+
+> **Warning:** While the Live Call Assistant is incredibly powerful, ensure your reps are trained on how to interpret and act on the suggestions without disrupting the natural flow of the conversation. It's a guide, not a script.
+
+#### Benefits of Live Coaching
+
+*   **Immediate Course Correction:** Prevents deal-costing mistakes from happening in real-time.
+*   **Increased Confidence:** Reps feel supported and guided, reducing anxiety during challenging conversations.
+*   **Accelerated Skill Development:** Learning happens in the moment of need, reinforcing best practices instantly.
+*   **Consistent Performance:** Ensures all reps, regardless of experience level, can leverage the wisdom of top performers.
+
+## How Motus Works: Architecture and Data Flow {#how-motus-works}
+
+Motus is built on a robust, scalable cloud-native architecture designed for high performance, security, and reliability. Our system processes vast amounts of audio and textual data, transforming raw conversations into actionable intelligence.
+
+![Motus Architecture Diagram Placeholder]
+*(Imagine a diagram here showing data flow: Call Source -> Ingestion Layer -> Speech-to-Text -> AI Analysis Engine (NLP, Sentiment, Sales Frameworks) -> Insights Database -> User Interface / API / CRM Integration)*
+
+#### Key Components:
+
+1.  **Call Ingestion Layer:**
+    *   **Integrations:** Connects to third-party platforms (CRM, conferencing tools, dialers) via OAuth, API keys, or webhooks to automatically pull call recordings or live streams.
+    *   **Direct Upload:** Provides secure endpoints for manual audio/transcript uploads.
+    *   **Streaming API:** For real-time audio input for the Live Call Assistant.
+2.  **Speech-to-Text (STT) Engine:**
+    *   Utilizes advanced deep learning models for highly accurate transcription, speaker diarization (identifying who spoke when), and noise reduction. Optimized for conversational speech.
+3.  **AI Analysis Engine:**
+    *   **Natural Language Processing (NLP):** Extracts entities, identifies topics, categorizes intent, and understands the semantic meaning of the conversation.
+    *   **Sentiment Analysis:** Analyzes emotional tone and sentiment shifts at a granular level for both speakers.
+    *   **Proprietary Sales AI Models:** These are the core of Motus, trained on millions of successful and unsuccessful sales calls. They identify specific sales methodologies, common pitfalls, buying signals, and objection types. This includes:
+        *   **Objection Detection & Classification:** Identifies and categorizes common sales objections.
+        *   **Value Proposition Effectiveness:** Assesses how well the rep articulated value and ROI.
+        *   **Discovery Question Quality:** Evaluates the depth and effectiveness of questions asked.
+        *   **Closing Signal Recognition:** Detects explicit and implicit cues for moving forward.
+    *   **Rule Engine:** Allows for custom rules and triggers based on specific keywords, phrases, or conversational patterns defined by the user (e.g., "flag if competitor X is mentioned").
+4.  **Insights Database:**
+    *   Stores all processed data, transcripts, and generated insights in a highly optimized, searchable format. This enables historical analysis, trend reporting, and personalized coaching recommendations.
+5.  **API & Webhooks:**
+    *   Provides programmatic access to all Motus features, allowing for seamless integration with custom applications, data warehouses, and business intelligence tools.
+6.  **User Interface (UI):**
+    *   An intuitive web application for sales managers and reps to view call insights, manage settings, and access the Live Call Assistant.
+
+#### Data Flow Example: Post-Call Analysis
+
+1.  A sales call concludes on Zoom.
+2.  Motus's Zoom integration automatically pulls the recorded audio file.
+3.  The audio is sent to the STT Engine for transcription.
+4.  The transcript is then fed into the AI Analysis Engine.
+5.  The AI identifies key moments, sentiment, sales framework adherence, and generates actionable feedback.
+6.  These insights are stored in the Insights Database.
+7.  The insights are pushed to the Motus UI for review and optionally synced back to the CRM (e.g., Salesforce opportunity record) via the CRM Integration.
+
+## Getting Started with Motus {#getting-started}
+
+Getting started with Motus is designed to be quick and straightforward, allowing you to begin automating call reviews and improving sales performance in minutes.
+
+### Quick Start Guide
+
+1.  **Sign Up for a Motus Account:**
+    *   Navigate to [https://app.motustech.io](https://app.motustech.io) and create your account. Motus offers a 14-day free trial with no credit card required.
+2.  **Connect Your Call Source:**
+    *   Upon first login, you'll be prompted to connect your primary call source.
+    *   **Recommended:** Connect your conferencing platform (e.g., Zoom, Google Meet, Microsoft Teams) for automatic recording ingestion.
+        *   Go to **Settings > Integrations > Conferencing**.
+        *   Click "Connect" next to your platform and follow the OAuth flow to grant Motus the necessary permissions (e.g., access to recordings).
+    *   Alternatively, connect your CRM (e.g., Salesforce, HubSpot) if your call recordings are stored there.
+        *   Go to **Settings > Integrations > CRM**.
+        *   Follow the authentication steps.
+3.  **Upload Your First Call (Optional):**
+    *   If you have existing call recordings, you can manually upload them to get immediate insights.
+    *   Go to **Dashboard > Upload Call**.
+    *   Drag and drop your audio file (MP3, WAV) or provide a link.
+4.  **Review Your First Insights:**
+    *   Once a call is processed (typically within minutes for post-call analysis), navigate to the **Calls** section in your dashboard.
+    *   Click on a processed call to view the interactive timeline, key insights, and actionable feedback.
+5.  **Enable Live Call Assistant (for real-time coaching):**
+    *   For live coaching, ensure your conferencing integration is active.
+    *   The Live Call Assistant typically runs as a browser extension or a small desktop application, providing an overlay during your live calls.
+    *   Refer to the **Live Call Assistant Setup Guide** in the app for specific instructions for your operating system and browser.
+
+> **Note:** For optimal performance and comprehensive insights, ensure your call recordings are clear and have distinct speaker separation.
+
+## Integration and Configuration {#integration-and-configuration}
+
+Motus is built for seamless integration into your existing sales ecosystem. We provide robust APIs and native connectors to ensure data flows effortlessly between your tools and Motus.
+
+### Native Integrations
+
+Motus offers out-of-the-box integrations with leading sales and communication platforms:
+
+*   **CRM Systems:**
+    *   **Salesforce:** Sync call summaries, key insights, and identified next steps directly to opportunity or contact records.
+    *   **HubSpot:** Automate logging of call activities and enrich contact timelines with Motus insights.
+    *   **Other CRMs:** Generic webhook support for custom integrations.
+*   **Conferencing Platforms:**
+    *   **Zoom:** Automatic ingestion of cloud recordings, real-time audio stream for Live Call Assistant.
+    *   **Google Meet:** Similar to Zoom, supports recording ingestion and live stream.
+    *   **Microsoft Teams:** Integration for call recording access and live analysis.
+*   **Dialers & Sales Engagement Platforms:**
+    *   **Gong.io / Salesloft / Outreach.io:** Connect to import existing call libraries for retrospective analysis and benchmark against Motus's insights.
+
+To configure an integration:
+1.  Navigate to **Settings > Integrations**.
+2.  Select the platform you wish to connect.
+3.  Follow the on-screen prompts, which typically involve OAuth authentication to grant Motus access to your data.
+4.  Configure specific sync settings (e.g., which call types to analyze, what data to push to CRM).
+
+### Advanced Configuration: Custom Playbooks and Rules
+
+Motus allows you to tailor its AI analysis to your specific sales methodology and business needs.
+
+*   **Custom Sales Frameworks:** Define your own stages, key questions, and best practices. Motus's AI can then evaluate calls against your custom framework.
+    *   **Example:** If your sales process emphasizes "MEDDPICC," you can configure Motus to look for specific cues related to Metrics, Economic Buyer, Decision Criteria, etc.
+*   **Keyword Tracking & Alerts:** Set up alerts for specific keywords or phrases.
+    *   **Use Case:** Get notified if a competitor's name is mentioned, or if a specific compliance term is used incorrectly.
+*   **Automated Workflows:** Create rules to trigger actions based on call insights (e.g., "If a call has a 'High' severity 'Missed Objection' insight, automatically assign it to a manager for review").
+
+To configure custom settings:
+1.  Navigate to **Settings > Customization**.
+2.  Use the intuitive interface to define your frameworks, keywords, and rules.
+
+## Best Practices and Advanced Usage {#best-practices}
+
+To maximize the value you get from Motus, consider these best practices and advanced usage patterns.
+
+### For Sales Representatives
+
+*   **Review Insights Regularly:** Make it a habit to review your call insights immediately after a call, especially for critical opportunities. This reinforces learning while the memory is fresh.
+*   **Focus on Actionable Feedback:** Don't just read the insights; actively implement the suggested changes in your next calls.
+*   **Utilize the Live Call Assistant:** Treat it as a silent coach. Learn to quickly glance at prompts and integrate them naturally into your conversation flow. The more you use it, the more intuitive it becomes.
+*   **Self-Coaching:** Use Motus to identify your personal patterns. Are you consistently talking too much? Missing specific types of objections? This self-awareness is key to rapid improvement.
+*   **Share with Your Manager:** Proactively share your Motus insights with your manager during 1:1s. This demonstrates initiative and provides concrete data points for coaching discussions.
+
+### For Sales Managers and Leaders
+
+*   **Shift from Manual Review to Strategic Coaching:** Instead of spending hours listening to calls, use Motus to pinpoint exact moments that require attention. Focus your coaching efforts on specific, data-backed issues.
+*   **Identify Team-Wide Trends:** Analyze aggregate data from Motus to identify common strengths and weaknesses across your team. This informs broader training initiatives.
+*   **Onboarding and Ramp-Up:** Accelerate the ramp-up time for new reps by providing them with immediate, personalized feedback from day one, reducing the burden on senior reps or managers.
+*   **A/B Test Sales Approaches:** Use Motus to analyze the effectiveness of different sales scripts, objection handling techniques, or value propositions across your team.
+*   **Leverage Custom Playbooks:** Work with your team to define your ideal sales process within Motus's custom frameworks, ensuring consistency and adherence to your winning formula.
+*   **Integrate with CRM for Holistic View:** Ensure Motus insights are flowing into your CRM to provide a complete picture of deal health and rep performance, informing forecasting and pipeline management.
+
+### Real-World Use Cases
+
+*   **Improving Discovery Calls:** Motus can highlight instances where reps failed to ask deep enough pain-point questions or missed opportunities to uncover budget and authority.
+*   **Mastering Objection Handling:** Identify specific objections that reps struggle with and provide targeted coaching on effective responses, improving close rates.
+*   **Boosting Conversion Rates:** By consistently applying best practices identified by Motus, teams can see significant improvements in their ability to move deals forward.
+*   **Scaling Coaching:** Empower every rep with personalized coaching, even in large teams, without needing to hire more sales coaches.
+*   **Ensuring Compliance:** Automatically flag calls where specific compliance terms were not used or where prohibited statements were made.
+
+## Troubleshooting and Support {#troubleshooting}
+
+This section provides common troubleshooting steps and resources for getting help with Motus.
+
+### Common Issues and Solutions
+
+*   **"Call not processing" or "Stuck in pending":**
+    *   **Check File Format:** Ensure the uploaded audio file is a supported format (MP3, WAV, M4A).
+    *   **File Size:** Very large files might take longer. Check your plan's limits.
+    *   **Integration Status:** For automatic ingestion, verify your conferencing/CRM integration is active and correctly authenticated in **Settings > Integrations**.
+    *   **Permissions:** Ensure Motus has the necessary permissions to access recordings from your connected platforms.
+*   **"No insights generated" or "Limited insights":**
+    *   **Audio Quality:** Poor audio quality (background noise, low volume, multiple speakers talking over each other) can impact transcription and analysis accuracy.
+    *   **Call Content:** Ensure the call contains actual sales conversation. Short or non-sales related calls may yield fewer insights.
+    *   **Language:** Motus primarily supports English. Ensure the call is in a supported language.
+*   **Live Call Assistant not appearing/working:**
+    *   **Browser Extension/Desktop App:** Ensure the Motus Live Call Assistant browser extension is installed and enabled, or the desktop application is running.
+    *   **Conferencing Platform Compatibility:** Verify your specific version of Zoom, Google Meet, or Teams is supported.
+    *   **Microphone Access:** Ensure your browser or desktop app has microphone permissions.
+    *   **Firewall/VPN:** Check if your network settings or VPN are blocking the connection to Motus servers.
+*   **CRM Sync Issues:**
+    *   **Integration Status:** Verify your CRM integration is active and authenticated.
+    *   **Field Mapping:** Check your CRM integration settings to ensure fields are correctly mapped between Motus insights and your CRM custom fields.
+    *   **CRM Permissions:** Ensure the connected CRM user has the necessary permissions to create/update records.
+
+### Getting Help
+
+If you encounter issues not covered here, or require further assistance:
+
+*   **In-App Help:** Look for the "?" icon or "Help" section within the Motus application for context-sensitive help and FAQs.
+*   **Support Portal:** Visit our dedicated support portal at [https://support.motustech.io](https://support.motustech.io) for detailed guides, articles, and troubleshooting steps.
+*   **Contact Support:** For direct assistance, email our support team at `support@motustech.io`. Please include your account email, a detailed description of the issue, and any relevant screenshots or call IDs.
+
+## Frequently Asked Questions (FAQs) {#faqs}
+
+**Q: What types of calls can Motus analyze?**
+A: Motus is optimized for sales conversations, including discovery calls, demo calls, negotiation calls, and follow-up calls. It can analyze any spoken interaction, but its insights are tailored to sales contexts.
+
+**Q: What languages does Motus support?**
+A: Currently, Motus primarily supports English. We are continuously working to expand our language support based on user demand.
+
+**Q: How accurate is Motus's AI analysis?**
+A: Motus leverages state-of-the-art AI and NLP models, combined with proprietary sales frameworks, to achieve high accuracy. While no AI is 100% perfect, our models are continuously trained and refined on real-world sales data to provide highly relevant and actionable insights.
+
+**Q: Is my data secure with Motus?**
+A: Yes, data security is a top priority. Motus employs industry-standard encryption for data in transit and at rest, adheres to strict access control policies, and is designed with privacy regulations (like GDPR and CCPA) in mind. For more details, see our [Security and Data Privacy](#security-and-data-privacy) section.
+
+**Q: Can Motus integrate with my custom CRM or internal tools?**
+A: Yes, beyond our native integrations, Motus provides a comprehensive RESTful API that allows for custom integrations with any system capable of making API calls.
+
+**Q: How long does it take for a call to be analyzed?**
+A: Post-call analysis typically takes a few minutes, depending on the call duration and current system load. Live Call Assistant provides insights in near real-time (sub-second latency).
+
+**Q: Does Motus record my calls?**
+A: Motus does not record calls directly. It integrates with your existing conferencing platforms (e.g., Zoom) to access recordings that you have already chosen to record, or it processes live audio streams from those platforms. You maintain control over your recording settings.
+
+## Security and Data Privacy {#security-and-data-privacy}
+
+At Motus, we understand that sales conversations contain sensitive information. We are committed to protecting your data with robust security measures and strict privacy practices.
+
+### Data Encryption
+
+*   **Data in Transit:** All data transmitted between your systems and Motus, and within Motus's infrastructure, is encrypted using industry-standard TLS 1.2+ protocols.
+*   **Data at Rest:** All customer data stored in our databases and storage systems is encrypted using AES-256 encryption.
+
+### Access Control and Authentication
+
+*   **Least Privilege:** Access to customer data is strictly controlled on a need-to-know basis, following the principle of least privilege.
+*   **Role-Based Access Control (RBAC):** Within the Motus application, granular permissions ensure that users only access the data and features relevant to their role.
+*   **Secure Authentication:** We support strong password policies and recommend enabling multi-factor authentication (MFA) for all user accounts. Our API uses secure Bearer token authentication.
+
+### Compliance and Privacy
+
+*   **GDPR & CCPA:** Motus is designed with compliance to major data privacy regulations like GDPR and CCPA in mind. We provide tools and processes to help you meet your obligations regarding data subject rights.
+*   **Data Minimization:** We only collect and process data necessary to provide our services and improve our AI models.
+*   **Data Retention:** You have control over your data retention policies. Data is stored only for as long as necessary or as configured by your organization.
+*   **Consent:** It is the customer's responsibility to ensure they have obtained all necessary consents for recording and processing sales calls in accordance with local laws and regulations. Motus provides the tools, but compliance with recording laws (e.g., one-party vs. two-party consent) rests with the user.
+
+### Infrastructure Security
+
+Motus's infrastructure is hosted on leading cloud providers (e.g., AWS, GCP) that maintain rigorous security certifications (e.g., ISO 27001, SOC 2 Type II). We leverage their robust security features, including network segmentation, intrusion detection, and continuous monitoring.
+
+For a detailed overview of our security measures and privacy policy, please visit:
+*   [Motus Security Policy](https://motustech.io/security) (Hypothetical Link)
+*   [Motus Privacy Policy](https://motustech.io/privacy) (Hypothetical Link)
+
+## Pricing and Availability {#pricing-and-availability}
+
+Motus offers flexible pricing plans designed to scale with your team's needs, from individual sales professionals to large enterprise organizations.
+
+*   **Free Trial:** Start with a 14-day free trial, no credit card required, to experience Motus's core features.
+*   **Tiered Plans:** Our plans are typically structured based on the number of users, call minutes analyzed, and access to advanced features (e.g., custom playbooks, API access, dedicated support).
+*   **Enterprise Solutions:** For large organizations with specific security, compliance, or integration requirements, we offer custom enterprise packages.
+
+For detailed pricing information and to choose the plan that's right for you, please visit our pricing page:
+
+[Motus Pricing](https://motustech.io/pricing) (Hypothetical Link)
+
+---
+
+© 2025 Motus. All rights reserved.

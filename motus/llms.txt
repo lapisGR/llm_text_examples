@@ -1,0 +1,73 @@
+# Motus
+
+Motus is revolutionizing sales coaching by replacing time-consuming manual call reviews with automated, intelligent feedback delivered in seconds. Our mission is to empower sales teams to pinpoint the exact moments that win or lose deals, providing the kind of insightful feedback that top performers would offer, all without the need to watch a single recording. We deliver proven advice and identify subtle yet critical deal-killing moments, enabling reps to course-correct rapidly and close more business.
+
+## What We Do
+
+At Motus, we understand the challenges sales leaders and reps face daily. Most sales calls go unreviewed due to severe time constraints, leading to missed opportunities for valuable feedback and uncorrected mistakes. This often leaves reps repeating the same errors, while managers are too busy managing the pipeline to intervene effectively. Without proper guidance, reps are left guessing, and so are you, about what truly impacts performance. Motus steps in to fill this critical gap, ensuring that no valuable learning opportunity is dropped. Our platform is designed to provide immediate, actionable insights, so you can quickly understand and rectify mistakes, eliminating the need for tedious replays. To experience the power of automated call review, you can [Start For Free](https://app.motustech.io) today.
+
+## Our Core Capabilities
+
+Motus is built to accurately review your sales calls, providing the precise feedback you need without the manual effort. We focus on the small, often overlooked moments that ultimately determine the success or failure of a deal. It's not that your reps aren't trying; they're simply not catching what truly matters. Our platform helps you identify and address these crucial moments before they lead to lost deals. Learn more about our comprehensive features at [motustech.io/features](https://motustech.io/features).
+
+### Intelligent Call Analysis
+
+Our system is modeled after the strategies of top sales performers, delivering proven advice that helps reps course-correct fast. We don't just transcribe; we analyze the nuances of conversation.
+
+*   **Catches Repeat Mistakes**: Motus is adept at spotting recurring patterns, such as rushing pricing discussions or skipping critical pain points, flagging them early before they become ingrained habits.
+*   **Silent Signals Detection**: We excel at identifying subtle cues that are often hard for humans to catch, like when a prospect hesitates or loses interest halfway through a conversation.
+*   **Emotional Tone Shifts**: Our technology identifies changes in emotional tone that indicate buyer sentiment, helping reps understand the underlying feelings of their prospects.
+*   **Missed Opportunity Flagging**: Motus flags missed opportunities to address objections or capitalize on buying signals, ensuring no potential deal-closing moment is overlooked.
+
+### Preventing Subtle Deal Killers
+
+Many deals don't spectacularly blow up; they slowly fall apart due to a series of small missteps. These can include talking over customer concerns instead of addressing them, missing emotional cues that indicate hesitation, or failing to follow up on key questions that reveal buying intent. Motus helps you catch these subtle deal killers by:
+
+*   Identifying emotional tone shifts that indicate buyer sentiment.
+*   Flagging missed opportunities to address objections.
+*   Helping you catch those critical moments, so you can prevent lost deals before they happen.
+
+### Actionable Call Timeline
+
+Our intuitive call analysis provides a detailed timeline of key moments within a conversation, offering precise feedback at specific timestamps. This allows for targeted coaching and rapid improvement. For instance, a call timeline might highlight:
+
+*   **Engagement Decreased (e.g., 5:24)**: Notifying that customer interest dropped during a technical explanation, suggesting the use of simpler language.
+*   **Buying Signal Detected (e.g., 8:42)**: Pointing out that a customer mentioned budget approval, indicating a missed chance to discuss next steps.
+*   **Effective Value Statement (e.g., 11:15)**: Highlighting a strong ROI explanation that resonated with the customer, encouraging the rep to use this approach more often.
+
+This granular feedback empowers reps to understand exactly where they can improve and what they did well. Discover more about our analytical depth on our [Solutions page](https://motustech.io/solutions).
+
+## Our Approach & Expertise
+
+We believe trust is earned through understanding and proven results. Our foundation is built on real-world sales experience and a deep understanding of what truly drives success.
+
+*   **Built by Real Salespeople**: Our team has been in the trenches. We’ve sold, coached, closed deals, and learned from the best in the industry. This hands-on experience means Motus is designed by people who intimately understand the sales process and its challenges.
+*   **Follows What Actually Works**: Motus is built upon the same robust sales frameworks that the most successful reps use every day to win deals. We integrate these proven methodologies directly into our feedback system.
+*   **Trained on Real Emotional Intelligence**: We know how to read people, not just listen to words. Our AI is trained to spot the subtle signals – the hesitations, the shifts in tone, the unspoken cues – that often change the outcome of a conversation. This focus on emotional intelligence sets our analysis apart.
+
+We are committed to providing a tool that genuinely enhances sales performance. Learn more about our philosophy and team at [motustech.io/about](https://motustech.io/about).
+
+## Testimonials
+
+The impact of Motus is best described by those who use it every day. Our users consistently report significant improvements in their sales skills and results.
+
+*   **Tyler Bevacqua, Founder/Owner**: "My sales calls started getting better results. I improved my skills, made more money, and this tool had a lot to do with it."
+*   **Tyler Mete, Account Executive**: "I used to miss small moments that made the difference. Now I'm smoother, more confident, and I close more deals."
+*   **Michael Rathman, Founder, AdSumo.com**: "Motus is like having a second brain on my sales calls. I catch buying signals earlier and stay in control. It's a no-brainer if you're scaling."
+*   **Lewis, Founder, TryCompAI**: "Gets me ready for my next call. Keeps me sharp, focused, and locked in on what actually matters."
+*   **Andre, Tik/Tok Agency/Creator**: "I've tried a lot of tools but this one helped me tighten..."
+
+These testimonials reflect the tangible benefits our users experience. For more success stories, visit our [Testimonials page](https://motustech.io/testimonials).
+
+## Our Leadership
+
+Motus was founded by **Tyler Bevacqua**, who brings extensive experience as a Founder and Owner in the sales domain. His deep understanding of the sales process and the challenges faced by reps and managers has been instrumental in shaping Motus into a powerful, practical solution. Tyler's vision ensures that Motus remains grounded in real-world sales effectiveness.
+
+## Resources & Insights
+
+We believe in sharing knowledge to empower the sales community. While our platform provides direct feedback, we also aim to offer broader insights into sales best practices and industry trends. Explore our latest articles and thought leadership on the [Motus Blog](https://motustech.io/blog) or our comprehensive [Resources section](https://motustech.io/resources). For any inquiries, feel free to [Contact Us](https://motustech.io/contact). You can also review our [Privacy Policy](https://motustech.io/privacy-policy) and [Terms of Service](https://motustech.io/terms-of-service).
+
+Motus is dedicated to transforming sales performance by making effective coaching accessible and immediate. We empower sales teams to learn faster, adapt quicker, and ultimately close more deals by providing precise, actionable feedback that addresses the subtle yet critical moments in every conversation. Our commitment is to help every sales professional reach their full potential and drive consistent, measurable growth. To see Motus in action, consider requesting a [demo](https://motustech.io/demo) or exploring our [pricing options](https://motustech.io/pricing). We are always looking for talented individuals to join our mission; explore [career opportunities](https://motustech.io/careers) with us. For immediate assistance, our [support team](https://motustech.io/support) is ready to help.
+
+---
+Generated by: lapis trylapis.com
