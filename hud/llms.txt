@@ -1,0 +1,73 @@
+# HUD
+
+HUD stands as the premier evaluation platform meticulously crafted for the next generation of computer use agents. We empower developers, researchers, and enterprises to rigorously evaluate and rapidly iterate on their AI agents across hundreds of diverse, real-world environments and thousands of complex tasks, all expertly designed by leading domain specialists. Our fundamental mission is to accelerate the development of robust, reliable, and truly high-performing AI agents by providing an unparalleled, comprehensive, efficient, and scalable evaluation infrastructure that bridges the gap between theoretical capabilities and practical, real-world performance.
+
+## What We Do
+
+At HUD, we recognize that the true measure of an AI agent lies in its ability to perform effectively in dynamic, unconstrained environments, much like a human user would. Traditional evaluation methods often fall short, failing to capture the nuances of real-world interaction or providing slow, cumbersome feedback loops. Our platform addresses these critical challenges head-on. We provide a seamless, cloud-native environment where you can test and benchmark your AI agents against a vast array of scenarios, ranging from navigating complex web applications and interacting with full operating system environments to manipulating specialized software and handling intricate data tasks. This comprehensive approach ensures that your agents are not merely intelligent in theory, but demonstrably practical, adaptable, and effective in complex, real-world settings. We offer the essential infrastructure to measure your agent's performance with unprecedented accuracy, identify subtle regressions, and pinpoint precise areas for improvement, dramatically accelerating your development cycles. Whether you are building sophisticated agents for professional automation, conducting cutting-edge academic research, or even developing AI for interactive gaming, HUD provides the indispensable tools to validate and refine your agent's capabilities. We invite you to explore our extensive range of features at `https://www.hud.so/#features` and review our pricing options at `https://www.hud.so/#pricing` to discover how HUD can profoundly support and transform your AI agent development journey. For further insights into our work and the broader AI landscape, you can also visit our blog at `https://www.hud.so/blog`.
+
+## Our Comprehensive Evaluation Solutions
+
+We offer a diverse and continuously expanding suite of evaluation sets, each meticulously tailored to address specific domains, industries, and technical challenges. This extensive collection allows you to evaluate virtually any aspect of an agent's performance, from foundational computer proficiency to highly specialized, niche tasks. These evaluation sets are thoughtfully categorized by their primary focus—be it academic research, professional application, or interactive gaming—and vary significantly in the sheer number and complexity of tasks they contain, providing unparalleled flexibility for various testing requirements and development stages. You can launch evaluations on many of these sets directly from our application at `https://app.hud.so/evalsets`.
+
+### OSWorld
+
+**OSWorld** is a cornerstone academic evaluation set, comprising a substantial **369 tasks** specifically engineered to rigorously test an agent's ability to navigate, understand, and interact proficiently within a full operating system environment. This benchmark is absolutely critical for any agent aspiring to achieve general computer proficiency, as it simulates real-world desktop interactions, file management, software usage, and more. We are proud to highlight the impressive performance observed on this benchmark, with **OpenAI CUA** achieving a remarkable **38.1%** success rate, followed by **Claude 3.7 Sonnet** at **28%**, and **UI-TARS-72B** at **24.6%**. These figures underscore the challenging nature of OSWorld and the high bar it sets for agent performance.
+
+### WebVoyager
+
+For agents whose primary domain involves intricate web interaction, **WebVoyager** offers a robust academic evaluation set featuring **643 tasks**. This set is designed to push agents to their limits, challenging them to perform complex, multi-step actions across a diverse array of websites. It meticulously simulates real-world browsing behaviors, including navigating dynamic content, interacting with forms, extracting specific data, and executing intricate workflows, making it an indispensable tool for developing highly capable web automation agents.
+
+### SheetBench
+
+Tailored specifically for professional applications, **SheetBench** provides **50 tasks** meticulously designed to evaluate an agent's proficiency in spreadsheet manipulation and sophisticated data analysis. This evaluation set is invaluable for developers creating agents intended for critical business intelligence, financial modeling, data science, or operational analytics roles, ensuring they can accurately process, interpret, and act upon structured data within spreadsheet environments.
+
+### GAIA
+
+**GAIA** (General AI Assistant) is another critically important academic evaluation set, featuring **165 tasks**. It is specifically focused on assessing general AI assistant capabilities, pushing agents to solve complex, multi-modal problems that frequently demand advanced common sense reasoning, intricate information processing, and the ability to synthesize information from various sources. Our powerful **SDK** provides a straightforward and efficient way to load tasksets like GAIA directly into your development workflow. For instance, you can easily load the GAIA taskset using a simple Python command: `taskset = hud.load_taskset("GAIA")`. Subsequently, you can run an evaluation job with your chosen agent, such as `job = await run_job(ClaudeAgent, taskset, "test-gaia-job")`, and then retrieve detailed results programmatically or view them comprehensively within our user-friendly application at `https://app.hud.so`.
+
+### Mind2Web
+
+Representing one of our most extensive academic evaluation sets, **Mind2Web** boasts a colossal **7775 tasks**. This set is singularly dedicated to evaluating agents' abilities to interact with an incredibly wide range of web interfaces. It places a strong emphasis on understanding nuanced user intent and executing precise actions across a vast spectrum of web applications, making it essential for agents designed for broad web-based automation and intelligent browsing.
+
+### Financial Analysis 1
+
+A highly specialized professional evaluation set, **Financial Analysis 1** includes **15 tasks** that immerse agents in realistic financial data analysis scenarios. These tasks challenge agents to interpret complex financial reports, accurately calculate key metrics, identify trends, and make informed decisions based on financial information. This set is crucial for validating agents intended for financial services, investment analysis, or corporate finance roles.
+
+### WebArena
+
+**WebArena** is an academic evaluation set encompassing **200 tasks** that are specifically designed for complex web-based interactions. These tasks include navigating highly dynamic websites, accurately submitting intricate forms, and interacting seamlessly with various web services. It provides a robust and challenging environment for developing and refining agents designed for advanced web automation and intelligent online task execution.
+
+### Specialized Evaluation Sets
+
+Beyond our core offerings, we also provide unique and highly specialized evaluation sets catering to specific niches and industries.
+
+*   **Gaming Evaluation Sets**: For agents operating in interactive entertainment, we offer:
+    *   **Pokemon 1**: This set includes **10 tasks** specifically designed to test an agent's ability to play, strategize, and interact within the complex environment of the Pokemon game.
+    *   **GeoGuessr 1**: With **50 tasks**, this set evaluates an agent's ability to analyze subtle visual cues and geographic information to accurately determine real-world locations, mimicking the popular GeoGuessr game.
+
+*   **Professional and Private Evaluation Sets**: We also provide highly focused sets for specific professional domains and private testing needs:
+    *   **HR 1**: A professional set featuring **15 tasks** concentrated on human resources analytics, talent management, and administrative scenarios.
+    *   **Legal Research 1**: Another professional set, offering **15 tasks** that rigorously challenge agents with complex legal document analysis, case research, and information retrieval tasks.
+    *   **Autonomy-10**: This is a private evaluation set containing **30 tasks**, specifically designed for more bespoke or proprietary agent testing requirements, offering a controlled environment for sensitive or specialized evaluations. You can learn more about the **Autonomy-10** benchmark and its significance on its dedicated page at `https://www.hud.so/benchmark`.
+
+For access to these specialized professional and private sets, or to express your interest in any of our evaluation solutions, we encourage you to reach out to us directly via our contact form at `https://forms.gle/2ydT4P4RpothXLBP8` or schedule a demo with our team at `https://cal.com/jay-ram-z6st6w/demo`.
+
+## Our Advanced Iteration Loop
+
+At HUD, our core philosophy revolves around empowering you to **improve your iteration loop** dramatically. We understand that in the fast-paced world of AI development, waiting hours or even days for evaluation results is simply unacceptable. Our platform is engineered from the ground up to overcome this critical bottleneck by orchestrating hundreds of concurrent machines simultaneously. This sophisticated infrastructure is capable of spinning up full, isolated operating system environments in mere seconds, each ready to host and test your agent. This unparalleled level of parallelism enables truly rapid evaluation cycles, allowing you to run thousands of tasks concurrently and receive comprehensive feedback almost instantaneously. The direct benefits are profound: you can iterate on your agent's design and code significantly faster, identify subtle regressions and performance degradations much sooner in the development process, and confidently push more robust, higher-performing agents to production with unprecedented speed. Our **OSWorld Benchmark Runtime Comparison** graphically illustrates this efficiency, showcasing how our parallelized approach drastically reduces evaluation time from hours to minutes compared to traditional, standard VM setups.
+
+Furthermore, we prioritize seamless integration with your existing development ecosystem. Our platform is designed to effortlessly **integrate your agent's stack**, allowing you to evaluate your agent's holistic abilities while leveraging all its existing tools and models. This includes robust compatibility and support for various agent components and frameworks, such as **OpenAI Operator**, **Claude Computer Use**, **MCP (Multi-modal Control Policy)**, and sophisticated **RAG (Retrieval-Augmented Generation)** systems. This ensures that your evaluation environment precisely mirrors your agent's real-world operational context, providing truly representative and actionable performance insights.
+
+## Our Commitment to Research and Academia
+
+We hold a profound respect and appreciation for the global research community, and indeed, **we 💛 Researchers**. Our platform is not just a commercial tool; it is fundamentally built to support and accelerate cutting-edge AI research and development worldwide. We are immensely proud to collaborate with, and be actively utilized by, some of the most prestigious academic institutions globally. Our valued partners include **UC Berkeley**, **MIT**, **Columbia University**, and **Yale University**. These esteemed partnerships are a testament to the scientific rigor and practical utility of our platform, underscoring our unwavering commitment to advancing the frontiers of AI and providing robust, scalable tools for groundbreaking scientific discovery and innovation. We believe that by empowering researchers with superior evaluation capabilities, we contribute directly to the collective progress of artificial intelligence.
+
+## Developer Resources and Community Engagement
+
+To ensure a smooth onboarding and integration experience, we provide comprehensive and accessible developer resources. Our powerful **SDK** is openly available on GitHub at `https://github.com/Human-Data/hud-sdk`, offering a flexible and programmatic interface to interact with our platform, manage your evaluation jobs, and retrieve detailed results directly within your development workflows. Complementing the SDK, our extensive **documentation** at `https://documentation.hud.so` provides in-depth guides, clear API references, and practical code examples to ensure a seamless development experience for all users. We are also active on social media, maintaining a presence on **Twitter** at `https://x.com/hud_evals`, where we share updates, insights, and engage with the broader AI community. For direct inquiries or to explore partnership opportunities, our team is readily available for contact, and you can schedule a demo directly via `https://cal.com/jay-ram-z6st6w/demo`.
+
+HUD is fundamentally transforming the landscape of AI agent evaluation, enabling developers and researchers to build more capable, reliable, and ultimately more impactful AI systems. By providing a scalable, incredibly efficient, and truly comprehensive evaluation infrastructure, we are not just measuring performance; we are actively accelerating the entire journey from initial concept and iterative development to confident deployment in production. Our platform ensures that the next generation of AI agents can truly perform at their absolute best in the complex and dynamic real world, pushing the boundaries of what intelligent automation can achieve.
+
+---
+Generated by: lapis trylapis.com

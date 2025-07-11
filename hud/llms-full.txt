@@ -1,0 +1,394 @@
+--------------------------------------------------------------------------------
+title: "HUD - An evaluation platform for your computer use agent"
+description: "HUD is a cutting-edge evaluation platform designed specifically for **computer use agents** – AI systems capable of interacting with and operating within various digital environments. In the rapidly e..."
+last_updated: "July 11, 2025"
+source: "https://www.hud.so/"
+domain: "www.hud.so"
+generated_by: "lapis trylapis.com"
+--------------------------------------------------------------------------------
+
+# HUD - An evaluation platform for your computer use agent
+
+HUD is a cutting-edge evaluation platform designed specifically for **computer use agents** – AI systems capable of interacting with and operating within various digital environments. In the rapidly evolving landscape of AI, agents are becoming increasingly sophisticated, performing complex tasks across operating systems, web browsers, and specialized applications. However, effectively evaluating, benchmarking, and iterating on these agents presents significant challenges, often involving slow, resource-intensive, and inconsistent testing methodologies.
+
+HUD addresses these challenges by providing a **fast, flexible, and comprehensive solution** for agent evaluation. It enables developers and researchers to rigorously test their AI agents against hundreds of environments and thousands of tasks, orchestrating concurrent execution across a distributed infrastructure. This platform empowers teams to accelerate their development cycles, identify regressions early, and confidently deploy more robust and capable AI agents into production.
+
+Whether you're building a general-purpose AI assistant, a specialized automation agent, or conducting academic research on agentic AI, HUD offers the tools and infrastructure to ensure your agents perform optimally. From pre-built academic benchmarks to custom enterprise-specific workflows, HUD provides the necessary environment and tooling to gain deep insights into your agent's performance and drive continuous improvement.
+
+---
+
+## Getting Started with HUD SDK (<a name="getting-started"></a>)
+
+The HUD SDK provides a straightforward way to integrate your AI agents with the HUD platform and initiate evaluations directly from your Python environment. This section guides you through the initial setup and a quick example to get you started.
+
+### Prerequisites
+
+Before you begin, ensure you have:
+*   **Python 3.8+** installed.
+*   A **HUD account** and an **API key**. You can sign up and obtain your API key from the [HUD web application](https://app.hud.so).
+
+### Installation
+
+Install the HUD SDK using pip:
+
+```bash
+pip install hud-sdk
+```
+
+### Quick Start Example
+
+The following example demonstrates how to load a pre-defined taskset, run a job with your agent, and retrieve the results.
+
+```python
+import os
+from hud import load_taskset, run_job, ClaudeAgent # ClaudeAgent is an example agent integration
+
+# 1. Authenticate with HUD
+# Ensure your HUD API key is set as an environment variable: HUD_API_KEY
+# Alternatively, you can pass it directly: hud.set_api_key("YOUR_API_KEY")
+if "HUD_API_KEY" not in os.environ:
+    print("Please set the HUD_API_KEY environment variable.")
+    print("You can find your API key in the HUD web application.")
+    exit()
+
+async def run_evaluation():
+    # 2. Load a Taskset
+    # Tasksets are collections of evaluation tasks. "GAIA" is a well-known academic benchmark.
+    print("Loading GAIA taskset...")
+    taskset = load_taskset("GAIA")
+    print(f"Taskset '{taskset.name}' loaded with {len(taskset.tasks)} tasks.")
+
+    # 3. Define Your Agent
+    # For this example, we're using a placeholder 'ClaudeAgent'.
+    # In a real scenario, you would define your own agent class that inherits from hud.Agent
+    # and implements the necessary interaction logic.
+    # See the "Integrating Your Agent" section for more details.
+    class MyCustomAgent(ClaudeAgent): # Inherit from a base agent or implement from scratch
+        def __init__(self, *args, **kwargs):
+            super().__init__(*args, **kwargs)
+            # Initialize your agent's models, tools, etc.
+            print("MyCustomAgent initialized.")
+
+        async def run_task(self, task_input: str) -> str:
+            # Implement your agent's logic to solve the given task
+            print(f"Agent received task: {task_input[:50]}...")
+            # This is where your agent interacts with the environment provided by HUD
+            # For a real agent, this would involve complex reasoning and actions.
+            return "Agent's solution to the task." # Return the agent's output
+
+    # 4. Run the Evaluation Job
+    # This will spin up environments and execute your agent against the taskset concurrently.
+    print("Running evaluation job...")
+    job = await run_job(MyCustomAgent, taskset, "my-first-gaia-job")
+    print(f"Job '{job.job_id}' started. You can view progress at https://app.hud.so/jobs/{job.job_id}")
+
+    # 5. Get Results
+    # Wait for the job to complete and retrieve analytics.
+    print("Waiting for job to complete and fetching analytics...")
+    analytics = await job.get_analytics()
+    print("\n--- Job Results ---")
+    print(analytics)
+    print("-------------------")
+
+# Run the asynchronous function
+import asyncio
+asyncio.run(run_evaluation())
+```
+
+> **Note:** The `ClaudeAgent` in the example is a placeholder. To run a real evaluation, you would either use a pre-integrated agent (if available and configured) or, more commonly, define your own agent class that implements the necessary methods to interact with HUD's environments. Refer to the SDK documentation for detailed agent implementation guidelines.
+
+---
+
+## What is HUD? (<a name="what-is-hud"></a>)
+
+HUD is an **evaluation platform for computer use agents**. It provides the infrastructure and tools necessary to systematically test, benchmark, and improve AI agents that operate within digital environments. Unlike traditional software testing, evaluating AI agents requires dynamic interaction with complex, often non-deterministic, environments. HUD is built to handle this complexity at scale.
+
+### The Problem HUD Solves
+
+Developing robust AI agents is challenging due to:
+*   **Slow Iteration Cycles:** Manually testing agents or running evaluations on limited local resources can take hours or days, significantly slowing down development.
+*   **Lack of Reproducibility:** Ensuring consistent evaluation environments and task execution is difficult, leading to unreliable results.
+*   **Limited Scope:** Testing agents across a diverse range of real-world environments (e.g., different operating systems, web applications, desktop software) is resource-intensive.
+*   **Complex Tooling:** Setting up and managing the infrastructure for agent evaluation often requires significant engineering effort.
+
+### How HUD Works
+
+HUD addresses these problems through its core architecture:
+1.  **Orchestrated Environments:** HUD spins up **full OS environments** (virtual machines or containers) on demand, providing a clean, isolated, and consistent testing ground for each agent run.
+2.  **Concurrent Execution:** The platform orchestrates hundreds of concurrent machines, allowing for **massive parallelization** of evaluation tasks. This dramatically reduces the time required to get results.
+3.  **Flexible Agent Integration:** HUD is designed to accommodate various agent architectures. You can integrate your agent's existing stack, including custom tools, models (like VLMs or RAG systems), and APIs.
+4.  **Comprehensive Tasksets:** It offers a library of pre-built, domain-expert-designed tasksets, alongside the ability to create custom evaluation scenarios tailored to specific needs.
+5.  **Detailed Telemetry and Analytics:** After each job, HUD provides rich analytics and telemetry, allowing you to understand agent performance, identify failure modes, and track progress over time.
+
+By abstracting away the infrastructure complexities, HUD allows developers to focus on building and refining their agents, leading to faster iteration, higher quality, and more confident deployments.
+
+---
+
+## Core Concepts (<a name="core-concepts"></a>)
+
+Understanding these core concepts will help you effectively utilize the HUD platform for your agent evaluations.
+
+### Agents
+
+In the context of HUD, an **Agent** refers to the AI system or program you are evaluating. This can be:
+*   A large language model (LLM) integrated with tools.
+*   A multi-modal AI system (e.g., incorporating Vision-Language Models).
+*   A script or automation bot.
+*   Any software entity designed to interact with a digital environment to achieve a goal.
+
+Your agent code, typically implemented as a Python class inheriting from `hud.Agent` (or a similar base), defines how it perceives the environment and executes actions.
+
+### Environments
+
+An **Environment** is the digital space in which your agent operates and performs tasks. HUD supports a wide variety of environments to simulate real-world computer use:
+*   **Desktop / OS:** Full operating system environments (e.g., Windows, Linux) where agents can interact with desktop applications, file systems, and system settings.
+*   **Browser / Web:** Web browser environments where agents can navigate websites, fill forms, click elements, and interact with web applications.
+*   **Response / API:** Text-based or API-driven environments where agents process input and generate responses, simulating command-line interfaces or API interactions.
+*   **Dockerfile / Custom:** Highly customizable environments defined by a Dockerfile, allowing you to bring proprietary tools, specific software versions, or unique system configurations.
+
+Each environment provides a consistent and isolated sandbox for agent execution.
+
+### Tasks
+
+A **Task** is a single, specific problem or objective that an agent needs to solve within an environment. Each task typically includes:
+*   A clear **description** of the objective.
+*   An initial **state** of the environment.
+*   **Evaluation criteria** to determine success or failure.
+*   Potentially, **ground truth** data for comparison.
+
+Examples include "Find the capital of France on Wikipedia," "Create a new document in Microsoft Word," or "Analyze a financial spreadsheet."
+
+### Tasksets (Evaluation Sets)
+
+A **Taskset** (also referred to as an **Evaluation Set**) is a curated collection of related tasks. Tasksets are designed to evaluate specific capabilities or benchmark agents against known challenges. HUD offers both pre-built academic and professional tasksets, as well as the ability to create your own.
+
+### Jobs
+
+A **Job** represents a single execution run of a specific agent against a chosen taskset on the HUD platform. When you initiate a job:
+*   HUD provisions the necessary environments.
+*   Your agent is deployed to each environment.
+*   Tasks from the taskset are assigned and executed.
+*   Telemetry and results are collected.
+
+Jobs are the primary mechanism for running evaluations and generating performance data.
+
+### Telemetry & Analytics
+
+During and after a job, HUD collects detailed **Telemetry** data, including agent actions, environment states, and task outcomes. This data is then processed into comprehensive **Analytics**, providing insights into:
+*   Overall success rates.
+*   Performance metrics (e.g., time to completion, resource usage).
+*   Failure modes and common errors.
+*   Task-specific results and logs.
+
+These analytics are crucial for understanding agent behavior, identifying areas for improvement, and tracking progress across iterations.
+
+---
+
+## Available Evaluation Sets (<a name="available-eval-sets"></a>)
+
+HUD provides access to a growing library of pre-built evaluation sets, designed by domain experts to rigorously test various aspects of computer use agents. These sets range from academic benchmarks to professional and gaming-specific scenarios.
+
+You can launch these evaluation sets directly from the [HUD web application](https://app.hud.so/evalsets) or integrate them into your SDK-driven workflows using `hud.load_taskset()`.
+
+| Evaluation Set | Category   | Tasks | Description                                                                                                                                                             | Status / Notes
+
+---
+
+## Integrating Your Agent (<a name="integrating-agent"></a>)
+
+HUD's philosophy is "Your agent, your way." We understand that AI agents come in diverse architectures, utilizing various models, tools, and APIs. The platform is designed to be highly adaptable, allowing you to focus on evaluating the core agentic abilities without forcing your agent into a specific mold.
+
+### The Flexible Evaluation Schema
+
+HUD's evaluation schema can adapt to virtually any agent architecture. This means you can:
+*   **Bring Your Own Tools:** Integrate your agent with external APIs, custom scripts, or proprietary software.
+*   **Utilize Any Model:** Whether you're using large language models (LLMs), Vision-Language Models (VLMs), Retrieval-Augmented Generation (RAG) systems, or other specialized models, HUD can accommodate them.
+*   **Adapt to Any Agent Loop:** Your agent's internal reasoning and action loops can remain as they are; HUD provides the environment and expects the agent to interact with it according to its design.
+
+### How to Integrate Your Agent
+
+Agent integration typically involves defining a Python class that interacts with the HUD environment. While the specific implementation details depend on your agent's design, the general pattern involves:
+
+1.  **Inheriting from `hud.Agent`:** Your custom agent class will typically inherit from a base `hud.Agent` class (or a similar interface provided by the SDK).
+2.  **Implementing `run_task`:** The core of your agent's logic will reside in a method like `run_task(self, task_input: str) -> str`. This method receives the task description and is responsible for interacting with the environment to produce a solution.
+3.  **Environment Interaction:** Inside `run_task`, your agent will use methods provided by the HUD environment object (implicitly available or passed to your agent) to:
+    *   **Observe:** Get screenshots, DOM trees, console outputs, or other environmental states.
+    *   **Act:** Perform actions like clicking, typing, dragging, executing commands, or making API calls.
+    *   **Reason:** Use your integrated models (LLMs, VLMs) and tools (RAG, external APIs) to decide on the next action based on observations and the task goal.
+
+#### Conceptual Agent Structure
+
+
+> **Tip:** Start with a simple agent that performs a single action, then gradually add complexity, integrating your models and tools. The HUD SDK documentation provides more specific examples and helper functions for common agent patterns.
+
+---
+
+## Custom Evaluations and Environments (<a name="custom-evals"></a>)
+
+While HUD offers a rich set of pre-built benchmarks, its true power lies in its flexibility to create **custom evaluations** tailored to your specific agent, product, or workflow. This allows you to go beyond standard benchmarks and test your agents on niche scenarios, proprietary tools, and unique agent loops that are critical to your application.
+
+### Building Custom Tasks and Tasksets
+
+You can define your own tasks and group them into custom tasksets. This involves:
+1.  **Defining Task Objectives:** Clearly articulate what the agent needs to achieve.
+2.  **Specifying Initial States:** Set up the environment to a precise starting point for each task. This might involve pre-loading data, opening specific applications, or navigating to a particular URL.
+3.  **Implementing Evaluation Logic:** Define how HUD will determine if the agent successfully completed the task. This can range from checking for specific file contents, verifying UI states, or parsing API responses.
+4.  **Providing Ground Truth (Optional but Recommended):** For objective evaluation, provide the expected correct output or state.
+
+HUD provides tools and APIs to help you define these custom tasks programmatically or through its web interface.
+
+### Testing on Any Environment
+
+HUD's platform supports a wide array of environment types, ensuring you can simulate almost any real-world computer interaction:
+
+#### 1. Desktop / OS Environments
+*   **Description:** Full-fledged operating system environments (e.g., Windows, various Linux distributions). Your agent can interact with the desktop, launch applications (like Microsoft Office, Photoshop, custom enterprise software), manage files, and use system utilities.
+*   **Use Cases:** Evaluating agents for IT automation, software testing, data entry in desktop applications, or general computer literacy.
+*   **Technical Details:** These environments are typically virtual machines provisioned with a graphical interface, allowing pixel-level or accessibility-tree-based interaction.
+
+#### 2. Browser / Web Environments
+*   **Description:** Dedicated web browser instances (e.g., Chrome, Firefox) within a clean environment. Agents can navigate websites, click links, fill forms, scrape data, interact with JavaScript applications, and perform complex web-based workflows.
+*   **Use Cases:** Testing web automation bots, customer support agents interacting with web CRMs, e-commerce agents, or web research assistants.
+*   **Technical Details:** Utilizes headless or visible browser instances, providing access to DOM trees, network requests, and screenshot capabilities.
+
+#### 3. Response / API Environments
+*   **Description:** Text-based or API-driven environments where the agent's interaction is primarily through input/output strings or structured API calls. This can simulate command-line interfaces, chat applications, or direct API integrations.
+*   **Use Cases:** Evaluating agents for code generation, text summarization, data transformation, or interacting with RESTful APIs.
+*   **Technical Details:** Focuses on parsing input and generating output, often involving JSON or plain text.
+
+#### 4. Dockerfile / Custom Environments
+*   **Description:** The most flexible environment type, allowing you to define your entire environment using a Dockerfile. This means you can pre-install any software, libraries, dependencies, or even proprietary tools that your agent needs to interact with.
+*   **Use Cases:** Testing agents that rely on specific versions of software, interact with niche scientific tools, require a particular database setup, or operate within a highly customized corporate IT landscape.
+*   **Technical Details:** You provide a Dockerfile that HUD builds and runs. This container serves as the isolated environment for your agent. This is ideal for replicating production environments or testing against highly specialized setups.
+
+> **Best Practice:** When creating custom environments, strive for minimal dependencies in your Dockerfile to ensure faster build times and more efficient resource utilization. Clearly document the setup for reproducibility.
+
+By combining custom tasks with tailored environments, HUD empowers you to build highly specific and relevant evaluations that directly reflect your agent's intended real-world applications.
+
+---
+
+## Accelerated Evaluation Workflow (<a name="accelerated-workflow"></a>)
+
+One of HUD's most significant advantages is its ability to dramatically accelerate your agent iteration loop. Traditional evaluation methods often involve sequential execution on limited hardware, leading to hours or even days of waiting for results. HUD's parallelized architecture fundamentally changes this.
+
+### Orchestrating Concurrent Machines
+
+HUD's platform is engineered to orchestrate **hundreds of concurrent machines**. When you initiate an evaluation job, HUD:
+1.  **Spins up full OS environments in seconds:** Each task within your taskset can be assigned to a dedicated, isolated environment.
+2.  **Distributes tasks in parallel:** Instead of running tasks one by one, HUD executes them simultaneously across its distributed infrastructure.
+3.  **Manages resources dynamically:** Environments are provisioned and de-provisioned as needed, ensuring efficient use of resources and minimizing idle time.
+
+This massive parallelization capability means that a taskset that might take days on a single machine can be completed in a fraction of the time on HUD.
+
+### OSWorld Benchmark Runtime Comparison
+
+Consider the impact of parallelization on complex benchmarks like OSWorld, which involves agents interacting with full operating systems.
+
+| Evaluation Method | Approximate Time to Complete (OSWorld) |
+| :---------------- | :------------------------------------- |
+| **Standard VM**   | 32+ Hours                              |
+| **HUD Parallelized** | ~1-2 Hours                             |
+
+> **Insight:** The "OSWorld Benchmark Runtime Comparison" on the HUD homepage visually demonstrates this. A standard sequential approach on a single virtual machine could take over 32 hours to complete a comprehensive benchmark. By leveraging HUD's parallelized architecture, the same evaluation can be completed in just a few hours. This dramatic reduction in evaluation time is critical for rapid iteration.
+
+### Benefits for Your Iteration Loop
+
+The accelerated evaluation workflow offers several key benefits:
+*   **Rapid Iteration:** Get feedback on your agent changes in minutes or hours, not days. This allows developers to experiment more freely and test more hypotheses.
+*   **Identify Regressions Sooner:** Run comprehensive regression tests after every code change. Catch performance degradations or new bugs immediately, before they become deeply embedded.
+*   **Faster Time to Production:** Confidently push better, more robust agents to production by thoroughly testing them against a wide array of scenarios in a fraction of the time.
+*   **Increased Throughput:** Run more evaluations per day, enabling more rigorous testing and a deeper understanding of agent capabilities and limitations.
+
+By significantly shortening the feedback loop, HUD transforms the agent development process from a slow, bottlenecked operation into a dynamic, agile workflow.
+
+---
+
+## Pricing and Credits (<a name="pricing"></a>)
+
+HUD offers flexible pricing plans to accommodate individual researchers, startups, and large enterprises, ensuring you can scale your agent evaluations effectively.
+
+### Basic Plan
+
+The Basic plan is ideal for individual developers, small teams, and those just getting started with agent evaluations.
+
+*   **Cost:** **$1 per evaluation** run.
+    *   *Plus $0.15/hour per active environment.*
+    *   Most informative evalsets typically cost ~$10-15 per run (average 10 minutes of active environment time per taskset).
+*   **Features:**
+    *   ✓ Access to all stock (pre-built) evaluations.
+    *   ✓ Full control over your evaluation jobs, including telemetry and detailed results.
+    *   ✓ Access to public leaderboards (Coming soon).
+*   **Free Credits:** Start with **$10 in free credits** upon signing up.
+
+[Get Started with Basic Plan](https://github.com/hud-evals/hud-sdk)
+
+### Enterprise Plan
+
+The Enterprise plan is designed for labs and organizations running evaluations at scale, requiring custom solutions and dedicated support.
+
+*   **Cost:** **Custom pricing** based on usage and specific requirements. Significant discounts are available for high-volume usage.
+*   **Features:**
+    *   ✓ Benchmark agents on proprietary datasets and custom workflows.
+    *   ✓ Stress-test new models before production deployment with dedicated resources.
+    *   ✓ Dedicated support for complex evaluation needs, including custom environment setup and integration assistance.
+    *   ✓ Advanced analytics and reporting.
+*   **Consultation:** [Book a Consultation](https://cal.com/jay-ram-z6st6w/demo) to discuss your specific needs and receive a tailored quote.
+
+### Special Programs for Researchers
+
+HUD is committed to supporting academic research in AI agents.
+*   **Researcher Credits:** Get **$100 in free credits** when you sign up with a `.edu` email address.
+*   **Academic Grants:** If you are making an academic evaluation, you can [apply for a grant](https://forms.gle/D6Lsf4N4gjm7ZZwM7) and HUD may cover your evaluation costs.
+*   **Custom Research Environments:** Need custom environments and evalsets for your research? [Tell us what you're building](https://forms.gle/LcQR57Up4ax8Jno29), and we can explore how to support your unique requirements.
+
+---
+
+## Troubleshooting and Support (<a name="troubleshooting"></a>)
+
+We're here to help you get the most out of HUD. If you encounter any issues or have questions, please refer to the following resources.
+
+### Common Issues & Tips
+
+*   **API Key Not Found:** Ensure your `HUD_API_KEY` environment variable is correctly set, or pass your API key directly when initializing the SDK.
+*   **Job Errors:** Check the logs within the HUD web application for your specific job run. Detailed error messages from your agent or the environment will be available there.
+*   **Agent Implementation:** Double-check that your agent class correctly inherits from `hud.Agent` and implements the `run_task` method as expected. Refer to the SDK documentation for detailed examples.
+*   **Environment Issues:** If your custom Dockerfile environment is failing, ensure all dependencies are correctly installed within the Dockerfile and that the entry point is valid.
+
+### Getting Help
+
+If you need further assistance, please don't hesitate to reach out:
+*   **Book a 15-min Call:** For a quick discussion, demo, or to get personalized support, you can [schedule a call with our team](https://cal.com/jay-ram-z6st6w/demo).
+*   **Email Support:** For general inquiries or quick questions, email us directly at [founders@hud.so](mailto:founders@hud.so).
+*   **SDK GitHub Repository:** For code-related issues, feature requests, or to contribute, visit the [HUD SDK GitHub repository](https://github.com/Human-Data/hud-sdk).
+*   **Official Documentation:** For the most up-to-date and detailed technical guides on the SDK, API, and platform features, refer to our [official documentation](https://documentation.hud.so).
+
+---
+
+## Use Cases (<a name="use-cases"></a>)
+
+HUD is a versatile platform applicable across a range of scenarios for anyone building or researching AI agents.
+
+### 1. Benchmarking Agent Architectures
+
+*   **Scenario:** A research lab is developing a new agent architecture (e.g., a novel planning algorithm or a new way to integrate multi-modal inputs).
+*   **HUD's Value:** Use HUD to rigorously benchmark the new architecture against established academic tasksets like **GAIA**, **OSWorld**, or **WebArena**. The parallelization allows for rapid comparison across different model sizes, prompting strategies, or tool integrations, providing objective performance metrics.
+
+### 2. Regression Testing for Agent Updates
+
+*   **Scenario:** An engineering team regularly updates their production AI agent with new features, bug fixes, or fine-tuned models. They need to ensure that new changes don't introduce regressions in existing capabilities.
+*   **HUD's Value:** Integrate HUD into your CI/CD pipeline. Run a comprehensive suite of domain-specific custom tasks or relevant pre-built tasksets (e.g., **SheetBench** for professional tasks) after every code commit. HUD's speed ensures that regressions are identified within minutes, preventing faulty agents from reaching production.
+
+### 3. Evaluating Agents on Domain-Specific Tasks
+
+*   **Scenario:** An enterprise is building an AI agent to automate tasks within their proprietary software or niche industry workflows (e.g., legal research, financial analysis, HR analytics).
+*   **HUD's Value:** Leverage HUD's **Dockerfile/Custom Environments** to replicate your specific software stack and create **Custom Tasksets** that mirror your internal workflows (e.g., **Financial Analysis 1**, **Legal Research 1**, **HR 1**). This allows for highly relevant and accurate evaluation of agent performance in real-world business contexts.
+
+### 4. Academic Research and Comparative Studies
+
+*   **Scenario:** Researchers at universities (e.g., UC Berkeley, MIT, Columbia, Yale) are conducting comparative studies of different agentic AI approaches or evaluating the robustness of agents under various conditions.
+*   **HUD's Value:** Access to a wide range of academic benchmarks like **Mind2Web** or **WebVoyager**, coupled with the ability to apply for grants and receive significant free credits, makes HUD an invaluable tool for academic exploration. The platform ensures reproducibility and scalability for large-scale experiments.
+
+### 5. Stress-Testing and Robustness Analysis
+
+*   **Scenario:** Before deploying a new agent model to a critical production environment, a team needs to understand its failure modes and robustness under edge cases.
+*   **HUD's Value:** Design tasksets specifically to stress-test the agent with challenging inputs, unexpected environment states, or adversarial examples. HUD's ability to run many concurrent evaluations helps uncover subtle bugs or vulnerabilities that might be missed in limited testing.
