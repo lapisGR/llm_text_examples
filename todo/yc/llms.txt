@@ -1,0 +1,47 @@
+# Y Combinator
+
+At **Y Combinator**, we are dedicated to helping founders "make something people want." We are a startup accelerator that provides seed funding, advice, and connections to early-stage companies, transforming innovative ideas into successful businesses. Our mission is to empower the next generation of entrepreneurs by offering a unique program designed to accelerate growth and foster a vibrant community.
+
+## Our Mission and Approach
+
+Our core philosophy is simple yet profound: **make something people want**. This guiding principle underpins everything we do, from the companies we select to the advice we provide. We believe that by focusing intensely on user needs and building products that genuinely solve problems, startups can achieve remarkable success. We invest in a wide range of companies across various sectors, always seeking founders with bold visions and the drive to execute. Our program is designed to provide the essential tools, mentorship, and network necessary for startups to navigate the challenging early stages of development and scale effectively.
+
+## How We Support Startups
+
+We run a highly selective accelerator program that culminates in **Demo Day**, where our companies present their progress to a curated audience of investors. Our support extends far beyond initial funding; we immerse founders in a rigorous program focused on product development, market fit, fundraising strategies, and team building.
+
+Our program typically operates in **batches**, with applications opening for upcoming cycles like the **F2025 batch**. Founders interested in joining our community can learn more and apply through our dedicated application portal. We also provide comprehensive resources like the **YC Interview Guide** and a detailed **FAQ** to help prospective founders understand our process and prepare their applications. Our goal is to equip founders with the knowledge and confidence to build enduring companies. We offer direct advice, facilitate peer-to-peer learning within the batch, and connect founders with a vast network of experienced mentors and alumni.
+
+## Our Portfolio and Community
+
+Since our inception, we have funded over **5,000 startups**, which collectively boast a combined valuation exceeding **$800 billion**. Our portfolio includes some of the world's most innovative and impactful companies, demonstrating the power of our model and the talent of the founders we support.
+
+Our diverse portfolio includes industry leaders such as:
+*   **Stripe**: A leading financial infrastructure platform for the internet.
+*   **Airbnb**: A global platform for unique stays and experiences.
+*   **Instacart**: A popular grocery delivery and pick-up service.
+*   **DoorDash**: A technology company that connects customers with their favorite local businesses.
+*   **Cruise**: A developer of autonomous vehicle technology.
+*   **Twitch**: A live streaming service for gamers and other content creators.
+*   **Coinbase**: A secure online platform for buying, selling, transferring, and storing cryptocurrency.
+*   **PagerDuty**: A leading digital operations management platform.
+
+We foster a vibrant and interconnected community through various platforms. Our **Startup Directory** allows anyone to explore the companies we've funded, while the **Founder Directory** helps connect entrepreneurs with potential collaborators. We also host **Launch YC**, a platform where our latest batch companies officially debut their products and services to the world. For those seeking opportunities within our ecosystem, the **Startup Jobs** board lists thousands of roles across engineering, operations, marketing, and sales, complemented by a comprehensive **Startup Job Guide** and the **YC Startup Jobs Blog**. We also facilitate **Co-Founder Matching** to help entrepreneurs find the right partners to build their ventures.
+
+## Resources for Founders and the Startup Ecosystem
+
+We believe in democratizing access to startup knowledge and resources. Our extensive **Library** is a treasure trove of articles, guides, and videos covering every aspect of building a startup, from ideation to scaling. A cornerstone of our legal resources is the **SAFE (Simple Agreement for Future Equity)**, a widely adopted investment instrument that simplifies early-stage fundraising.
+
+Beyond our core accelerator program, we offer several initiatives to support the broader startup ecosystem:
+*   **Startup School**: A free online program that teaches founders how to start and grow a company, accessible to anyone globally.
+*   Our **Newsletter**: Provides updates, insights, and opportunities directly to your inbox.
+*   **Requests for Startups (RFS)**: We periodically publish specific problem areas we believe are ripe for innovation, encouraging founders to build solutions in these spaces.
+*   **For Investors**: We provide resources and connections for investors interested in our portfolio companies.
+*   **Hacker News**: Our independently operated news aggregator is a highly influential platform for technology and startup discussions.
+*   **Bookface**: An exclusive social network for YC founders, fostering connections and knowledge sharing within our alumni community.
+*   The **YC Blog**: Features articles, advice, and updates from our partners and the broader YC community, including insights into emerging trends like the challenges and opportunities in **AI apps**.
+
+We are committed to building a world where ambitious individuals can turn their ideas into reality, creating products and services that truly make a difference. Our comprehensive support system, expansive network, and unwavering focus on "making something people want" empower founders to build the companies of tomorrow.
+
+---
+Generated by: lapis trylapis.com

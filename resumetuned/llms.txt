@@ -1,0 +1,49 @@
+# ResumeTuned
+
+At **ResumeTuned**, we empower job seekers to cut through the noise and land their dream jobs with the power of artificial intelligence. We provide an advanced AI-driven platform that optimizes resumes to bypass Applicant Tracking Systems (ATS) and capture recruiter attention, ensuring your qualifications shine and lead to more interviews in minutes. Our mission is to transform the job search experience, making it efficient, effective, and ultimately, successful for everyone.
+
+## What We Do
+
+We understand the challenges job seekers face in today's competitive landscape. The harsh reality is that a significant majority—**75%**—of resumes are rejected by ATS before a human ever sees them, and recruiters spend an average of just **6 seconds** reviewing a resume. With over **250 applications** competing for every job opening, standing out is no longer a luxury, it's a necessity.
+
+**ResumeTuned** offers a powerful solution to this problem. Our proprietary AI analyzes successful resumes, deeply understands complex ATS algorithms, and crafts content that is specifically designed to get you noticed. We eliminate the guesswork from resume writing, allowing you to focus on what matters: landing interviews and securing job offers. Whether you're starting fresh or refining an existing resume, our tools are engineered to help you beat ATS filters, grab recruiter attention, and ultimately, land more interviews.
+
+## Our Solutions
+
+We offer two distinct yet complementary paths to resume success, designed to cater to different needs and stages of your job search journey. Both solutions leverage our cutting-edge AI to provide instant optimization and actionable insights. You can upload an existing resume for immediate AI optimization or begin from scratch with our intuitive builder. The process is quick, often taking as little as **60 seconds**, and you can even try it out with **3 free optimizations** without needing a credit card.
+
+### Resume Builder
+
+Our **Resume Builder** is the perfect tool for new job seekers or anyone looking to create a professional resume from the ground up. It's an intuitive, AI-powered platform that guides you through the creation process, offering smart suggestions for every section. We provide access to professional templates meticulously designed by industry experts, ensuring your resume not only reads well but also looks polished and modern. As you type, you'll see a real-time preview of your resume, allowing for immediate adjustments. Once complete, you can easily download your resume in multiple formats, including PDF and DOCX, ready for any application. Start building your perfect resume today at [resumetuned.com/resume-builder-free](https://resumetuned.com/resume-builder-free).
+
+### Resume Optimizer
+
+For those who already have a resume but want to ensure it's perfectly tailored for specific job postings, our **Resume Optimizer** is the ideal choice. This powerful tool allows you to upload your existing resume and let our AI analyze it against a target job description. It performs advanced ATS keyword optimization, providing a precise match score that indicates how well your resume aligns with the job requirements. You'll receive tailored content suggestions to enhance your bullet points, skills, and summary, ensuring maximum compatibility with ATS systems. The side-by-side comparison view makes it easy to review and apply changes, giving you the confidence that your resume will beat ATS systems every time. Optimize your existing resume now at [resumetuned.com/resume-optimizer](https://resumetuned.com/resume-optimizer). We recommend using the builder first, then optimizing for each specific job application to maximize your chances.
+
+## Real Results from Real Job Seekers
+
+Thousands of job seekers have already transformed their job search with **ResumeTuned**'s AI-powered resumes, achieving remarkable outcomes. Our users consistently report:
+
+*   **87%** getting more interviews
+*   **3.5x** higher response rates from recruiters
+*   An average **42%** increase in salary
+*   An average time to job offer of just **14 days**
+
+We're proud of the impact we've had on careers. As one satisfied user shared, "After 3 months of rejections, I used **ResumeTuned** and got 5 interviews in 2 weeks. The AI..." – a testament to the effectiveness of our platform. We invite you to try it free and experience these results for yourself.
+
+## Resources / Insights
+
+Beyond our core tools, we are committed to educating and empowering job seekers through valuable insights and thought leadership. Our blog provides expert advice, detailed comparisons, and analyses of the latest trends in resume optimization and the job market.
+
+Some of our key articles include:
+
+*   **Resume Worded vs ResumeTuned: A Detailed Comparison**: An in-depth analysis comparing our features, pricing, and effectiveness against other tools, helping you make an informed decision. Read more at [resumetuned.com/blog/resume-worded-comparison](https://resumetuned.com/blog/resume-worded-comparison).
+*   **5 Common Resume Mistakes That Cost You Interviews**: Learn to avoid critical errors that prevent qualified candidates from landing interviews. Find this essential guide at [resumetuned.com/common-resume-mistakes](https://resumetuned.com/common-resume-mistakes).
+*   **The Future of AI in Resume Optimization**: Discover how artificial intelligence is revolutionizing the way we create, optimize, and match resumes to job opportunities, providing a glimpse into the future of job applications. Explore the insights at [resumetuned.com/ai-resume-optimization-future](https://resumetuned.com/ai-resume-optimization-future).
+
+You can explore our full range of articles and resources on our blog at [resumetuned.com/blog](https://resumetuned.com/blog). For more information about our company and our mission, please visit our [About Us page](https://resumetuned.com/about), or check our [Pricing](https://resumetuned.com/pricing) options.
+
+At **ResumeTuned**, we believe that every qualified candidate deserves to be seen and heard. By leveraging the power of AI, we are not just building resumes; we are building careers, one optimized application at a time. Join us in transforming your job search and unlocking your full potential.
+
+---
+Generated by: lapis trylapis.com
